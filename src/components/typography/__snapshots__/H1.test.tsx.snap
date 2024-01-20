@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`H1 when asked to render  renders 1`] = `
+<h1
+  className="font-display text-5xl font-bold text-black dark:text-white subpixel-antialiased"
+>
+  Hello world!
+</h1>
+`;
+
+exports[`H1 when asked to render with additional class  renders with additional class 1`] = `
+<h1
+  className="font-display text-5xl font-bold text-black dark:text-white subpixel-antialiased some-class"
+>
+  Hello world!
+</h1>
+`;

@@ -1,6 +1,6 @@
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
-import { TypographyProps } from '~/types/props/TypographyProps';
+import { TypographyProps } from '@/types/props/TypographyProps';
 
 export const typographyRenderTests = (
   name: string,

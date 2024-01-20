@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`B1 when asked to render  renders 1`] = `
+<p
+  className="text-xl text-black dark:text-white"
+>
+  Hello world!
+</p>
+`;
+
+exports[`B1 when asked to render with additional class  renders with additional class 1`] = `
+<p
+  className="text-xl text-black dark:text-white some-class"
+>
+  Hello world!
+</p>
+`;
