@@ -8,7 +8,7 @@ exports[`InputLabel when asked to render with additional class  renders with add
     aria-invalid={false}
     aria-label="Test label"
     autoFocus={false}
-    className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none group-hover:border-primary-300 focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300 invalid:border-error hover:invalid:border-error peer order-2"
+    className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none group-hover:valid:border-primary-300 invalid:border-error  focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300 peer order-2"
     data-test-id="test-input"
     disabled={false}
     id="test-input"
@@ -36,7 +36,7 @@ exports[`InputLabel when asked to render with label  renders with label 1`] = `
     aria-invalid={false}
     aria-label="Test label"
     autoFocus={false}
-    className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none group-hover:border-primary-300 focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300 invalid:border-error hover:invalid:border-error peer order-2"
+    className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none group-hover:valid:border-primary-300 invalid:border-error  focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300 peer order-2"
     data-test-id="test-input"
     disabled={false}
     id="test-input"

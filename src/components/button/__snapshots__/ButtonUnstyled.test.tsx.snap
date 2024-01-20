@@ -7,6 +7,7 @@ exports[`ButtonUnstyled when asked to render disabled renders disabled 1`] = `
   data-test-id="test-button"
   disabled={true}
   id="test-button"
+  onClick={[Function]}
 >
   Test Button
 </button>
@@ -18,6 +19,7 @@ exports[`ButtonUnstyled when asked to render renders 1`] = `
   className=""
   data-test-id="test-button"
   id="test-button"
+  onClick={[Function]}
 >
   Test Button
 </button>
@@ -29,6 +31,7 @@ exports[`ButtonUnstyled when asked to render with additional class renders with 
   className="some-class"
   data-test-id="test-button"
   id="test-button"
+  onClick={[Function]}
 >
   Test Button
 </button>
