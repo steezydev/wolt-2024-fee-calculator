@@ -9,10 +9,17 @@ import ButtonPrimary from './components/button/ButtonPrimary';
 
 const App = () => {
   const [cartValue, setCartValue] = useState('');
+  const [deliveryDistance, setDeliveryDistance] = useState('');
+  const [itemsAmount, setItemsAmount] = useState('');
+  const [orderTime, setOrderTime] = useState('');
+
+  //TODO: Add validation
+  const isButtonActive =
+    cartValue && deliveryDistance && itemsAmount && orderTime;
 
   return (
     <>
-      <header className='pt-16 pb-20'>
+      <header className='py-10 sm:py-16'>
         <H1>Delivery fee calculator</H1>
       </header>
       <main className='flex flex-col gap-6'>
@@ -20,7 +27,7 @@ const App = () => {
           <BadgeInfoIcon className='text-primary-300' />
           <B2>Fill the fields to calculate the delivery fee</B2>
         </div>
-        <form className='flex flex-col gap-6'>
+        <form className='flex flex-col gap-4 sm:gap-6'>
           <InputLabel label='Cart value' id='cart-value-input'>
             <InputMid
               required
@@ -45,8 +52,8 @@ const App = () => {
               ariaLabel='Delivery distance'
               placeholder='900 m'
               min={0}
-              onChange={setCartValue}
-              value={cartValue}
+              onChange={setDeliveryDistance}
+              value={deliveryDistance}
             />
           </InputLabel>
           <InputLabel label='Amount of items' id='items-amount-input'>
@@ -59,8 +66,8 @@ const App = () => {
               ariaLabel='Amount of items'
               placeholder='1'
               min={1}
-              onChange={setCartValue}
-              value={cartValue}
+              onChange={setItemsAmount}
+              value={itemsAmount}
             />
           </InputLabel>
           <InputLabel label='Order time' id='order-time-input'>
@@ -72,11 +79,18 @@ const App = () => {
               type='datetime-local'
               ariaLabel='Order time'
               placeholder='1'
-              onChange={setCartValue}
-              value={cartValue}
+              onChange={setOrderTime}
+              value={orderTime}
             />
           </InputLabel>
-          <ButtonPrimary>Calculate delivery price</ButtonPrimary>
+          <ButtonPrimary
+            id='submit-calculate-delivery-price'
+            ariaLabel='Calculate delivery price'
+            disabled={!isButtonActive}
+            className='mt-4 w-full'
+          >
+            Calculate delivery price
+          </ButtonPrimary>
         </form>
       </main>
     </>
