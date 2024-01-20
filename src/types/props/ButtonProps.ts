@@ -7,4 +7,5 @@ export declare interface ButtonProps extends HasChildrenProps, ClassNameProps {
     onClick?: () => void;
     disabled?: boolean;
     type?: 'button' | 'submit' | 'reset';
+    buttonRef?: React.Ref<HTMLButtonElement>;
 }

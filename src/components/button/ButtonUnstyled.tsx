@@ -9,12 +9,20 @@ const ButtonUnstyled = ({
   disabled,
   onClick,
   type,
+  buttonRef,
 }: ButtonProps) => {
+  // Preventing form submission on button click
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    onClick && onClick();
+  };
+
   return (
     <button
+      ref={buttonRef}
       id={id}
       type={type}
-      onClick={onClick}
+      onClick={handleClick}
       aria-label={ariaLabel}
       className={classNames('', className)}
       disabled={disabled}
