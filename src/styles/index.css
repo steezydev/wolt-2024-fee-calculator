@@ -9,3 +9,21 @@
     font-display: swap;
     src: url('/fonts/omnes_bold.ttf') format('opentype');
 }
+
+@layer base {
+    body {
+        @apply m-auto max-w-xl;
+    }
+    html {
+        @apply bg-white dark:bg-black;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        text-rendering: optimizeLegibility;
+    }
+}
