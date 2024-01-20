@@ -1,0 +1,30 @@
+{
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "quoteProps": "consistent",
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "useTabs": false,
+    "importOrder": ["^~/(.*)$", "^[./]"],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true,
+    "plugins": [
+        "<THIRD_PARTY_MODULES>",
+        "prettier-plugin-tailwindcss",
+        "@trivago/prettier-plugin-sort-imports"
+    ],
+    "overrides": [
+        {
+            "files": "*.json",
+            "options": {
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": ["*.tsx", "*.jsx"],
+            "options": {
+                "tabWidth": 2
+            }
+        }
+    ]
+}
