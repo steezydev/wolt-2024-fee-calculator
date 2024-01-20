@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputUnstyled when asked to render autofocused renders autofocused 1`] = `
+<input
+  aria-invalid={false}
+  aria-label="Test label"
+  autoFocus={true}
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+  data-test-id="test-input"
+  disabled={false}
+  id="test-input"
+  name="test-input"
+  onChange={[Function]}
+  required={false}
+  type="text"
+/>
+`;
+
+exports[`InputUnstyled when asked to render disabled renders disabled 1`] = `
+<input
+  aria-invalid={false}
+  aria-label="Test label"
+  autoFocus={false}
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+  data-test-id="test-input"
+  disabled={true}
+  id="test-input"
+  name="test-input"
+  onChange={[Function]}
+  required={false}
+  type="text"
+/>
+`;
+
+exports[`InputUnstyled when asked to render renders 1`] = `
+<input
+  aria-invalid={false}
+  aria-label="Test label"
+  autoFocus={false}
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+  data-test-id="test-input"
+  disabled={false}
+  id="test-input"
+  name="test-input"
+  onChange={[Function]}
+  required={false}
+  type="text"
+/>
+`;
+
+exports[`InputUnstyled when asked to render required renders required 1`] = `
+<input
+  aria-invalid={false}
+  aria-label="Test label"
+  autoFocus={false}
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+  data-test-id="test-input"
+  disabled={false}
+  id="test-input"
+  name="test-input"
+  onChange={[Function]}
+  required={true}
+  type="text"
+/>
+`;
+
+exports[`InputUnstyled when asked to render with placeholder renders with placeholder 1`] = `
+<input
+  aria-invalid={false}
+  aria-label="Test label"
+  autoFocus={false}
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+  data-test-id="test-input"
+  disabled={false}
+  id="test-input"
+  name="test-input"
+  onChange={[Function]}
+  placeholder="Test placeholder"
+  required={false}
+  type="text"
+/>
+`;
+
+exports[`InputUnstyled when asked to render with value renders with placeholder 1`] = `
+<input
+  aria-invalid={false}
+  aria-label="Test label"
+  autoFocus={false}
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+  data-test-id="test-input"
+  disabled={false}
+  id="test-input"
+  name="test-input"
+  onChange={[Function]}
+  required={false}
+  type="text"
+  value="Test value"
+/>
+`;

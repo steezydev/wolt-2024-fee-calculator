@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputRegular when asked to render autofocused renders autofocused 1`] = `
+<input
+  aria-invalid={false}
+  aria-label="Test label"
+  autoFocus={true}
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-transparent invalid:border-error"
+  data-test-id="test-input"
+  disabled={false}
+  id="test-input"
+  name="test-input"
+  onChange={[Function]}
+  required={false}
+  type="text"
+/>
+`;
+
+exports[`InputRegular when asked to render disabled renders disabled 1`] = `
+<input
+  aria-invalid={false}
+  aria-label="Test label"
+  autoFocus={false}
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-transparent invalid:border-error"
+  data-test-id="test-input"
+  disabled={true}
+  id="test-input"
+  name="test-input"
+  onChange={[Function]}
+  required={false}
+  type="text"
+/>
+`;
+
+exports[`InputRegular when asked to render renders 1`] = `
+<input
+  aria-invalid={false}
+  aria-label="Test label"
+  autoFocus={false}
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-transparent invalid:border-error"
+  data-test-id="test-input"
+  disabled={false}
+  id="test-input"
+  name="test-input"
+  onChange={[Function]}
+  required={false}
+  type="text"
+/>
+`;
+
+exports[`InputRegular when asked to render required renders required 1`] = `
+<input
+  aria-invalid={false}
+  aria-label="Test label"
+  autoFocus={false}
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-transparent invalid:border-error"
+  data-test-id="test-input"
+  disabled={false}
+  id="test-input"
+  name="test-input"
+  onChange={[Function]}
+  required={true}
+  type="text"
+/>
+`;
+
+exports[`InputRegular when asked to render with placeholder renders with placeholder 1`] = `
+<input
+  aria-invalid={false}
+  aria-label="Test label"
+  autoFocus={false}
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-transparent invalid:border-error"
+  data-test-id="test-input"
+  disabled={false}
+  id="test-input"
+  name="test-input"
+  onChange={[Function]}
+  placeholder="Test placeholder"
+  required={false}
+  type="text"
+/>
+`;
+
+exports[`InputRegular when asked to render with value renders with placeholder 1`] = `
+<input
+  aria-invalid={false}
+  aria-label="Test label"
+  autoFocus={false}
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none focus:outline-none focus:ring-2 focus:ring-primary-300 focus:border-transparent invalid:border-error"
+  data-test-id="test-input"
+  disabled={false}
+  id="test-input"
+  name="test-input"
+  onChange={[Function]}
+  required={false}
+  type="text"
+  value="Test value"
+/>
+`;
