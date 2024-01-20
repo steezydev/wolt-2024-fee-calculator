@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonUnstyled when asked to render disabled renders disabled 1`] = `
+<button
+  aria-label="Test button label"
+  className="some-class"
+  data-test-id="test-button"
+  disabled={true}
+  id="test-button"
+>
+  Test Button
+</button>
+`;
+
+exports[`ButtonUnstyled when asked to render renders 1`] = `
+<button
+  aria-label="Test button label"
+  className=""
+  data-test-id="test-button"
+  id="test-button"
+>
+  Test Button
+</button>
+`;
+
+exports[`ButtonUnstyled when asked to render with additional class renders with additional class 1`] = `
+<button
+  aria-label="Test button label"
+  className="some-class"
+  data-test-id="test-button"
+  id="test-button"
+>
+  Test Button
+</button>
+`;

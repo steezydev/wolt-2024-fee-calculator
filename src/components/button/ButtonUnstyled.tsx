@@ -2,6 +2,7 @@ import { classNames } from '@/helpers/classNames';
 import { ButtonProps } from '@/types/props/ButtonProps';
 
 const ButtonUnstyled = ({
+  id,
   children,
   ariaLabel,
   className,
@@ -11,11 +12,13 @@ const ButtonUnstyled = ({
 }: ButtonProps) => {
   return (
     <button
+      id={id}
       type={type}
       onClick={onClick}
       aria-label={ariaLabel}
       className={classNames('', className)}
       disabled={disabled}
+      data-test-id={id}
     >
       {children}
     </button>
