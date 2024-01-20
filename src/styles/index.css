@@ -12,7 +12,7 @@
 
 @layer base {
     body {
-        @apply m-auto max-w-xl;
+        @apply m-auto px-4 sm:max-w-xl sm:p-0;
     }
     html {
         @apply bg-white dark:bg-black;

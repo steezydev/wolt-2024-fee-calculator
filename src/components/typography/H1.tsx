@@ -5,7 +5,7 @@ const H1 = ({ children, className }: TypographyProps) => {
   return (
     <h1
       className={classNames(
-        'font-display text-5xl font-bold text-black dark:text-white subpixel-antialiased',
+        'font-display text-4xl sm:text-5xl font-bold text-black dark:text-white subpixel-antialiased',
         className
       )}
     >
