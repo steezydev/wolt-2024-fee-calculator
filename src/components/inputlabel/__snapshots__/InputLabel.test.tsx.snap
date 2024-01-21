@@ -9,7 +9,7 @@ exports[`InputLabel when asked to render with additional class  renders with add
     aria-label="Test label"
     aria-required={true}
     autoFocus={false}
-    className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl border-2 bg-transparent border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-2.5 text-xl text-black leading-none  dark:border-neutral-dark-100 dark:placeholder:text-neutral-dark-300 dark:text-white group-hover:data-[invalid=false]:border-primary-300 data-[invalid=true]:border-error data-[invalid=true]:dark:border-error focus:data-[invalid=true]:border-primary-300 focus:data-[invalid=true]:dark:border-primary-300 focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300 focus:dark:border-primary-300 peer order-2"
+    className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl border-2 bg-transparent border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-2.5 text-xl text-black leading-none  dark:border-neutral-dark-100 dark:placeholder:text-neutral-dark-300 dark:text-white group-hover:data-[invalid=false]:border-primary-300 data-[invalid=true]:placeholder:text-error data-[invalid=true]:dark:placeholder:text-error data-[invalid=true]:border-error data-[invalid=true]:dark:border-error focus:data-[invalid=true]:border-primary-300 focus:data-[invalid=true]:dark:border-primary-300 focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300 focus:dark:border-primary-300 peer order-2"
     data-invalid={false}
     data-test-id="test-input"
     disabled={false}
@@ -74,7 +74,7 @@ exports[`InputLabel when asked to render with label  renders with label 1`] = `
     aria-label="Test label"
     aria-required={true}
     autoFocus={false}
-    className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl border-2 bg-transparent border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-2.5 text-xl text-black leading-none  dark:border-neutral-dark-100 dark:placeholder:text-neutral-dark-300 dark:text-white group-hover:data-[invalid=false]:border-primary-300 data-[invalid=true]:border-error data-[invalid=true]:dark:border-error focus:data-[invalid=true]:border-primary-300 focus:data-[invalid=true]:dark:border-primary-300 focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300 focus:dark:border-primary-300 peer order-2"
+    className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl border-2 bg-transparent border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-2.5 text-xl text-black leading-none  dark:border-neutral-dark-100 dark:placeholder:text-neutral-dark-300 dark:text-white group-hover:data-[invalid=false]:border-primary-300 data-[invalid=true]:placeholder:text-error data-[invalid=true]:dark:placeholder:text-error data-[invalid=true]:border-error data-[invalid=true]:dark:border-error focus:data-[invalid=true]:border-primary-300 focus:data-[invalid=true]:dark:border-primary-300 focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300 focus:dark:border-primary-300 peer order-2"
     data-invalid={false}
     data-test-id="test-input"
     disabled={false}
