@@ -57,6 +57,16 @@ export function wihtInputIcon<T extends InputProps>(
     // Workaround for tailwind peer selector in InputLabel component
     const [isFocused, setIsFocused] = useState(false);
 
+    const handleBlur = (event: React.FocusEvent<HTMLInputElement>) => {
+      props.onBlur && props.onBlur(event);
+      setIsFocused(false);
+    };
+
+    const handleFocus = (event: React.FocusEvent<HTMLInputElement>) => {
+      props.onFocus && props.onFocus(event);
+      setIsFocused(true);
+    };
+
     return (
       <div
         data-invalid={props.isInvalid}
@@ -68,8 +78,8 @@ export function wihtInputIcon<T extends InputProps>(
       >
         <WrappedComponent
           {...props}
-          onFocus={() => setIsFocused(true)}
-          onBlur={() => setIsFocused(false)}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
           className={classNames('pl-10 w-full peer')}
         />
         <div className='absolute left-2 top-0 h-full flex items-center text-neutral-light-300 dark:text-neutral-dark-300 peer-data-[invalid=true]:text-error peer-focus:text-primary-300'>
