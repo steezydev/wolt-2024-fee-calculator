@@ -27,7 +27,7 @@ export default {
                 'black': '#202125',
                 'white': '#FFFFFF',
                 'error': '#F93A24',
-                'focus': '0F2594',
+                'focus': '#0F2594',
             },
             typography: {
                 b1: 'text-xl',

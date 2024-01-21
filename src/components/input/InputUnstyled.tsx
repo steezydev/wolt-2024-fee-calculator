@@ -1,6 +1,6 @@
 import { classNames } from '@/helpers/classNames';
 import { InputProps } from '@/types/props/InputProps';
-import React, { useState } from 'react';
+import React from 'react';
 
 const InputUnstyled = React.forwardRef<HTMLInputElement, InputProps>(
   (
@@ -14,28 +14,17 @@ const InputUnstyled = React.forwardRef<HTMLInputElement, InputProps>(
       onFocus,
       onBlur,
       onInput,
-      validate,
       placeholder,
       min,
       max,
       autoFocus = false,
       disabled = false,
       required = false,
+      isInvalid = false,
       className,
     },
     ref
   ) => {
-    const [isValid, setIsValid] = useState(true);
-
-    //TODO: Make validation
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-      const newValue = event.target.value;
-      onChange && onChange(newValue);
-      if (validate) {
-        setIsValid(validate(newValue));
-      }
-    };
-
     return (
       <input
         ref={ref}
@@ -44,11 +33,12 @@ const InputUnstyled = React.forwardRef<HTMLInputElement, InputProps>(
         name={name}
         aria-label={ariaLabel}
         value={value}
-        onChange={handleChange}
+        onChange={onChange}
         onFocus={onFocus}
         onBlur={onBlur}
         disabled={disabled}
         required={required}
+        aria-required={required}
         placeholder={placeholder}
         className={classNames(
           '[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none',
@@ -56,7 +46,8 @@ const InputUnstyled = React.forwardRef<HTMLInputElement, InputProps>(
         )}
         onInput={onInput}
         autoFocus={autoFocus}
-        aria-invalid={!isValid}
+        aria-invalid={isInvalid}
+        data-invalid={isInvalid}
         data-test-id={id}
         min={min}
         max={max}

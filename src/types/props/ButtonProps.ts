@@ -1,5 +1,5 @@
-import { ClassNameProps } from './ClassNameProps';
-import { HasChildrenProps } from './HasChildrenProps';
+import { ClassNameProps } from '@/types/props/ClassNameProps';
+import { HasChildrenProps } from '@/types/props/HasChildrenProps';
 
 export declare interface ButtonProps extends HasChildrenProps, ClassNameProps {
     id: string;

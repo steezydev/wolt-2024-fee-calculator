@@ -11,11 +11,17 @@
 }
 
 @layer base {
+    body * {
+        @apply transition-colors duration-200;
+    }
     body {
         @apply m-auto px-4 sm:max-w-xl sm:p-0;
     }
     html {
         @apply bg-white dark:bg-black;
+    }
+    html.dark {
+        @apply bg-black;
     }
     h1,
     h2,

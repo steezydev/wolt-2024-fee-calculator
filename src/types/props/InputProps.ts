@@ -1,4 +1,5 @@
-import { ClassNameProps } from './ClassNameProps';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { ClassNameProps } from '@/types/props/ClassNameProps';
 
 export declare type InputType =
     | 'text'
@@ -21,16 +22,17 @@ export declare interface InputProps extends ClassNameProps {
     ariaLabel: string;
     type: InputType;
     name: string;
-    onChange?: (value: string) => void;
+    onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
     onFocus?: (event: React.FocusEvent<HTMLInputElement>) => void;
     onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
     onInput?: (event: React.FormEvent<HTMLInputElement>) => void;
-    validate?: (value: string) => boolean;
-    value?: string | number;
+    validate?: (value: any) => boolean;
+    value?: string;
     autoFocus?: boolean;
     disabled?: boolean;
     required?: boolean;
     placeholder?: string;
     min?: number;
     max?: number;
+    isInvalid?: boolean;
 }

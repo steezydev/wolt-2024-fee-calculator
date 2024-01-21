@@ -1,8 +1,7 @@
+import InputRegular from '@/components/input/InputRegular';
 import { InputLabelProps } from '@/types/props/InputLabelProps';
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
-
-import InputRegular from '../input/InputRegular';
 
 export const inputLabelRenderTests = (
   name: string,
@@ -21,7 +20,7 @@ export const inputLabelRenderTests = (
               ariaLabel='Test label'
               placeholder='20'
               onChange={() => {}}
-              value={20}
+              value={'20'}
             />
           </InputLabel>
         );
@@ -42,7 +41,7 @@ export const inputLabelRenderTests = (
               ariaLabel='Test label'
               placeholder='20'
               onChange={() => {}}
-              value={20}
+              value={'20'}
             />
           </InputLabel>
         );

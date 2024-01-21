@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CalculationResultItem when asked to render renders 1`] = `
+<div
+  className="flex flex-row justify-between"
+>
+  <p
+    className="text-base"
+  >
+    Cart value
+  </p>
+  <p
+    className="text-base"
+  >
+    20 €
+  </p>
+</div>
+`;
+
+exports[`CalculationResultItem when asked to render with additional class renders with additional class 1`] = `
+<div
+  className="flex flex-row justify-between some-class"
+>
+  <p
+    className="text-base"
+  >
+    Cart value
+  </p>
+  <p
+    className="text-base"
+  >
+    20 €
+  </p>
+</div>
+`;

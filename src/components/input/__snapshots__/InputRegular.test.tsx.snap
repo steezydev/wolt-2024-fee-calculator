@@ -4,13 +4,14 @@ exports[`InputRegular when asked to render autofocused renders autofocused 1`] =
 <input
   aria-invalid={false}
   aria-label="Test label"
+  aria-required={false}
   autoFocus={true}
-  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none group-hover:valid:border-primary-300 invalid:border-error  focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300"
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl border-2 bg-transparent border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-2.5 text-xl text-black leading-none  dark:border-neutral-dark-100 dark:placeholder:text-neutral-dark-300 dark:text-white group-hover:data-[invalid=false]:border-primary-300 data-[invalid=true]:border-error data-[invalid=true]:dark:border-error focus:data-[invalid=true]:border-primary-300 focus:data-[invalid=true]:dark:border-primary-300 focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300 focus:dark:border-primary-300"
+  data-invalid={false}
   data-test-id="test-input"
   disabled={false}
   id="test-input"
   name="test-input"
-  onChange={[Function]}
   required={false}
   type="text"
 />
@@ -20,13 +21,14 @@ exports[`InputRegular when asked to render disabled renders disabled 1`] = `
 <input
   aria-invalid={false}
   aria-label="Test label"
+  aria-required={false}
   autoFocus={false}
-  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none group-hover:valid:border-primary-300 invalid:border-error  focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300"
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl border-2 bg-transparent border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-2.5 text-xl text-black leading-none  dark:border-neutral-dark-100 dark:placeholder:text-neutral-dark-300 dark:text-white group-hover:data-[invalid=false]:border-primary-300 data-[invalid=true]:border-error data-[invalid=true]:dark:border-error focus:data-[invalid=true]:border-primary-300 focus:data-[invalid=true]:dark:border-primary-300 focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300 focus:dark:border-primary-300"
+  data-invalid={false}
   data-test-id="test-input"
   disabled={true}
   id="test-input"
   name="test-input"
-  onChange={[Function]}
   required={false}
   type="text"
 />
@@ -36,13 +38,14 @@ exports[`InputRegular when asked to render renders 1`] = `
 <input
   aria-invalid={false}
   aria-label="Test label"
+  aria-required={false}
   autoFocus={false}
-  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none group-hover:valid:border-primary-300 invalid:border-error  focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300"
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl border-2 bg-transparent border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-2.5 text-xl text-black leading-none  dark:border-neutral-dark-100 dark:placeholder:text-neutral-dark-300 dark:text-white group-hover:data-[invalid=false]:border-primary-300 data-[invalid=true]:border-error data-[invalid=true]:dark:border-error focus:data-[invalid=true]:border-primary-300 focus:data-[invalid=true]:dark:border-primary-300 focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300 focus:dark:border-primary-300"
+  data-invalid={false}
   data-test-id="test-input"
   disabled={false}
   id="test-input"
   name="test-input"
-  onChange={[Function]}
   required={false}
   type="text"
 />
@@ -52,13 +55,14 @@ exports[`InputRegular when asked to render required renders required 1`] = `
 <input
   aria-invalid={false}
   aria-label="Test label"
+  aria-required={true}
   autoFocus={false}
-  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none group-hover:valid:border-primary-300 invalid:border-error  focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300"
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl border-2 bg-transparent border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-2.5 text-xl text-black leading-none  dark:border-neutral-dark-100 dark:placeholder:text-neutral-dark-300 dark:text-white group-hover:data-[invalid=false]:border-primary-300 data-[invalid=true]:border-error data-[invalid=true]:dark:border-error focus:data-[invalid=true]:border-primary-300 focus:data-[invalid=true]:dark:border-primary-300 focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300 focus:dark:border-primary-300"
+  data-invalid={false}
   data-test-id="test-input"
   disabled={false}
   id="test-input"
   name="test-input"
-  onChange={[Function]}
   required={true}
   type="text"
 />
@@ -68,13 +72,14 @@ exports[`InputRegular when asked to render with placeholder renders with placeho
 <input
   aria-invalid={false}
   aria-label="Test label"
+  aria-required={false}
   autoFocus={false}
-  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none group-hover:valid:border-primary-300 invalid:border-error  focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300"
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl border-2 bg-transparent border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-2.5 text-xl text-black leading-none  dark:border-neutral-dark-100 dark:placeholder:text-neutral-dark-300 dark:text-white group-hover:data-[invalid=false]:border-primary-300 data-[invalid=true]:border-error data-[invalid=true]:dark:border-error focus:data-[invalid=true]:border-primary-300 focus:data-[invalid=true]:dark:border-primary-300 focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300 focus:dark:border-primary-300"
+  data-invalid={false}
   data-test-id="test-input"
   disabled={false}
   id="test-input"
   name="test-input"
-  onChange={[Function]}
   placeholder="Test placeholder"
   required={false}
   type="text"
@@ -85,13 +90,14 @@ exports[`InputRegular when asked to render with value renders with placeholder 1
 <input
   aria-invalid={false}
   aria-label="Test label"
+  aria-required={false}
   autoFocus={false}
-  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl bg-white border-2 border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-3 text-xl text-black dark:text-white leading-none group-hover:valid:border-primary-300 invalid:border-error  focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300"
+  className="[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none rounded-xl border-2 bg-transparent border-neutral-light-100 placeholder:text-neutral-light-300 px-3 py-2.5 text-xl text-black leading-none  dark:border-neutral-dark-100 dark:placeholder:text-neutral-dark-300 dark:text-white group-hover:data-[invalid=false]:border-primary-300 data-[invalid=true]:border-error data-[invalid=true]:dark:border-error focus:data-[invalid=true]:border-primary-300 focus:data-[invalid=true]:dark:border-primary-300 focus:outline-none focus:ring-1 focus:ring-primary-300 focus:border-primary-300 focus:dark:border-primary-300"
+  data-invalid={false}
   data-test-id="test-input"
   disabled={false}
   id="test-input"
   name="test-input"
-  onChange={[Function]}
   required={false}
   type="text"
   value="Test value"
