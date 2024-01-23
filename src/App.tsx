@@ -17,6 +17,7 @@ import MapPinIcon from './components/icons/MapPinIcon';
 import ThemeSwitch from './components/themeswitch/ThemeSwitch';
 import { calculateDeliveryFee } from './helpers/deliveryFee';
 import { withThemeSelectorHoc } from './hoc/ThemeHoc';
+import useDatetimeSelector from './hooks/useDatetimeSelector';
 import useInput from './hooks/useInput';
 
 //TODO: Write comments for components (everything)
@@ -43,7 +44,7 @@ const App = () => {
     type: 'integer',
   });
 
-  const [orderTime, setOrderTime] = useState(new Date());
+  const orderTime = useDatetimeSelector(new Date());
   const [deliveryPrice, setDeliveryPrice] = useState<number | null>(null);
 
   const isButtonActive =
@@ -53,13 +54,13 @@ const App = () => {
     deliveryDistanceInputData.isFilled &&
     itemsAmountInputData.isValid &&
     itemsAmountInputData.isFilled &&
-    orderTime;
+    orderTime.value;
 
   const handleFormSubmit = () => {
     const cartValue = parseFloat(cartValueInputData.value);
     const deliveryDistance = parseInt(deliveryDistanceInputData.value);
     const itemsAmount = parseInt(itemsAmountInputData.value);
-    const orderDatetime = new Date(orderTime);
+    const orderDatetime = new Date(orderTime.value);
 
     console.log(cartValue, deliveryDistance, itemsAmount, orderDatetime);
     const fee = calculateDeliveryFee(
@@ -158,8 +159,10 @@ const App = () => {
               name='deliveryOrderDateTimeInput'
               ariaLabel='Order time'
               placeholder='hh.mm.yyyy HH:MM'
-              onChange={setOrderTime}
-              value={orderTime}
+              onChange={orderTime.handleChangeDate}
+              onChangeDate={orderTime.handleChangeDate}
+              onChangeTime={orderTime.handleChangeTime}
+              value={orderTime.value}
             />
           </InputLabel>
           <ButtonPrimary
@@ -188,7 +191,7 @@ const App = () => {
             />
             <CalculationResultItem
               label='Order time'
-              value={format(orderTime, 'dd.MM.yyyy HH:mm')}
+              value={format(orderTime.value, 'dd.MM.yyyy HH:mm')}
             />
           </CalculationResult>
         )}

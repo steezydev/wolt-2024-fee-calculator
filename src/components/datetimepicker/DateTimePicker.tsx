@@ -10,18 +10,21 @@ import { InputDateProps } from '@/types/props/InputDateProps';
 import { format } from 'date-fns';
 import { useEffect, useState } from 'react';
 
+import { Panel, Tab, Tabs } from '../tabs/Tabs';
 import TimeSelector from '../timeselector/TimeSelector';
-import B2 from '../typography/B2';
+import B3 from '../typography/B3';
 
 //TODO: Refactor component
 
-//TODO: Additional functionality
-
 //TODO: Add tests
 
-//TODO: Add time picker
-
-const DateTimePicker = ({ Item, className, ...props }: InputDateProps) => {
+const DateTimePicker = ({
+  Item,
+  className,
+  onChangeDate,
+  onChangeTime,
+  ...props
+}: InputDateProps) => {
   const [textValue, setTextValue] = useState('');
   const [lastValidValue, setLastValidValue] = useState('');
   const [isPickerOpen, setIsPickerOpen] = useState(false);
@@ -52,19 +55,6 @@ const DateTimePicker = ({ Item, className, ...props }: InputDateProps) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = e.target.value;
     saveValue(newValue);
-  };
-
-  //TODO: Refactor #2
-  const handleDayClick = (day: Date) => {
-    const timePart = textValue.split(' ')[1] || '00:00'; // Preserve existing time or use default
-    const newDateValue = `${day.getDate().toString().padStart(2, '0')}.${(day.getMonth() + 1).toString().padStart(2, '0')}.${day.getFullYear()} ${timePart}`;
-    saveValue(newDateValue);
-  };
-
-  const handleTimePick = (hour: number, minute: number) => {
-    const datePart = textValue.split(' ')[0] || '01.01.1970'; // Preserve existing date or use default
-    const newTimeValue = `${datePart} ${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
-    saveValue(newTimeValue);
   };
 
   const handleBlur = () => {
@@ -102,24 +92,41 @@ const DateTimePicker = ({ Item, className, ...props }: InputDateProps) => {
       />
       {isPickerOpen && (
         <div
-          className='w-fit absolute bg-white dark:bg-black border-2 rounded-xl border-primary-300 top-16 flex flex-row h-80'
+          className='absolute bg-white dark:bg-black border-2 rounded-xl border-primary-300 top-16 flex flex-row h-[360px] w-80 p-2'
           ref={ref}
         >
-          <Calendar
-            weekStartsOn={1}
-            showOutsideDays
-            selectedDate={props.value}
-            onDayClick={handleDayClick}
-          />
-          <div className='h-full border border-primary-300'></div>
-          <div className='py-5 px-4 h-full flex flex-col gap-3'>
-            <B2 className='font-bold'>Time</B2>
-            <TimeSelector
-              className='grow-0 max-h-full'
-              selectedDateTime={props.value}
-              onTimeChange={handleTimePick}
-            />
-          </div>
+          <Tabs className='w-full'>
+            <Tab
+              id='datePickerTabButton'
+              ariaLabel='Open date picker tab'
+              value='datePickerTabButton'
+            >
+              <B3>Date</B3>
+            </Tab>
+            <Panel value='datePickerTabButton'>
+              <Calendar
+                weekStartsOn={1}
+                showOutsideDays
+                selectedDate={props.value}
+                onDayClick={onChangeDate}
+              />
+            </Panel>
+
+            <Tab
+              id='timePickerTabButton'
+              ariaLabel='Open time picker tab'
+              value='timePickerTabButton'
+            >
+              <B3>Time</B3>
+            </Tab>
+            <Panel value='timePickerTabButton' className='p-2'>
+              <TimeSelector
+                className=''
+                time={props.value}
+                onTimeChange={onChangeTime}
+              />
+            </Panel>
+          </Tabs>
         </div>
       )}
     </div>

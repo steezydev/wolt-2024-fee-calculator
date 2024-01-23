@@ -6,6 +6,8 @@ export declare interface InputDateProps extends ClassNameProps {
     id: string;
     ariaLabel: string;
     name: string;
+    onChangeDate?: (value: Date) => void;
+    onChangeTime?: (value: Date) => void;
     onChange?: (value: Date) => void;
     onFocus?: (event: React.FocusEvent<HTMLInputElement>) => void;
     onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
