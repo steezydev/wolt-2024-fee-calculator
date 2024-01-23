@@ -1,22 +1,20 @@
-import { ClassNameProps } from '@/types/props/ClassNameProps';
-import { InputType } from '@/types/shared/InputType';
+import { ClassNameProps } from './ClassNameProps';
+import { InputProps } from './InputProps';
 
-export declare interface InputProps extends ClassNameProps {
+export declare interface InputDateProps extends ClassNameProps {
+    Item: React.FC<InputProps>;
     id: string;
     ariaLabel: string;
-    type: InputType;
     name: string;
-    onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange?: (value: Date) => void;
     onFocus?: (event: React.FocusEvent<HTMLInputElement>) => void;
     onBlur?: (event: React.FocusEvent<HTMLInputElement>) => void;
     onInput?: (event: React.FormEvent<HTMLInputElement>) => void;
-    value?: string;
+    value?: Date;
     autoFocus?: boolean;
     disabled?: boolean;
     required?: boolean;
     placeholder?: string;
-    min?: number;
-    max?: number;
     isInvalid?: boolean;
     readOnly?: boolean;
 }

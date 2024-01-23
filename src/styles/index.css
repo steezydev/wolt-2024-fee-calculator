@@ -10,6 +10,22 @@
     src: url('/fonts/omnes_bold.ttf') format('opentype');
 }
 
+.rdp {
+    --rdp-accent-color: #0000ff; /* Accent color for the background of selected days. */
+    --rdp-background-color: #009de080; /* Background color for the hovered/focused elements. */
+    --rdp-accent-color: #009de0; /* Accent color for the background of selected days. */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
 @layer base {
     body * {
         @apply transition-colors duration-200;

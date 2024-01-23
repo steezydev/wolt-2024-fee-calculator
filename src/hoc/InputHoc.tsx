@@ -1,52 +1,8 @@
 import { classNames } from '@/helpers/classNames';
 import { IconProps } from '@/types/props/IconProps';
 import { InputProps } from '@/types/props/InputProps';
+import React from 'react';
 import { useState } from 'react';
-
-export function withInputField<T extends InputProps>(
-  WrappedComponent: React.FC<T>
-) {
-  type InputFieldProps = T;
-  const Component = (props: InputFieldProps) => {
-    const [isValid, setIsValid] = useState(true);
-    const [isFilled, setIsFilled] = useState(true);
-
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-      const newValue = event.target.value;
-
-      props.onChange && props.onChange(event);
-
-      if (props.validate) {
-        setIsValid(props.validate(newValue));
-      }
-
-      setIsFilled(newValue.length > 0);
-    };
-
-    const handleBlur = (event: React.FocusEvent<HTMLInputElement>) => {
-      props.onBlur && props.onBlur(event);
-
-      if (props.validate) {
-        setIsValid(props.validate(props.value));
-      }
-
-      if (props.value) {
-        setIsFilled(props.value.length > 0);
-      } else setIsFilled(false);
-    };
-
-    return (
-      <WrappedComponent
-        {...props}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        isInvalid={!isValid || !isFilled}
-      />
-    );
-  };
-
-  return Component;
-}
 
 export function wihtInputIcon<T extends InputProps>(
   WrappedComponent: React.FC<T>,

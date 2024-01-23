@@ -21,6 +21,7 @@ const InputUnstyled = React.forwardRef<HTMLInputElement, InputProps>(
       disabled = false,
       required = false,
       isInvalid = false,
+      readOnly = false,
       className,
     },
     ref
@@ -31,6 +32,7 @@ const InputUnstyled = React.forwardRef<HTMLInputElement, InputProps>(
         type={type}
         id={id}
         name={name}
+        readOnly={readOnly}
         aria-label={ariaLabel}
         value={value}
         onChange={onChange}

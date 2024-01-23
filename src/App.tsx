@@ -1,53 +1,74 @@
 import ButtonPrimary from '@/components/button/ButtonPrimary';
 import BadgeInfoIcon from '@/components/icons/BadgeInfoIcon';
-import InputMid from '@/components/input/InputRegular';
+import InputRegular from '@/components/input/InputRegular';
 import InputLabel from '@/components/inputlabel/InputLabel';
 import B2 from '@/components/typography/B2';
 import H1 from '@/components/typography/H1';
-import { wihtInputIcon, withInputField } from '@/hoc/InputHoc';
+import { wihtInputIcon } from '@/hoc/InputHoc';
+import { format } from 'date-fns';
 import { useState } from 'react';
 
 import CalculationResult from './components/calculationresult/CalculationResult';
 import CalculationResultItem from './components/calculationresult/CalculationResultItem';
+import DateTimePicker from './components/datetimepicker/DateTimePicker';
+import CalendarClockIcon from './components/icons/CalendarClockIcon';
 import EuroIcon from './components/icons/EuroIcon';
 import MapPinIcon from './components/icons/MapPinIcon';
 import ThemeSwitch from './components/themeswitch/ThemeSwitch';
 import { calculateDeliveryFee } from './helpers/deliveryFee';
 import { withThemeSelectorHoc } from './hoc/ThemeHoc';
+import useInput from './hooks/useInput';
 
-const CartValueInput = withInputField(wihtInputIcon(InputMid, EuroIcon));
-const DeliveryDistanceInput = withInputField(
-  wihtInputIcon(InputMid, MapPinIcon)
-);
-const ItemsAmountInput = withInputField(InputMid);
+//TODO: Write comments for components (everything)
+
+const CartValueInput = wihtInputIcon(InputRegular, EuroIcon);
+const DeliveryDistanceInput = wihtInputIcon(InputRegular, MapPinIcon);
+const ItemsAmountInput = InputRegular;
+const OrderTimeInput = wihtInputIcon(InputRegular, CalendarClockIcon);
 const ThemeSwitchSelector = withThemeSelectorHoc(ThemeSwitch);
 
 const App = () => {
-  const [cartValue, setCartValue] = useState('');
-  const [deliveryDistance, setDeliveryDistance] = useState('');
-  const [itemsAmount, setItemsAmount] = useState('');
-  const [orderTime, setOrderTime] = useState('');
+  const cartValueInputData = useInput('', {
+    required: true,
+    type: 'numeric',
+  });
 
-  //TODO: Add validation
+  const deliveryDistanceInputData = useInput('', {
+    required: true,
+    type: 'integer',
+  });
+
+  const itemsAmountInputData = useInput('', {
+    required: true,
+    type: 'integer',
+  });
+
+  const [orderTime, setOrderTime] = useState(new Date());
+  const [deliveryPrice, setDeliveryPrice] = useState<number | null>(null);
+
   const isButtonActive =
-    cartValue && deliveryDistance && itemsAmount && orderTime;
+    cartValueInputData.isValid &&
+    cartValueInputData.isFilled &&
+    deliveryDistanceInputData.isValid &&
+    deliveryDistanceInputData.isFilled &&
+    itemsAmountInputData.isValid &&
+    itemsAmountInputData.isFilled &&
+    orderTime;
 
   const handleFormSubmit = () => {
-    console.log(
-      parseFloat(cartValue),
-      parseInt(deliveryDistance),
-      parseInt(itemsAmount),
-      new Date(orderTime)
-    );
+    const cartValue = parseFloat(cartValueInputData.value);
+    const deliveryDistance = parseInt(deliveryDistanceInputData.value);
+    const itemsAmount = parseInt(itemsAmountInputData.value);
+    const orderDatetime = new Date(orderTime);
 
+    console.log(cartValue, deliveryDistance, itemsAmount, orderDatetime);
     const fee = calculateDeliveryFee(
-      parseFloat(cartValue),
-      parseInt(deliveryDistance),
-      parseInt(itemsAmount),
-      new Date(orderTime)
+      cartValue,
+      deliveryDistance,
+      itemsAmount,
+      orderDatetime
     );
-
-    console.log(fee);
+    setDeliveryPrice(fee);
   };
 
   return (
@@ -66,77 +87,83 @@ const App = () => {
         <form className='flex flex-col gap-4 sm:gap-6'>
           <InputLabel
             label='Cart value, €'
-            id='cart-value-input'
-            errorMessage='Please enter a positive float number'
+            id='cartValueInput'
+            errorMessage={cartValueInputData.error}
           >
             <CartValueInput
               required
               className='w-full'
-              id='cart-value-input'
-              name='cart-value-input'
-              type='number'
+              id='cartValueInput'
+              name='cartValueInput'
+              type='text'
               ariaLabel='Cart value in euros'
               placeholder='20'
-              min={0}
-              onChange={(e) => setCartValue(e.target.value)}
-              value={cartValue}
+              min={1}
+              onBlur={cartValueInputData.handleTouch}
+              isInvalid={!cartValueInputData.isValid}
+              onChange={cartValueInputData.handleChange}
+              value={cartValueInputData.value}
             />
           </InputLabel>
           <InputLabel
             label='Delivery distance, m'
-            id='delivery-distance-input'
-            errorMessage='Please enter a positive integer number in meters'
+            id='deliveryDistanceInput'
+            errorMessage={deliveryDistanceInputData.error}
           >
             <DeliveryDistanceInput
               required
               className='w-full'
-              id='delivery-distance-input'
-              name='delivery-distance-input'
-              type='number'
+              id='deliveryDistanceInput'
+              name='deliveryDistanceInput'
+              type='text'
               ariaLabel='Delivery distance in meters'
               placeholder='900'
               min={0}
-              onChange={(e) => setDeliveryDistance(e.target.value)}
-              value={deliveryDistance}
+              onBlur={deliveryDistanceInputData.handleTouch}
+              isInvalid={!deliveryDistanceInputData.isValid}
+              onChange={deliveryDistanceInputData.handleChange}
+              value={deliveryDistanceInputData.value}
             />
           </InputLabel>
           <InputLabel
             label='Amount of items'
-            id='items-amount-input'
-            errorMessage='Please enter a positive integer number of items'
+            id='deliveryItemsAmountInput'
+            errorMessage={itemsAmountInputData.error}
           >
             <ItemsAmountInput
               required
               className='w-full'
-              id='items-amount-input'
-              name='items-amount-input'
-              type='number'
+              id='deliveryItemsAmountInput'
+              name='deliveryItemsAmountInput'
+              type='text'
               ariaLabel='Amount of items in cart'
               placeholder='1'
               min={1}
-              onChange={(e) => setItemsAmount(e.target.value)}
-              value={itemsAmount}
+              onBlur={itemsAmountInputData.handleTouch}
+              isInvalid={!itemsAmountInputData.isValid}
+              onChange={itemsAmountInputData.handleChange}
+              value={itemsAmountInputData.value}
             />
           </InputLabel>
           <InputLabel
             label='Order time'
-            id='order-time-input'
+            id='deliveryOrderDateTimeInput'
             errorMessage='Please enter a valid date'
           >
-            <InputMid
+            <DateTimePicker
+              Item={OrderTimeInput}
               required
               className='w-full'
-              id='order-time-input'
-              name='order-time-input'
-              type='datetime-local'
+              id='deliveryOrderDateTimeInput'
+              name='deliveryOrderDateTimeInput'
               ariaLabel='Order time'
-              placeholder='1'
-              onChange={(e) => setOrderTime(e.target.value)}
+              placeholder='hh.mm.yyyy HH:MM'
+              onChange={setOrderTime}
               value={orderTime}
             />
           </InputLabel>
           <ButtonPrimary
-            id='submit-calculate-delivery-price'
+            id='submitCalculateDeliveryPrice'
             ariaLabel='Calculate delivery price'
             disabled={!isButtonActive}
             className='mt-4 w-full'
@@ -145,12 +172,26 @@ const App = () => {
             Calculate delivery price
           </ButtonPrimary>
         </form>
-        <CalculationResult result={7}>
-          <CalculationResultItem label='Cart value' value='20 €' />
-          <CalculationResultItem label='Delivery distance' value='900 m' />
-          <CalculationResultItem label='Amount of items' value='1' />
-          <CalculationResultItem label='Order time' value='17.01.2024 14:38' />
-        </CalculationResult>
+        {deliveryPrice !== null && (
+          <CalculationResult result={deliveryPrice}>
+            <CalculationResultItem
+              label='Cart value'
+              value={`${cartValueInputData.value} €`}
+            />
+            <CalculationResultItem
+              label='Delivery distance'
+              value={`${deliveryDistanceInputData.value} m`}
+            />
+            <CalculationResultItem
+              label='Amount of items'
+              value={itemsAmountInputData.value}
+            />
+            <CalculationResultItem
+              label='Order time'
+              value={format(orderTime, 'dd.MM.yyyy HH:mm')}
+            />
+          </CalculationResult>
+        )}
       </main>
     </>
   );
