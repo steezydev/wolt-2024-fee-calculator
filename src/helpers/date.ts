@@ -61,3 +61,9 @@ export const autoCompleteDate = (dateStr: string): string => {
 export const dateTimeStringToDate = (dateTimeString: string): Date => {
     return parse(dateTimeString, 'dd.MM.yyyy HH:mm', new Date());
 };
+
+export const timeToDate = (hours: number, minutes: number): Date => {
+    const newDate = new Date();
+    newDate.setHours(hours, minutes, 0, 0);
+    return newDate;
+};

@@ -4,7 +4,7 @@ import { InputProps } from '@/types/props/InputProps';
 import React from 'react';
 import { useState } from 'react';
 
-export function wihtInputIcon<T extends InputProps>(
+export function withInputIcon<T extends InputProps>(
   WrappedComponent: React.FC<T>,
   Icon: React.FC<IconProps>
 ) {

@@ -6,6 +6,7 @@ export declare interface InputDateProps extends ClassNameProps {
     id: string;
     ariaLabel: string;
     name: string;
+    onTextChange?: (value: string) => string;
     onChangeDate?: (value: Date) => void;
     onChangeTime?: (value: Date) => void;
     onChange?: (value: Date) => void;

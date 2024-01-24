@@ -1,4 +1,3 @@
-import { dateTimeStringToDate, isValidDate } from '@/helpers/date';
 import { useState } from 'react';
 
 const useDatetimeSelector = (initialValue: Date) => {
@@ -27,13 +26,6 @@ const useDatetimeSelector = (initialValue: Date) => {
 
     const handleChangeDatetime = (newDatetime: Date) => {
         setValue(newDatetime);
-    };
-
-    const handleChangeTextValue = (newTextValue: string) => {
-        if (isValidDate(newTextValue)) {
-            //setLastValidValue(value);
-            setValue(dateTimeStringToDate(newTextValue));
-        }
     };
 
     return {

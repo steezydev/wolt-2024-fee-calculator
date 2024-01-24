@@ -4,13 +4,13 @@ import InputRegular from '@/components/input/InputRegular';
 import InputLabel from '@/components/inputlabel/InputLabel';
 import B2 from '@/components/typography/B2';
 import H1 from '@/components/typography/H1';
-import { wihtInputIcon } from '@/hoc/InputHoc';
+import { withInputIcon } from '@/hoc/InputHoc';
 import { format } from 'date-fns';
 import { useState } from 'react';
 
 import CalculationResult from './components/calculationresult/CalculationResult';
 import CalculationResultItem from './components/calculationresult/CalculationResultItem';
-import DateTimePicker from './components/datetimepicker/DateTimePicker';
+import DatePicker from './components/datepicker/DatePicker';
 import CalendarClockIcon from './components/icons/CalendarClockIcon';
 import EuroIcon from './components/icons/EuroIcon';
 import MapPinIcon from './components/icons/MapPinIcon';
@@ -22,10 +22,10 @@ import useInput from './hooks/useInput';
 
 //TODO: Write comments for components (everything)
 
-const CartValueInput = wihtInputIcon(InputRegular, EuroIcon);
-const DeliveryDistanceInput = wihtInputIcon(InputRegular, MapPinIcon);
+const CartValueInput = withInputIcon(InputRegular, EuroIcon);
+const DeliveryDistanceInput = withInputIcon(InputRegular, MapPinIcon);
 const ItemsAmountInput = InputRegular;
-const OrderTimeInput = wihtInputIcon(InputRegular, CalendarClockIcon);
+const OrderTimeInput = withInputIcon(InputRegular, CalendarClockIcon);
 const ThemeSwitchSelector = withThemeSelectorHoc(ThemeSwitch);
 
 const App = () => {
@@ -45,6 +45,7 @@ const App = () => {
   });
 
   const orderTime = useDatetimeSelector(new Date());
+
   const [deliveryPrice, setDeliveryPrice] = useState<number | null>(null);
 
   const isButtonActive =
@@ -151,18 +152,23 @@ const App = () => {
             id='deliveryOrderDateTimeInput'
             errorMessage='Please enter a valid date'
           >
-            <DateTimePicker
-              Item={OrderTimeInput}
-              required
-              className='w-full'
-              id='deliveryOrderDateTimeInput'
-              name='deliveryOrderDateTimeInput'
-              ariaLabel='Order time'
-              placeholder='hh.mm.yyyy HH:MM'
-              onChange={orderTime.handleChangeDate}
-              onChangeDate={orderTime.handleChangeDate}
-              onChangeTime={orderTime.handleChangeTime}
+            <DatePicker
               value={orderTime.value}
+              renderInput={(inputProps) => (
+                <OrderTimeInput
+                  {...inputProps}
+                  required
+                  className='w-full'
+                  id='deliveryOrderDateTimeInput'
+                  name='deliveryOrderDateTimeInput'
+                  ariaLabel='Order time'
+                  placeholder='hh.mm.yyyy HH:MM'
+                  type='text'
+                />
+              )}
+              onDatetimeChange={orderTime.handleChangeDatetime}
+              onDateChange={orderTime.handleChangeDate}
+              onTimeChange={orderTime.handleChangeTime}
             />
           </InputLabel>
           <ButtonPrimary
