@@ -16,25 +16,28 @@ const TimeSelector = ({
   const hours = useMemo(() => Array.from({ length: 24 }, (_, i) => i), []);
   const minutes = useMemo(() => Array.from({ length: 60 }, (_, i) => i), []);
 
-  // Scroll to the position of the selected item on mount
-  useEffect(() => {
-    scrollToPosition(hourRef, time.getHours());
-    scrollToPosition(minuteRef, time.getMinutes());
-  }, [time]);
-
   // Scroll to the position of the selected item
   const scrollToPosition = useCallback(
     (ref: React.RefObject<HTMLDivElement>, value: number) => {
       const element = ref.current;
       if (element) {
         const child = element.children[value];
+
         const scrollPosition =
           (child as HTMLElement).offsetTop - element.clientHeight / 2;
+
         element.scrollTo({ top: scrollPosition, behavior: 'smooth' });
       }
     },
     []
   );
+
+  //TODO: Fix scrolling to the position of the selected item on mount (it only works on rerender now) offsetTop and clientHeight are 0 on mount
+  // Scroll to the position of the selected item on mount
+  useEffect(() => {
+    scrollToPosition(hourRef, time.getHours());
+    scrollToPosition(minuteRef, time.getMinutes());
+  }, [scrollToPosition, time]);
 
   const handleTimeChange = useCallback(
     (hour: number, minute: number) => {

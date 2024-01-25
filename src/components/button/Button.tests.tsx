@@ -1,16 +1,18 @@
 import { ButtonProps } from '@/types/props/ButtonProps';
+import '@testing-library/jest-dom';
+import { fireEvent, render } from '@testing-library/react';
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
-
-//TODO: Add event and state tests
 
 export const buttonRenderTests = (
   name: string,
   Button: React.FC<ButtonProps>
 ) => {
+  // === Snapshot tests ===
+
   describe(name, () => {
-    describe('when asked to render', () => {
-      it('renders', () => {
+    describe('when asked to render with children', () => {
+      it('renders with children', () => {
         const component = TestRenderer.create(
           <Button id='test-button' ariaLabel='Test button label'>
             Test Button
@@ -51,6 +53,45 @@ export const buttonRenderTests = (
         );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
+      });
+    });
+
+    // === Event tests ===
+
+    describe('when clicked', () => {
+      it('triggers onClick event', () => {
+        const handleClick = jest.fn();
+        const { getByRole } = render(
+          <Button
+            id='test-button'
+            ariaLabel='Test button label'
+            onClick={handleClick}
+          >
+            Test Button
+          </Button>
+        );
+
+        fireEvent.click(getByRole('button'));
+        expect(handleClick).toHaveBeenCalled();
+      });
+    });
+
+    describe('when disabled', () => {
+      it('does not trigger onClick event', () => {
+        const handleClick = jest.fn();
+        const { getByRole } = render(
+          <Button
+            disabled
+            id='test-button'
+            ariaLabel='Test button label'
+            onClick={handleClick}
+          >
+            Test Button
+          </Button>
+        );
+
+        fireEvent.click(getByRole('button'));
+        expect(handleClick).not.toHaveBeenCalled();
       });
     });
   });

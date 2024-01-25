@@ -17,8 +17,7 @@ const DateField = ({ date, onDateChange, renderInput }: DateFieldProps) => {
   }, [date]);
 
   // Set or revert date value on blur
-  const handleBlur = (e: React.FocusEvent<HTMLInputElement>) => {
-    console.log('DateField additional onBlur');
+  const handleBlur = () => {
     const autoCompletedValue = autoCompleteDate(inputValue);
 
     if (isValidDate(autoCompletedValue)) {
@@ -31,7 +30,7 @@ const DateField = ({ date, onDateChange, renderInput }: DateFieldProps) => {
   return renderInput({
     value: inputValue,
     onChange: (e) => setInputValue(e.target.value),
-    onBlur: (e) => handleBlur(e),
+    onBlur: () => handleBlur(),
   });
 };
 

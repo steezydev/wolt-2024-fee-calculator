@@ -12,6 +12,7 @@ exports[`InputUnstyled when asked to render autofocused renders autofocused 1`] 
   disabled={false}
   id="test-input"
   name="test-input"
+  readOnly={false}
   required={false}
   type="text"
 />
@@ -29,6 +30,7 @@ exports[`InputUnstyled when asked to render disabled renders disabled 1`] = `
   disabled={true}
   id="test-input"
   name="test-input"
+  readOnly={false}
   required={false}
   type="text"
 />
@@ -46,6 +48,7 @@ exports[`InputUnstyled when asked to render renders 1`] = `
   disabled={false}
   id="test-input"
   name="test-input"
+  readOnly={false}
   required={false}
   type="text"
 />
@@ -63,6 +66,7 @@ exports[`InputUnstyled when asked to render required renders required 1`] = `
   disabled={false}
   id="test-input"
   name="test-input"
+  readOnly={false}
   required={true}
   type="text"
 />
@@ -81,6 +85,7 @@ exports[`InputUnstyled when asked to render with placeholder renders with placeh
   id="test-input"
   name="test-input"
   placeholder="Test placeholder"
+  readOnly={false}
   required={false}
   type="text"
 />
@@ -98,6 +103,7 @@ exports[`InputUnstyled when asked to render with value renders with placeholder 
   disabled={false}
   id="test-input"
   name="test-input"
+  readOnly={false}
   required={false}
   type="text"
   value="Test value"

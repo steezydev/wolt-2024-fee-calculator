@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs when asked to render with additional class renders with additional class 1`] = `
+<div
+  className="flex flex-col some-class"
+>
+  <div
+    className="flex w-full rounded-xl"
+  >
+    <button
+      aria-label="Tab 1 label"
+      className="py-1 px-4 w-full rounded-l-xl bg-primary-300 text-white"
+      data-test-id="tab1Button"
+      id="tab1Button"
+      onClick={[Function]}
+    >
+      Tab 1
+    </button>
+    <button
+      aria-label="Tab 2 label"
+      className="py-1 px-4 w-full rounded-r-xl bg-primary-100 hover:bg-primary-300/80 hover:text-white text-black dark:text-white"
+      data-test-id="tab2Button"
+      id="tab2Button"
+      onClick={[Function]}
+    >
+      Tab 2
+    </button>
+  </div>
+  <div>
+    <div
+      className="h-full block"
+    >
+      Panel 1 
+    </div>
+    <div
+      className="h-full hidden"
+    >
+      Panel 2
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Tabs when asked to render with children renders with children 1`] = `
+<div
+  className="flex flex-col"
+>
+  <div
+    className="flex w-full rounded-xl"
+  >
+    <button
+      aria-label="Tab 1 label"
+      className="py-1 px-4 w-full rounded-l-xl bg-primary-300 text-white"
+      data-test-id="tab1Button"
+      id="tab1Button"
+      onClick={[Function]}
+    >
+      Tab 1
+    </button>
+    <button
+      aria-label="Tab 2 label"
+      className="py-1 px-4 w-full rounded-r-xl bg-primary-100 hover:bg-primary-300/80 hover:text-white text-black dark:text-white"
+      data-test-id="tab2Button"
+      id="tab2Button"
+      onClick={[Function]}
+    >
+      Tab 2
+    </button>
+  </div>
+  <div>
+    <div
+      className="h-full block"
+    >
+      Panel 1 
+    </div>
+    <div
+      className="h-full hidden"
+    >
+      Panel 2
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Tabs when asked to render without children renders without children 1`] = `
+<div
+  className="flex flex-col"
+>
+  <div
+    className="flex w-full rounded-xl"
+  />
+  <div />
+</div>
+`;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DateField when asked to render renders 1`] = `
+<input
+  onBlur={[Function]}
+  onChange={[Function]}
+  value="17.01.2024 12:00"
+/>
+`;
+
+exports[`DateField when asked to render with additional class renders with additional class 1`] = `
+<input
+  onBlur={[Function]}
+  onChange={[Function]}
+  value="17.01.2024 12:00"
+/>
+`;

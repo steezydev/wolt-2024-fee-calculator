@@ -1,20 +1,20 @@
 import { InputProps } from '@/types/props/InputProps';
+import '@testing-library/jest-dom';
+import { act, render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 
 //TODO: Add event tests
 
 export const inputRenderTests = (name: string, Input: React.FC<InputProps>) => {
+  // === Snapshot tests ===
+
   describe(name, () => {
     describe('when asked to render', () => {
       it('renders', () => {
         const component = TestRenderer.create(
-          <Input
-            id='test-input'
-            name='test-input'
-            type='text'
-            ariaLabel='Test label'
-          />
+          <Input id='test-input' name='test-input' ariaLabel='Test label' />
         );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
@@ -27,7 +27,6 @@ export const inputRenderTests = (name: string, Input: React.FC<InputProps>) => {
           <Input
             id='test-input'
             name='test-input'
-            type='text'
             ariaLabel='Test label'
             disabled
           />
@@ -43,7 +42,6 @@ export const inputRenderTests = (name: string, Input: React.FC<InputProps>) => {
           <Input
             id='test-input'
             name='test-input'
-            type='text'
             ariaLabel='Test label'
             placeholder='Test placeholder'
           />
@@ -59,7 +57,6 @@ export const inputRenderTests = (name: string, Input: React.FC<InputProps>) => {
           <Input
             id='test-input'
             name='test-input'
-            type='text'
             ariaLabel='Test label'
             value='Test value'
           />
@@ -75,7 +72,6 @@ export const inputRenderTests = (name: string, Input: React.FC<InputProps>) => {
           <Input
             id='test-input'
             name='test-input'
-            type='text'
             ariaLabel='Test label'
             required
           />
@@ -91,13 +87,78 @@ export const inputRenderTests = (name: string, Input: React.FC<InputProps>) => {
           <Input
             id='test-input'
             name='test-input'
-            type='text'
             ariaLabel='Test label'
             autoFocus
           />
         );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
+      });
+    });
+
+    // === Event tests ===
+
+    describe('when value is changed', () => {
+      it('onChange is called', async () => {
+        const user = userEvent.setup();
+        const onChange = jest.fn();
+
+        render(
+          <Input
+            id='testInput'
+            name='testInput'
+            ariaLabel='Test label'
+            onChange={onChange}
+          />
+        );
+
+        const input = screen.getByRole<HTMLInputElement>('textbox');
+        expect(input).toBeInTheDocument();
+        expect(input.value).toBe('');
+        await user.type(input, 'hello world');
+        expect(input.value).toBe('hello world');
+        expect(onChange).toHaveBeenCalledTimes(11);
+      });
+    });
+
+    describe('when focused', () => {
+      it('onFocus is called', async () => {
+        const onFocus = jest.fn();
+
+        render(
+          <Input
+            id='testInput'
+            name='testInput'
+            ariaLabel='Test label'
+            onFocus={onFocus}
+          />
+        );
+
+        const input = screen.getByRole<HTMLInputElement>('textbox');
+        act(() => input.focus());
+        expect(onFocus).toHaveBeenCalledTimes(1);
+      });
+    });
+
+    describe('when blured', () => {
+      it('onBlur is called', async () => {
+        const onBlur = jest.fn();
+
+        render(
+          <Input
+            id='testInput'
+            name='testInput'
+            ariaLabel='Test label'
+            onBlur={onBlur}
+          />
+        );
+
+        const input = screen.getByRole<HTMLInputElement>('textbox');
+        act(() => {
+          input.focus();
+          input.blur();
+        });
+        expect(onBlur).toHaveBeenCalledTimes(1);
       });
     });
   });

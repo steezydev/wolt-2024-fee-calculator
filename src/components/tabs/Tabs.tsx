@@ -1,79 +1,71 @@
+import ButtonUnstyled from '@/components/button/ButtonUnstyled';
 import { classNames } from '@/helpers/classNames';
 import { TabsPanelProps } from '@/types/props/TabsPanelProps';
 import { TabsProps } from '@/types/props/TabsProps';
 import { TabsTabProps } from '@/types/props/TabsTabProps';
-import React, { ReactElement, useEffect, useState } from 'react';
+import React, { ReactElement, useMemo, useState } from 'react';
 
-import ButtonUnstyled from '../button/ButtonUnstyled';
 import Panel from './TabsPanel';
 import Tab from './TabsTab';
 
 const Tabs = ({ children, className }: TabsProps) => {
-  const [activeTab, setActiveTab] = useState<string>('');
+  const tabsAndPanels = useMemo(() => {
+    const tabs: ReactElement<TabsTabProps>[] = [];
+    const panels: ReactElement<TabsPanelProps>[] = [];
+    React.Children.forEach(children, (child) => {
+      if (React.isValidElement(child)) {
+        if (child.type === Tab) {
+          tabs.push(child as ReactElement<TabsTabProps>);
+        } else if (child.type === Panel) {
+          panels.push(child as ReactElement<TabsPanelProps>);
+        }
+      }
+    });
+    return { tabs, panels };
+  }, [children]);
 
-  useEffect(() => {
-    const filteredChildren = React.Children.toArray(children).filter(
-      React.isValidElement
-    );
-    const firstTab = filteredChildren.find(
-      (child) => (child as ReactElement).type === Tab
-    ) as ReactElement<TabsTabProps>;
-
-    if (firstTab) {
-      setActiveTab(firstTab.props.value);
-    }
-  }, []);
-
-  const tabs = React.Children.toArray(children).filter(
-    (child) =>
-      React.isValidElement(child) && (child as ReactElement).type === Tab
+  const [activeTab, setActiveTab] = useState<string>(
+    tabsAndPanels.tabs[0]?.props.value || ''
   );
-  const panels = React.Children.toArray(children).filter(
-    (child) =>
-      React.isValidElement(child) && (child as ReactElement).type === Panel
-  );
+
+  const handleTabClick = (value: string) => {
+    setActiveTab(value);
+  };
 
   return (
     <div className={classNames('flex flex-col', className)}>
       <div className='flex w-full rounded-xl'>
-        {tabs.map((tab, index) => (
+        {tabsAndPanels.tabs.map((tab, index) => (
           <ButtonUnstyled
-            id={(tab as ReactElement<TabsTabProps>).props.id}
-            ariaLabel={(tab as ReactElement<TabsTabProps>).props.ariaLabel}
-            key={index}
+            id={tab.props.id}
+            ariaLabel={tab.props.ariaLabel}
+            key={tab.props.id || index}
             className={classNames(
-              'py-1 px-4 w-full ',
+              'py-1 px-4 w-full',
               index === 0 ? 'rounded-l-xl' : '',
-              index === tabs.length - 1 ? 'rounded-r-xl' : '',
-              activeTab === (tab as ReactElement<TabsTabProps>).props.value
+              index === tabsAndPanels.tabs.length - 1 ? 'rounded-r-xl' : '',
+              activeTab === tab.props.value
                 ? 'bg-primary-300 text-white'
-                : 'bg-primary-100 hover:bg-primary-300/80 hover:text-white text-black dark:text-white'
+                : 'bg-primary-100 hover:bg-primary-300/80 hover:text-white text-black dark:text-white',
+              tab.props.className
             )}
-            onClick={() =>
-              setActiveTab((tab as ReactElement<TabsTabProps>).props.value)
-            }
+            onClick={() => handleTabClick(tab.props.value)}
           >
-            {(tab as ReactElement<TabsTabProps>).props.children}
+            {tab.props.children}
           </ButtonUnstyled>
         ))}
       </div>
-      <div className='flex-grow'>
-        {panels.map((panel, index) => (
+      <div>
+        {tabsAndPanels.panels.map((panel, index) => (
           <div
             className={classNames(
               'h-full',
-              (panel as ReactElement<TabsPanelProps>).props.className
+              activeTab === panel.props.value ? 'block' : 'hidden',
+              panel.props.className
             )}
-            key={index}
-            style={{
-              display:
-                (panel as ReactElement<TabsPanelProps>).props.value ===
-                activeTab
-                  ? 'block'
-                  : 'none',
-            }}
+            key={panel.props.value || index}
           >
-            {(panel as ReactElement<TabsPanelProps>).props.children}
+            {panel.props.children}
           </div>
         ))}
       </div>
@@ -81,4 +73,7 @@ const Tabs = ({ children, className }: TabsProps) => {
   );
 };
 
-export { Tabs, Tab, Panel };
+Tabs.Panel = Panel;
+Tabs.Tab = Tab;
+
+export default Tabs;

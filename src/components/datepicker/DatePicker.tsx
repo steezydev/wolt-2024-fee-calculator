@@ -1,6 +1,6 @@
 import Calendar from '@/components/calendar/Calendar';
 import DateField from '@/components/datefield/DateField';
-import { Panel, Tab, Tabs } from '@/components/tabs/Tabs';
+import Tabs from '@/components/tabs/Tabs';
 import TimeSelector from '@/components/timeselector/TimeSelector';
 import B3 from '@/components/typography/B3';
 import { classNames } from '@/helpers/classNames';
@@ -22,14 +22,14 @@ const DatePicker = ({
 
   const ref = useClickOutside<HTMLDivElement>(() => setIsPickerOpen(false));
 
-  const handleBlur = (e: React.FocusEvent<HTMLInputElement>) => {
+  const handleBlur = () => {
     setIsFocused(false);
     if (!ref.current?.focus) {
       setIsPickerOpen(false);
     }
   };
 
-  const handleFocus = (e: React.FocusEvent<HTMLInputElement>) => {
+  const handleFocus = () => {
     setIsPickerOpen(true);
     setIsFocused(true);
   };
@@ -41,11 +41,11 @@ const DatePicker = ({
     return renderInput({
       ...props,
       onBlur: (e: React.FocusEvent<HTMLInputElement>) => {
-        handleBlur(e);
+        handleBlur();
         onBlur && onBlur(e);
       },
       onFocus: (e: React.FocusEvent<HTMLInputElement>) => {
-        handleFocus(e);
+        handleFocus();
         onFocus && onFocus(e);
       },
     });
@@ -68,35 +68,35 @@ const DatePicker = ({
           ref={ref}
         >
           <Tabs className='w-full'>
-            <Tab
+            <Tabs.Tab
               id='datePickerTabButton'
               ariaLabel='Open date picker tab'
               value='datePickerTabButton'
             >
               <B3>Date</B3>
-            </Tab>
-            <Panel value='datePickerTabButton'>
+            </Tabs.Tab>
+            <Tabs.Panel value='datePickerTabButton'>
               <Calendar
                 weekStartsOn={1}
                 showOutsideDays
                 selectedDate={value}
                 onDayClick={onDateChange}
               />
-            </Panel>
-            <Tab
+            </Tabs.Panel>
+            <Tabs.Tab
               id='timePickerTabButton'
               ariaLabel='Open time picker tab'
               value='timePickerTabButton'
             >
               <B3>Time</B3>
-            </Tab>
-            <Panel value='timePickerTabButton' className='p-2'>
+            </Tabs.Tab>
+            <Tabs.Panel value='timePickerTabButton' className='p-2'>
               <TimeSelector
                 className=''
                 time={value}
                 onTimeChange={onTimeChange}
               />
-            </Panel>
+            </Tabs.Panel>
           </Tabs>
         </div>
       )}

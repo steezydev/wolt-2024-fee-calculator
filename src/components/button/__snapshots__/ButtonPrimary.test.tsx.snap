@@ -13,10 +13,10 @@ exports[`ButtonPrimary when asked to render disabled renders disabled 1`] = `
 </button>
 `;
 
-exports[`ButtonPrimary when asked to render renders 1`] = `
+exports[`ButtonPrimary when asked to render with additional class renders with additional class 1`] = `
 <button
   aria-label="Test button label"
-  className="bg-primary-300 text-white text-lg font-bold py-3 rounded-xl hover:bg-primary-300/90 active:bg-primary-300/80 disabled:bg-primary-300/60 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none"
+  className="bg-primary-300 text-white text-lg font-bold py-3 rounded-xl hover:bg-primary-300/90 active:bg-primary-300/80 disabled:bg-primary-300/60 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none some-class"
   data-test-id="test-button"
   id="test-button"
   onClick={[Function]}
@@ -25,10 +25,10 @@ exports[`ButtonPrimary when asked to render renders 1`] = `
 </button>
 `;
 
-exports[`ButtonPrimary when asked to render with additional class renders with additional class 1`] = `
+exports[`ButtonPrimary when asked to render with children renders with children 1`] = `
 <button
   aria-label="Test button label"
-  className="bg-primary-300 text-white text-lg font-bold py-3 rounded-xl hover:bg-primary-300/90 active:bg-primary-300/80 disabled:bg-primary-300/60 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none some-class"
+  className="bg-primary-300 text-white text-lg font-bold py-3 rounded-xl hover:bg-primary-300/90 active:bg-primary-300/80 disabled:bg-primary-300/60 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none"
   data-test-id="test-button"
   id="test-button"
   onClick={[Function]}

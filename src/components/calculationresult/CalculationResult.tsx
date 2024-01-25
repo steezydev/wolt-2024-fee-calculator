@@ -19,7 +19,7 @@ const CalculationResult = ({
       <div className='flex flex-col gap-1'>{children}</div>
       <div className='flex flex-row justify-between'>
         <B1 className='text-2xl font-semibold'>Delivery fee</B1>
-        <B1 className='text-2xl  font-semibold'>
+        <B1 data-test-id='fee' className='text-2xl  font-semibold'>
           {formatCurrency(result, currency)}
         </B1>
       </div>

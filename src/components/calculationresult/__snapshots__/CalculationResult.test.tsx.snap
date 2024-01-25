@@ -161,3 +161,27 @@ exports[`CalculationResult when asked to render with additional class renders wi
   </div>
 </div>
 `;
+
+exports[`CalculationResult when asked to render without children renders without children 1`] = `
+<div
+  className="flex flex-col gap-6 bg-primary-100 py-6 px-5 rounded-xl text-black dark:text-white"
+>
+  <div
+    className="flex flex-col gap-1"
+  />
+  <div
+    className="flex flex-row justify-between"
+  >
+    <p
+      className="text-xl  text-2xl font-semibold"
+    >
+      Delivery fee
+    </p>
+    <p
+      className="text-xl  text-2xl  font-semibold"
+    >
+      €7.00
+    </p>
+  </div>
+</div>
+`;

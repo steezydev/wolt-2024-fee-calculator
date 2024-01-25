@@ -1,24 +1,22 @@
 import ButtonPrimary from '@/components/button/ButtonPrimary';
+import CalculationResult from '@/components/calculationresult/CalculationResult';
+import CalculationResultItem from '@/components/calculationresult/CalculationResultItem';
+import DatePicker from '@/components/datepicker/DatePicker';
 import BadgeInfoIcon from '@/components/icons/BadgeInfoIcon';
+import CalendarClockIcon from '@/components/icons/CalendarClockIcon';
+import EuroIcon from '@/components/icons/EuroIcon';
+import MapPinIcon from '@/components/icons/MapPinIcon';
 import InputRegular from '@/components/input/InputRegular';
 import InputLabel from '@/components/inputlabel/InputLabel';
+import ThemeSwitch from '@/components/themeswitch/ThemeSwitch';
 import B2 from '@/components/typography/B2';
 import H1 from '@/components/typography/H1';
+import { calculateDeliveryFee } from '@/helpers/deliveryFee';
 import { withInputIcon } from '@/hoc/InputHoc';
+import useDatetimeSelector from '@/hooks/useDatetimeSelector';
+import useInput from '@/hooks/useInput';
 import { format } from 'date-fns';
 import { useState } from 'react';
-
-import CalculationResult from './components/calculationresult/CalculationResult';
-import CalculationResultItem from './components/calculationresult/CalculationResultItem';
-import DatePicker from './components/datepicker/DatePicker';
-import CalendarClockIcon from './components/icons/CalendarClockIcon';
-import EuroIcon from './components/icons/EuroIcon';
-import MapPinIcon from './components/icons/MapPinIcon';
-import ThemeSwitch from './components/themeswitch/ThemeSwitch';
-import { calculateDeliveryFee } from './helpers/deliveryFee';
-import { withThemeSelectorHoc } from './hoc/ThemeHoc';
-import useDatetimeSelector from './hooks/useDatetimeSelector';
-import useInput from './hooks/useInput';
 
 //TODO: Write comments for components (everything)
 
@@ -26,7 +24,6 @@ const CartValueInput = withInputIcon(InputRegular, EuroIcon);
 const DeliveryDistanceInput = withInputIcon(InputRegular, MapPinIcon);
 const ItemsAmountInput = InputRegular;
 const OrderTimeInput = withInputIcon(InputRegular, CalendarClockIcon);
-const ThemeSwitchSelector = withThemeSelectorHoc(ThemeSwitch);
 
 const App = () => {
   const cartValueInputData = useInput('', {
@@ -77,7 +74,7 @@ const App = () => {
     <>
       <header className='py-8 sm:py-12 flex flex-row items-start justify-between gap-5'>
         <H1 className='text-black dark:text-white'>Delivery fee calculator</H1>
-        <ThemeSwitchSelector />
+        <ThemeSwitch />
       </header>
       <main className='flex flex-col gap-6'>
         <div className='flex flex-row gap-3 items-center'>
@@ -95,9 +92,8 @@ const App = () => {
             <CartValueInput
               required
               className='w-full'
-              id='cartValueInput'
+              id='cartValue'
               name='cartValueInput'
-              type='text'
               ariaLabel='Cart value in euros'
               placeholder='20'
               min={1}
@@ -115,9 +111,8 @@ const App = () => {
             <DeliveryDistanceInput
               required
               className='w-full'
-              id='deliveryDistanceInput'
+              id='deliveryDistance'
               name='deliveryDistanceInput'
-              type='text'
               ariaLabel='Delivery distance in meters'
               placeholder='900'
               min={0}
@@ -135,9 +130,8 @@ const App = () => {
             <ItemsAmountInput
               required
               className='w-full'
-              id='deliveryItemsAmountInput'
+              id='numberOfItems'
               name='deliveryItemsAmountInput'
-              type='text'
               ariaLabel='Amount of items in cart'
               placeholder='1'
               min={1}
@@ -159,11 +153,10 @@ const App = () => {
                   {...inputProps}
                   required
                   className='w-full'
-                  id='deliveryOrderDateTimeInput'
+                  id='orderTime'
                   name='deliveryOrderDateTimeInput'
                   ariaLabel='Order time'
                   placeholder='hh.mm.yyyy HH:MM'
-                  type='text'
                 />
               )}
               onDatetimeChange={orderTime.handleChangeDatetime}

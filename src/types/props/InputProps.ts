@@ -4,7 +4,7 @@ import { InputType } from '@/types/shared/InputType';
 export declare interface InputProps extends ClassNameProps {
     id: string;
     ariaLabel: string;
-    type: InputType;
+    type?: InputType;
     name: string;
     onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
     onFocus?: (event: React.FocusEvent<HTMLInputElement>) => void;

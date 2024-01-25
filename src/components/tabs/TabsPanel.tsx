@@ -1,8 +1,7 @@
-import { classNames } from '@/helpers/classNames';
 import { TabsPanelProps } from '@/types/props/TabsPanelProps';
 
-const Panel = ({ children, className }: TabsPanelProps) => {
-  return <div className={classNames('p-4', className)}>{children}</div>;
+const TabsPanel = ({ children }: TabsPanelProps) => {
+  return <>{children}</>;
 };
 
-export default Panel;
+export default TabsPanel;

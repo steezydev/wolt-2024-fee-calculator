@@ -1,7 +1,7 @@
 import { TabsTabProps } from '@/types/props/TabsTabProps';
 
-const Tab: React.FC<TabsTabProps> = ({ children }) => {
+const TabsTab = ({ children }: TabsTabProps) => {
   return <>{children}</>;
 };
 
-export default Tab;
+export default TabsTab;

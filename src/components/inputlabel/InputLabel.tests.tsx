@@ -8,19 +8,15 @@ export const inputLabelRenderTests = (
   InputLabel: React.FC<InputLabelProps>
 ) => {
   describe(name, () => {
-    describe('when asked to render with label ', () => {
+    describe('when asked to render with label', () => {
       it('renders with label', () => {
         const component = TestRenderer.create(
-          <InputLabel label='Test label' id='test-input'>
+          <InputLabel label='Test label' id='testInput'>
             <InputRegular
               required
-              id='test-input'
-              name='test-input'
-              type='number'
+              id='testInput'
+              name='testInput'
               ariaLabel='Test label'
-              placeholder='20'
-              onChange={() => {}}
-              value={'20'}
             />
           </InputLabel>
         );
@@ -29,7 +25,7 @@ export const inputLabelRenderTests = (
       });
     });
 
-    describe('when asked to render with additional class ', () => {
+    describe('when asked to render with additional class', () => {
       it('renders with additional class', () => {
         const component = TestRenderer.create(
           <InputLabel label='Test label' id='test-input' className='some-class'>

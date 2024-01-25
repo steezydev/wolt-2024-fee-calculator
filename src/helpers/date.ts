@@ -65,5 +65,6 @@ export const dateTimeStringToDate = (dateTimeString: string): Date => {
 export const timeToDate = (hours: number, minutes: number): Date => {
     const newDate = new Date();
     newDate.setHours(hours, minutes, 0, 0);
+
     return newDate;
 };

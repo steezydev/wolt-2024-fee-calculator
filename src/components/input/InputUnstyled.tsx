@@ -7,7 +7,6 @@ const InputUnstyled = React.forwardRef<HTMLInputElement, InputProps>(
     {
       id,
       ariaLabel,
-      type,
       name,
       value,
       onChange,
@@ -17,6 +16,7 @@ const InputUnstyled = React.forwardRef<HTMLInputElement, InputProps>(
       placeholder,
       min,
       max,
+      type = 'text',
       autoFocus = false,
       disabled = false,
       required = false,
