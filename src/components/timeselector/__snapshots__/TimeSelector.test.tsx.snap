@@ -15,6 +15,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       onClick={[Function]}
     >
       <svg
+        aria-hidden="true"
         className="text-black dark:text-white"
         fill="none"
         height="24"
@@ -286,6 +287,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       onClick={[Function]}
     >
       <svg
+        aria-hidden="true"
         className="text-black dark:text-white"
         fill="none"
         height="24"
@@ -314,6 +316,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       onClick={[Function]}
     >
       <svg
+        aria-hidden="true"
         className="text-black dark:text-white"
         fill="none"
         height="24"
@@ -945,6 +948,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       onClick={[Function]}
     >
       <svg
+        aria-hidden="true"
         className="text-black dark:text-white"
         fill="none"
         height="24"
@@ -980,6 +984,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       onClick={[Function]}
     >
       <svg
+        aria-hidden="true"
         className="text-black dark:text-white"
         fill="none"
         height="24"
@@ -1251,6 +1256,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       onClick={[Function]}
     >
       <svg
+        aria-hidden="true"
         className="text-black dark:text-white"
         fill="none"
         height="24"
@@ -1279,6 +1285,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       onClick={[Function]}
     >
       <svg
+        aria-hidden="true"
         className="text-black dark:text-white"
         fill="none"
         height="24"
@@ -1910,6 +1917,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       onClick={[Function]}
     >
       <svg
+        aria-hidden="true"
         className="text-black dark:text-white"
         fill="none"
         height="24"

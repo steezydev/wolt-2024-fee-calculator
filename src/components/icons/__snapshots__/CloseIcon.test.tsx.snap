@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MoonIcon when asked to render renders 1`] = `
+exports[`CloseIcon when asked to render renders 1`] = `
 <svg
-  aria-hidden="true"
   fill="none"
   height="24"
   stroke="currentColor"
@@ -14,14 +13,16 @@ exports[`MoonIcon when asked to render renders 1`] = `
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
-    d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+    d="M18 6 6 18"
+  />
+  <path
+    d="m6 6 12 12"
   />
 </svg>
 `;
 
-exports[`MoonIcon when asked to render with additional class renders with additional class 1`] = `
+exports[`CloseIcon when asked to render with additional class renders with additional class 1`] = `
 <svg
-  aria-hidden="true"
   className="some-class"
   fill="none"
   height="24"
@@ -34,7 +35,10 @@ exports[`MoonIcon when asked to render with additional class renders with additi
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
-    d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"
+    d="M18 6 6 18"
+  />
+  <path
+    d="m6 6 12 12"
   />
 </svg>
 `;

@@ -2,6 +2,8 @@
 
 exports[`InputUnstyled when asked to render autofocused renders autofocused 1`] = `
 <input
+  aria-disabled={false}
+  aria-errormessage="test-inputErrorMessage"
   aria-invalid={false}
   aria-label="Test label"
   aria-required={false}
@@ -20,6 +22,8 @@ exports[`InputUnstyled when asked to render autofocused renders autofocused 1`] 
 
 exports[`InputUnstyled when asked to render disabled renders disabled 1`] = `
 <input
+  aria-disabled={true}
+  aria-errormessage="test-inputErrorMessage"
   aria-invalid={false}
   aria-label="Test label"
   aria-required={false}
@@ -38,6 +42,8 @@ exports[`InputUnstyled when asked to render disabled renders disabled 1`] = `
 
 exports[`InputUnstyled when asked to render renders 1`] = `
 <input
+  aria-disabled={false}
+  aria-errormessage="test-inputErrorMessage"
   aria-invalid={false}
   aria-label="Test label"
   aria-required={false}
@@ -56,6 +62,8 @@ exports[`InputUnstyled when asked to render renders 1`] = `
 
 exports[`InputUnstyled when asked to render required renders required 1`] = `
 <input
+  aria-disabled={false}
+  aria-errormessage="test-inputErrorMessage"
   aria-invalid={false}
   aria-label="Test label"
   aria-required={true}
@@ -74,6 +82,8 @@ exports[`InputUnstyled when asked to render required renders required 1`] = `
 
 exports[`InputUnstyled when asked to render with placeholder renders with placeholder 1`] = `
 <input
+  aria-disabled={false}
+  aria-errormessage="test-inputErrorMessage"
   aria-invalid={false}
   aria-label="Test label"
   aria-required={false}
@@ -93,6 +103,8 @@ exports[`InputUnstyled when asked to render with placeholder renders with placeh
 
 exports[`InputUnstyled when asked to render with value renders with placeholder 1`] = `
 <input
+  aria-disabled={false}
+  aria-errormessage="test-inputErrorMessage"
   aria-invalid={false}
   aria-label="Test label"
   aria-required={false}

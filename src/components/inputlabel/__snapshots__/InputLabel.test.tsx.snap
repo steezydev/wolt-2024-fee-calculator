@@ -5,6 +5,8 @@ exports[`InputLabel when asked to render with additional class renders with addi
   className="group flex flex-col gap-1 some-class"
 >
   <input
+    aria-disabled={false}
+    aria-errormessage="test-inputErrorMessage"
     aria-invalid={false}
     aria-label="Test label"
     aria-required={true}
@@ -32,6 +34,7 @@ exports[`InputLabel when asked to render with additional class renders with addi
     className="hidden order-3 peer-data-[invalid=true]:flex gap-1.5 items-center"
   >
     <svg
+      aria-hidden="true"
       className="w-5 h-5 text-error"
       fill="none"
       height="24"
@@ -61,6 +64,7 @@ exports[`InputLabel when asked to render with additional class renders with addi
     </svg>
     <p
       className="text-base text-error"
+      id="test-inputErrorMessage"
     />
   </div>
 </div>
@@ -71,6 +75,8 @@ exports[`InputLabel when asked to render with label renders with label 1`] = `
   className="group flex flex-col gap-1"
 >
   <input
+    aria-disabled={false}
+    aria-errormessage="testInputErrorMessage"
     aria-invalid={false}
     aria-label="Test label"
     aria-required={true}
@@ -95,6 +101,7 @@ exports[`InputLabel when asked to render with label renders with label 1`] = `
     className="hidden order-3 peer-data-[invalid=true]:flex gap-1.5 items-center"
   >
     <svg
+      aria-hidden="true"
       className="w-5 h-5 text-error"
       fill="none"
       height="24"
@@ -124,6 +131,7 @@ exports[`InputLabel when asked to render with label renders with label 1`] = `
     </svg>
     <p
       className="text-base text-error"
+      id="testInputErrorMessage"
     />
   </div>
 </div>

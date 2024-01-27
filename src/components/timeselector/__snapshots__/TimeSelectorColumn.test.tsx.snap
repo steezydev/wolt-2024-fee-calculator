@@ -12,6 +12,7 @@ exports[`TimeSelectorColumn when asked to render with hours renders with hours 1
     onClick={[Function]}
   >
     <svg
+      aria-hidden="true"
       className="text-black dark:text-white"
       fill="none"
       height="24"
@@ -283,6 +284,7 @@ exports[`TimeSelectorColumn when asked to render with hours renders with hours 1
     onClick={[Function]}
   >
     <svg
+      aria-hidden="true"
       className="text-black dark:text-white"
       fill="none"
       height="24"
@@ -314,6 +316,7 @@ exports[`TimeSelectorColumn when asked to render with minutes renders with minut
     onClick={[Function]}
   >
     <svg
+      aria-hidden="true"
       className="text-black dark:text-white"
       fill="none"
       height="24"
@@ -945,6 +948,7 @@ exports[`TimeSelectorColumn when asked to render with minutes renders with minut
     onClick={[Function]}
   >
     <svg
+      aria-hidden="true"
       className="text-black dark:text-white"
       fill="none"
       height="24"

@@ -12,6 +12,7 @@ exports[`ThemeSwitch when asked to render renders 1`] = `
     onClick={[Function]}
   >
     <svg
+      aria-hidden="true"
       fill="none"
       height="24"
       stroke="currentColor"
@@ -61,6 +62,7 @@ exports[`ThemeSwitch when asked to render renders 1`] = `
     onClick={[Function]}
   >
     <svg
+      aria-hidden="true"
       fill="none"
       height="24"
       stroke="currentColor"
@@ -91,6 +93,7 @@ exports[`ThemeSwitch when asked to render with additional class renders wtih add
     onClick={[Function]}
   >
     <svg
+      aria-hidden="true"
       fill="none"
       height="24"
       stroke="currentColor"
@@ -140,6 +143,7 @@ exports[`ThemeSwitch when asked to render with additional class renders wtih add
     onClick={[Function]}
   >
     <svg
+      aria-hidden="true"
       fill="none"
       height="24"
       stroke="currentColor"

@@ -2,6 +2,7 @@
 
 exports[`ChevronDownIcon when asked to render renders 1`] = `
 <svg
+  aria-hidden="true"
   fill="none"
   height="24"
   stroke="currentColor"
@@ -20,6 +21,7 @@ exports[`ChevronDownIcon when asked to render renders 1`] = `
 
 exports[`ChevronDownIcon when asked to render with additional class renders with additional class 1`] = `
 <svg
+  aria-hidden="true"
   className="some-class"
   fill="none"
   height="24"
