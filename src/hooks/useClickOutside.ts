@@ -1,11 +1,5 @@
 import { useEffect, useRef } from 'react';
 
-/**
- * useClickOutside Hook
- *
- * @param callback - Function to call on click outside
- * @returns - A ref to attach to the target element
- */
 function useClickOutside<T extends HTMLElement = HTMLElement>(
     callback: (e: MouseEvent | TouchEvent) => void
 ): React.RefObject<T> {
