@@ -7,9 +7,9 @@ const ButtonSecondary = ({ className, ...props }: ButtonProps) => {
     <ButtonUnstyled
       {...props}
       className={classNames(
-        'bg-primary-100 text-white text-lg font-bold py-3 rounded-xl',
-        'hover:bg-primary-300/40 active:bg-primary-300/80',
-        'disabled:bg-primary-300/60 disabled:text-white/40 disabled:cursor-not-allowed',
+        'bg-primary-100 text-lg font-bold py-3 rounded-xl',
+        'hover:bg-primary-300/20 active:bg-primary-300/50',
+        'disabled:bg-neutral-light-100 disabled:dark:bg-neutral-dark-100 disabled:text-white/40 disabled:cursor-not-allowed',
         'focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none',
         className
       )}

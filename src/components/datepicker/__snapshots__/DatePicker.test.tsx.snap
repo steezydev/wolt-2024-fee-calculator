@@ -6,12 +6,61 @@ exports[`DatePicker when asked to render renders 1`] = `
   data-focused={false}
   data-invalid={false}
 >
-  <input
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    value="17.01.2024 12:00"
-  />
+  <div
+    className="flex gap-2"
+  >
+    <input
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="17.01.2024 12:00"
+    />
+    <button
+      aria-label="Open datepicker modal"
+      className="bg-primary-100 text-lg font-bold py-3 rounded-xl hover:bg-primary-300/20 active:bg-primary-300/50 disabled:bg-neutral-light-100 disabled:dark:bg-neutral-dark-100 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none aspect-square flex justify-center items-center px-3 h-full flex-shrink-0 flex-grow text-primary-300"
+      data-test-id="openDatePickerButton"
+      disabled={false}
+      id="openDatePickerButton"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="w-6 h-6 text-inherit"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 2v4"
+        />
+        <path
+          d="M16 2v4"
+        />
+        <rect
+          height="18"
+          rx="2"
+          width="18"
+          x="3"
+          y="4"
+        />
+        <path
+          d="M3 10h18"
+        />
+        <path
+          d="M10 16h4"
+        />
+        <path
+          d="M12 14v4"
+        />
+      </svg>
+    </button>
+  </div>
 </div>
 `;
 
@@ -21,11 +70,60 @@ exports[`DatePicker when asked to render with additional class name renders with
   data-focused={false}
   data-invalid={false}
 >
-  <input
-    onBlur={[Function]}
-    onChange={[Function]}
-    onFocus={[Function]}
-    value="17.01.2024 12:00"
-  />
+  <div
+    className="flex gap-2"
+  >
+    <input
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      value="17.01.2024 12:00"
+    />
+    <button
+      aria-label="Open datepicker modal"
+      className="bg-primary-100 text-lg font-bold py-3 rounded-xl hover:bg-primary-300/20 active:bg-primary-300/50 disabled:bg-neutral-light-100 disabled:dark:bg-neutral-dark-100 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none aspect-square flex justify-center items-center px-3 h-full flex-shrink-0 flex-grow text-primary-300"
+      data-test-id="openDatePickerButton"
+      disabled={false}
+      id="openDatePickerButton"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="w-6 h-6 text-inherit"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 2v4"
+        />
+        <path
+          d="M16 2v4"
+        />
+        <rect
+          height="18"
+          rx="2"
+          width="18"
+          x="3"
+          y="4"
+        />
+        <path
+          d="M3 10h18"
+        />
+        <path
+          d="M10 16h4"
+        />
+        <path
+          d="M12 14v4"
+        />
+      </svg>
+    </button>
+  </div>
 </div>
 `;

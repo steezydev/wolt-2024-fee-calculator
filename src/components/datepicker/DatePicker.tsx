@@ -1,5 +1,8 @@
+import ButtonSecondary from '@/components/button/ButtonSecondary';
 import Calendar from '@/components/calendar/Calendar';
 import DateField from '@/components/datefield/DateField';
+import CalendarPlusIcon from '@/components/icons/CalendarPlusIcon';
+import ModalRegular from '@/components/modal/ModalRegular';
 import Tabs from '@/components/tabs/Tabs';
 import TimeSelector from '@/components/timeselector/TimeSelector';
 import B3 from '@/components/typography/B3';
@@ -7,8 +10,6 @@ import { classNames } from '@/helpers/classNames';
 import { DatePickerProps } from '@/types/props/DatePickerProps';
 import { RenderInputProps } from '@/types/props/RenderInputProps';
 import React, { useState } from 'react';
-
-import ModalRegular from '../modal/ModalRegular';
 
 const DatePicker = ({
   value,
@@ -26,8 +27,6 @@ const DatePicker = ({
   };
 
   const handleFocus = () => {
-    //TODO: Consider opening modal on button click instead of input focus
-    setIsPickerOpen(true);
     setIsFocused(true);
   };
 
@@ -54,16 +53,30 @@ const DatePicker = ({
       data-focused={isFocused}
       className={classNames('w-full relative', className)}
     >
-      <DateField
-        date={value}
-        onDateChange={onChange}
-        renderInput={additiveRenderInput}
-      />
+      <div className='flex gap-2'>
+        <DateField
+          date={value}
+          onDateChange={onChange}
+          renderInput={additiveRenderInput}
+        />
+        <ButtonSecondary
+          onClick={() => setIsPickerOpen(true)}
+          disabled={isPickerOpen}
+          className='aspect-square flex justify-center items-center px-3 h-full flex-shrink-0 flex-grow text-primary-300'
+          id='openDatePickerButton'
+          ariaLabel='Open datepicker modal'
+        >
+          <CalendarPlusIcon className='w-6 h-6 text-inherit' />
+        </ButtonSecondary>
+      </div>
       <ModalRegular
         id='datePickerModal'
         title={'Date picker'}
         isOpen={isPickerOpen}
-        onClose={() => setIsPickerOpen(false)}
+        onClose={() => {
+          setIsPickerOpen(false);
+          document.body.focus();
+        }}
         className='top-16 h-[395px] w-80 p-2'
       >
         <Tabs className='w-full'>
@@ -94,40 +107,6 @@ const DatePicker = ({
           </Tabs.Panel>
         </Tabs>
       </ModalRegular>
-      {/* {isPickerOpen && (
-        <div
-          className='absolute bg-white dark:bg-black border-2 rounded-xl border-primary-300 top-16 flex flex-row h-[360px] w-80 p-2'
-          ref={ref}
-        >
-          <Tabs className='w-full'>
-            <Tabs.Tab
-              id='datePickerTabButton'
-              ariaLabel='Open date picker tab'
-              value='datePickerTabButton'
-            >
-              <B3>Date</B3>
-            </Tabs.Tab>
-            <Tabs.Panel value='datePickerTabButton'>
-              <Calendar
-                weekStartsOn={1}
-                showOutsideDays
-                selectedDate={value}
-                onChange={onDateChange}
-              />
-            </Tabs.Panel>
-            <Tabs.Tab
-              id='timePickerTabButton'
-              ariaLabel='Open time picker tab'
-              value='timePickerTabButton'
-            >
-              <B3>Time</B3>
-            </Tabs.Tab>
-            <Tabs.Panel value='timePickerTabButton' className='p-2'>
-              <TimeSelector className='' time={value} onChange={onTimeChange} />
-            </Tabs.Panel>
-          </Tabs>
-        </div>
-      )} */}
     </div>
   );
 };

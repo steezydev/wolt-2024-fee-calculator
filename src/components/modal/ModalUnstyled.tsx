@@ -21,6 +21,7 @@ const ModalUnstyled = ({
 
   return (
     <div
+      role='dialog'
       ref={ref}
       className={classNames('absolute z-50 flex flex-col gap-3', className)}
       aria-modal='true'
