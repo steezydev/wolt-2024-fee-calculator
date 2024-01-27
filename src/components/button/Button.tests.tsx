@@ -1,6 +1,6 @@
 import { ButtonProps } from '@/types/props/ButtonProps';
 import '@testing-library/jest-dom';
-import { fireEvent, render } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 
@@ -8,18 +8,21 @@ export const buttonRenderTests = (
   name: string,
   Button: React.FC<ButtonProps>
 ) => {
-  // === Snapshot tests ===
-
   describe(name, () => {
     describe('when asked to render with children', () => {
       it('renders with children', () => {
-        const component = TestRenderer.create(
+        const cp = (
           <Button id='test-button' ariaLabel='Test button label'>
             Test Button
           </Button>
         );
+
+        const component = TestRenderer.create(cp);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
+
+        render(cp);
+        expect(screen.getByRole('button')).toHaveTextContent('Test Button');
       });
     });
 
@@ -55,9 +58,14 @@ export const buttonRenderTests = (
         expect(tree).toMatchSnapshot();
       });
     });
+  });
+};
 
-    // === Event tests ===
-
+export const buttonEventTests = (
+  name: string,
+  Button: React.FC<ButtonProps>
+) => {
+  describe(name, () => {
     describe('when clicked', () => {
       it('triggers onClick event', () => {
         const handleClick = jest.fn();

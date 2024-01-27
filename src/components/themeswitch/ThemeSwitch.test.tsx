@@ -1,5 +1,8 @@
 import ThemeSwitch from './ThemeSwitch';
-import { themeSwitchRenderTests } from './ThemeSwitch.tests';
+import {
+  themeSwitchEventTests,
+  themeSwitchRenderTests,
+} from './ThemeSwitch.tests';
 
 const localStorageMock = (function () {
   let store: Record<string, string> = {};
@@ -51,3 +54,4 @@ beforeEach(() => {
 });
 
 themeSwitchRenderTests('ThemeSwitch', ThemeSwitch);
+themeSwitchEventTests('ThemeSwitch', ThemeSwitch);

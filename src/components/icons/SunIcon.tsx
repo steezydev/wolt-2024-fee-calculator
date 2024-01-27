@@ -12,6 +12,7 @@ const SunIcon = ({ className }: IconProps) => {
       strokeWidth='2'
       strokeLinecap='round'
       strokeLinejoin='round'
+      aria-hidden='true'
       className={className}
     >
       <circle cx='12' cy='12' r='4' />

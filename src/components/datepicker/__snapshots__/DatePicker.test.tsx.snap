@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatePicker when asked to render renders 1`] = `
+<div
+  className="w-full relative"
+  data-focused={false}
+  data-invalid={false}
+>
+  <input
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    value="17.01.2024 12:00"
+  />
+</div>
+`;
+
+exports[`DatePicker when asked to render with additional class name renders with additional class name 1`] = `
+<div
+  className="w-full relative some-class"
+  data-focused={false}
+  data-invalid={false}
+>
+  <input
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    value="17.01.2024 12:00"
+  />
+</div>
+`;

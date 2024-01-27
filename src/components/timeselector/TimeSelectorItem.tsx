@@ -10,7 +10,7 @@ const TimeSelectorItem = ({
 }: TimeSelectorItemProps) => (
   <ButtonUnstyled
     id={`select${type.charAt(0).toUpperCase() + type.slice(1)}${value}Button`}
-    ariaLabel={`${type.charAt(0).toUpperCase() + type.slice(1)} ${value}`}
+    ariaLabel={`Select ${value} ${type}`}
     type='button'
     className={classNames(
       'px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base',

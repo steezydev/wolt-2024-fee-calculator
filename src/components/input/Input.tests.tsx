@@ -5,11 +5,7 @@ import userEvent from '@testing-library/user-event';
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 
-//TODO: Add event tests
-
 export const inputRenderTests = (name: string, Input: React.FC<InputProps>) => {
-  // === Snapshot tests ===
-
   describe(name, () => {
     describe('when asked to render', () => {
       it('renders', () => {
@@ -95,9 +91,11 @@ export const inputRenderTests = (name: string, Input: React.FC<InputProps>) => {
         expect(tree).toMatchSnapshot();
       });
     });
+  });
+};
 
-    // === Event tests ===
-
+export const inputEventTests = (name: string, Input: React.FC<InputProps>) => {
+  describe(name, () => {
     describe('when value is changed', () => {
       it('onChange is called', async () => {
         const user = userEvent.setup();

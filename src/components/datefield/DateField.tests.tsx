@@ -4,13 +4,13 @@ import { fireEvent, render } from '@testing-library/react';
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 
+const mockOnDateChange = jest.fn();
+const testDate = new Date(2024, 0, 17, 12, 0); // 17.01.2024 12:00
+
 export const dateFieldRenderTests = (
   name: string,
   DateField: React.FC<DateFieldProps>
 ) => {
-  const mockOnDateChange = jest.fn();
-  const testDate = new Date(2024, 0, 17, 12, 0); // 17.01.2024 12:00
-
   describe(name, () => {
     describe('when asked to render', () => {
       it('renders', () => {
@@ -74,7 +74,14 @@ export const dateFieldRenderTests = (
         expect(getByDisplayValue('18.01.2024 15:00')).toBeInTheDocument();
       });
     });
+  });
+};
 
+export const dateFieldEventTests = (
+  name: string,
+  DateField: React.FC<DateFieldProps>
+) => {
+  describe(name, () => {
     describe('when asked to blur with valid date', () => {
       it('calls onDateChange with a new date on valid blur', () => {
         const { getByDisplayValue } = render(

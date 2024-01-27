@@ -12,9 +12,9 @@ import React, { useState } from 'react';
 const DatePicker = ({
   value,
   renderInput,
-  onDatetimeChange,
   onDateChange,
   onTimeChange,
+  onChange,
   className,
 }: DatePickerProps) => {
   const [isPickerOpen, setIsPickerOpen] = useState(false);
@@ -59,7 +59,7 @@ const DatePicker = ({
     >
       <DateField
         date={value}
-        onDateChange={onDatetimeChange}
+        onDateChange={onChange}
         renderInput={additiveRenderInput}
       />
       {isPickerOpen && (
@@ -80,7 +80,7 @@ const DatePicker = ({
                 weekStartsOn={1}
                 showOutsideDays
                 selectedDate={value}
-                onDayClick={onDateChange}
+                onChange={onDateChange}
               />
             </Tabs.Panel>
             <Tabs.Tab
@@ -91,11 +91,7 @@ const DatePicker = ({
               <B3>Time</B3>
             </Tabs.Tab>
             <Tabs.Panel value='timePickerTabButton' className='p-2'>
-              <TimeSelector
-                className=''
-                time={value}
-                onTimeChange={onTimeChange}
-              />
+              <TimeSelector className='' time={value} onChange={onTimeChange} />
             </Tabs.Panel>
           </Tabs>
         </div>

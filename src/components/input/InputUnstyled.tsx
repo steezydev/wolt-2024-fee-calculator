@@ -41,6 +41,8 @@ const InputUnstyled = React.forwardRef<HTMLInputElement, InputProps>(
         disabled={disabled}
         required={required}
         aria-required={required}
+        aria-disabled={disabled}
+        aria-errormessage={name + 'ErrorMessage'}
         placeholder={placeholder}
         className={classNames(
           '[appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none',

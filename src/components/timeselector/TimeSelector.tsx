@@ -1,12 +1,11 @@
-import { timeToDate } from '@/helpers/date';
 import { TimeSelectorProps } from '@/types/props/TimeSelectorProps';
 import React, { useCallback, useEffect, useMemo, useRef } from 'react';
 
 import TimeSelectorColumn from './TimeSelectorColumn';
 
 const TimeSelector = ({
-  time = new Date(),
-  onTimeChange,
+  time = new Date(new Date().setHours(0, 0, 0, 0)),
+  onChange,
   className,
 }: TimeSelectorProps) => {
   const hourRef = useRef<HTMLDivElement>(null);
@@ -35,16 +34,19 @@ const TimeSelector = ({
   //TODO: Fix scrolling to the position of the selected item on mount (it only works on rerender now) offsetTop and clientHeight are 0 on mount
   // Scroll to the position of the selected item on mount
   useEffect(() => {
-    scrollToPosition(hourRef, time.getHours());
-    scrollToPosition(minuteRef, time.getMinutes());
+    if (time) {
+      scrollToPosition(hourRef, time.getHours());
+      scrollToPosition(minuteRef, time.getMinutes());
+    }
   }, [scrollToPosition, time]);
 
-  const handleTimeChange = useCallback(
-    (hour: number, minute: number) => {
-      onTimeChange?.(timeToDate(hour, minute));
-    },
-    [onTimeChange]
-  );
+  const handleChangeHour = (hour: number) => {
+    onChange?.(hour, null);
+  };
+
+  const handleChangeMinute = (minute: number) => {
+    onChange?.(null, minute);
+  };
 
   return (
     <div className={`flex gap-1 ${className}`}>
@@ -53,14 +55,14 @@ const TimeSelector = ({
         type='hour'
         items={hours}
         currentItem={time.getHours()}
-        onChange={(value) => handleTimeChange(value, time.getMinutes())}
+        onChange={handleChangeHour}
       />
       <TimeSelectorColumn
         ref={minuteRef}
         type='minute'
         items={minutes}
         currentItem={time.getMinutes()}
-        onChange={(value) => handleTimeChange(time.getHours(), value)}
+        onChange={handleChangeMinute}
       />
     </div>
   );

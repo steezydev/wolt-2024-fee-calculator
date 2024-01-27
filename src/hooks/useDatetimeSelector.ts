@@ -14,17 +14,26 @@ const useDatetimeSelector = (initialValue: Date) => {
         });
     };
 
-    const handleChangeTime = (newTime: Date) => {
+    const handleChangeTime = (
+        newHours: number | null,
+        newMinutes: number | null
+    ) => {
         setValue((prev) => {
-            let updatedDate = new Date(prev);
-            updatedDate.setHours(newTime.getHours());
-            updatedDate.setMinutes(newTime.getMinutes());
+            const currentOrderDate = prev;
+            const updatedHours =
+                newHours !== null ? newHours : currentOrderDate.getHours();
+            const updatedMinutes =
+                newMinutes !== null
+                    ? newMinutes
+                    : currentOrderDate.getMinutes();
 
-            return updatedDate;
+            return new Date(
+                currentOrderDate.setHours(updatedHours, updatedMinutes)
+            );
         });
     };
 
-    const handleChangeDatetime = (newDatetime: Date) => {
+    const handleChange = (newDatetime: Date) => {
         setValue(newDatetime);
     };
 
@@ -32,7 +41,7 @@ const useDatetimeSelector = (initialValue: Date) => {
         value,
         handleChangeDate,
         handleChangeTime,
-        handleChangeDatetime,
+        handleChange,
     };
 };
 

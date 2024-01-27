@@ -144,7 +144,7 @@ exports[`Calendar when asked to render renders 1`] = `
               role="presentation"
             >
               <button
-                className="rdp-button_reset rdp-button rdp-day"
+                className="rdp-button_reset rdp-button rdp-day my-today"
                 name="day"
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -161,7 +161,7 @@ exports[`Calendar when asked to render renders 1`] = `
                 onTouchStart={[Function]}
                 role="gridcell"
                 style={{}}
-                tabIndex={-1}
+                tabIndex={0}
                 type="button"
               >
                 1
@@ -856,7 +856,7 @@ exports[`Calendar when asked to render renders 1`] = `
               role="presentation"
             >
               <button
-                className="rdp-button_reset rdp-button rdp-day my-today"
+                className="rdp-button_reset rdp-button rdp-day"
                 name="day"
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -873,7 +873,7 @@ exports[`Calendar when asked to render renders 1`] = `
                 onTouchStart={[Function]}
                 role="gridcell"
                 style={{}}
-                tabIndex={0}
+                tabIndex={-1}
                 type="button"
               >
                 26
@@ -1161,7 +1161,7 @@ exports[`Calendar when asked to render with additional class renders with additi
         <div
           aria-live="polite"
           className="rdp-caption_label"
-          id="react-day-picker-5"
+          id="react-day-picker-6"
           role="presentation"
         >
           January 2024
@@ -1215,7 +1215,7 @@ exports[`Calendar when asked to render with additional class renders with additi
         </div>
       </div>
       <table
-        aria-labelledby="react-day-picker-5"
+        aria-labelledby="react-day-picker-6"
         className="rdp-table"
         role="grid"
       >
@@ -1287,7 +1287,7 @@ exports[`Calendar when asked to render with additional class renders with additi
               role="presentation"
             >
               <button
-                className="rdp-button_reset rdp-button rdp-day"
+                className="rdp-button_reset rdp-button rdp-day my-today"
                 name="day"
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -1304,7 +1304,7 @@ exports[`Calendar when asked to render with additional class renders with additi
                 onTouchStart={[Function]}
                 role="gridcell"
                 style={{}}
-                tabIndex={-1}
+                tabIndex={0}
                 type="button"
               >
                 1
@@ -1999,6 +1999,437 @@ exports[`Calendar when asked to render with additional class renders with additi
               role="presentation"
             >
               <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                26
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                27
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                28
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="rdp-row"
+          >
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                29
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                30
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                31
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day rdp-day_outside"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                1
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day rdp-day_outside"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                2
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day rdp-day_outside"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                3
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day rdp-day_outside"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                4
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Calendar when asked to render with selected date renders with selected date 1`] = `
+<div
+  className="rdp w-fit text-black dark:text-white"
+  style={{}}
+>
+  <div
+    className="rdp-months"
+  >
+    <div
+      className="rdp-month rdp-caption_start rdp-caption_end"
+      style={{}}
+    >
+      <div
+        className="rdp-caption"
+      >
+        <div
+          aria-live="polite"
+          className="rdp-caption_label"
+          id="react-day-picker-5"
+          role="presentation"
+        >
+          January 2024
+        </div>
+        <div
+          className="rdp-nav"
+        >
+          <button
+            aria-label="Go to previous month"
+            className="rdp-button_reset rdp-button rdp-nav_button rdp-nav_button_previous"
+            disabled={false}
+            name="previous-month"
+            onClick={[Function]}
+            style={{}}
+            type="button"
+          >
+            <svg
+              className="rdp-nav_icon"
+              height="16px"
+              viewBox="0 0 120 120"
+              width="16px"
+            >
+              <path
+                d="M69.490332,3.34314575 C72.6145263,0.218951416 77.6798462,0.218951416 80.8040405,3.34314575 C83.8617626,6.40086786 83.9268205,11.3179931 80.9992143,14.4548388 L80.8040405,14.6568542 L35.461,60 L80.8040405,105.343146 C83.8617626,108.400868 83.9268205,113.317993 80.9992143,116.454839 L80.8040405,116.656854 C77.7463184,119.714576 72.8291931,119.779634 69.6923475,116.852028 L69.490332,116.656854 L18.490332,65.6568542 C15.4326099,62.5991321 15.367552,57.6820069 18.2951583,54.5451612 L18.490332,54.3431458 L69.490332,3.34314575 Z"
+                fill="currentColor"
+                fillRule="nonzero"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Go to next month"
+            className="rdp-button_reset rdp-button rdp-nav_button rdp-nav_button_next"
+            disabled={false}
+            name="next-month"
+            onClick={[Function]}
+            style={{}}
+            type="button"
+          >
+            <svg
+              className="rdp-nav_icon"
+              height="16px"
+              viewBox="0 0 120 120"
+              width="16px"
+            >
+              <path
+                d="M49.8040405,3.34314575 C46.6798462,0.218951416 41.6145263,0.218951416 38.490332,3.34314575 C35.4326099,6.40086786 35.367552,11.3179931 38.2951583,14.4548388 L38.490332,14.6568542 L83.8333725,60 L38.490332,105.343146 C35.4326099,108.400868 35.367552,113.317993 38.2951583,116.454839 L38.490332,116.656854 C41.5480541,119.714576 46.4651794,119.779634 49.602025,116.852028 L49.8040405,116.656854 L100.804041,65.6568542 C103.861763,62.5991321 103.926821,57.6820069 100.999214,54.5451612 L100.804041,54.3431458 L49.8040405,3.34314575 Z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <table
+        aria-labelledby="react-day-picker-5"
+        className="rdp-table"
+        role="grid"
+      >
+        <thead
+          className="rdp-head"
+        >
+          <tr
+            className="rdp-head_row"
+          >
+            <th
+              aria-label="Monday"
+              className="rdp-head_cell"
+              scope="col"
+            >
+              Mo
+            </th>
+            <th
+              aria-label="Tuesday"
+              className="rdp-head_cell"
+              scope="col"
+            >
+              Tu
+            </th>
+            <th
+              aria-label="Wednesday"
+              className="rdp-head_cell"
+              scope="col"
+            >
+              We
+            </th>
+            <th
+              aria-label="Thursday"
+              className="rdp-head_cell"
+              scope="col"
+            >
+              Th
+            </th>
+            <th
+              aria-label="Friday"
+              className="rdp-head_cell"
+              scope="col"
+            >
+              Fr
+            </th>
+            <th
+              aria-label="Saturday"
+              className="rdp-head_cell"
+              scope="col"
+            >
+              Sa
+            </th>
+            <th
+              aria-label="Sunday"
+              className="rdp-head_cell"
+              scope="col"
+            >
+              Su
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="rdp-tbody"
+        >
+          <tr
+            className="rdp-row"
+          >
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
                 className="rdp-button_reset rdp-button rdp-day my-today"
                 name="day"
                 onBlur={[Function]}
@@ -2016,7 +2447,720 @@ exports[`Calendar when asked to render with additional class renders with additi
                 onTouchStart={[Function]}
                 role="gridcell"
                 style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                1
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                2
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                3
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                4
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                5
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                6
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                7
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="rdp-row"
+          >
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                8
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                9
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                10
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                11
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                12
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                13
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                14
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="rdp-row"
+          >
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                15
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                16
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                aria-selected={true}
+                className="rdp-button_reset rdp-button rdp-day bg-primary-300 text-white"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
                 tabIndex={0}
+                type="button"
+              >
+                17
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                18
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                19
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                20
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                21
+              </button>
+            </td>
+          </tr>
+          <tr
+            className="rdp-row"
+          >
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                22
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                23
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                24
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
+                type="button"
+              >
+                25
+              </button>
+            </td>
+            <td
+              className="rdp-cell"
+              role="presentation"
+            >
+              <button
+                className="rdp-button_reset rdp-button rdp-day"
+                name="day"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onPointerEnter={[Function]}
+                onPointerLeave={[Function]}
+                onTouchCancel={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                role="gridcell"
+                style={{}}
+                tabIndex={-1}
                 type="button"
               >
                 26
@@ -2598,7 +3742,7 @@ exports[`Calendar when asked to render with week starting on Tuesday renders wit
               role="presentation"
             >
               <button
-                className="rdp-button_reset rdp-button rdp-day"
+                className="rdp-button_reset rdp-button rdp-day my-today"
                 name="day"
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -2615,7 +3759,7 @@ exports[`Calendar when asked to render with week starting on Tuesday renders wit
                 onTouchStart={[Function]}
                 role="gridcell"
                 style={{}}
-                tabIndex={-1}
+                tabIndex={0}
                 type="button"
               >
                 1
@@ -3314,7 +4458,7 @@ exports[`Calendar when asked to render with week starting on Tuesday renders wit
               role="presentation"
             >
               <button
-                className="rdp-button_reset rdp-button rdp-day my-today"
+                className="rdp-button_reset rdp-button rdp-day"
                 name="day"
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -3331,7 +4475,7 @@ exports[`Calendar when asked to render with week starting on Tuesday renders wit
                 onTouchStart={[Function]}
                 role="gridcell"
                 style={{}}
-                tabIndex={0}
+                tabIndex={-1}
                 type="button"
               >
                 26
@@ -3773,7 +4917,7 @@ exports[`Calendar when asked to render without outside dates renders without out
               role="presentation"
             >
               <button
-                className="rdp-button_reset rdp-button rdp-day"
+                className="rdp-button_reset rdp-button rdp-day my-today"
                 name="day"
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -3790,7 +4934,7 @@ exports[`Calendar when asked to render without outside dates renders without out
                 onTouchStart={[Function]}
                 role="gridcell"
                 style={{}}
-                tabIndex={-1}
+                tabIndex={0}
                 type="button"
               >
                 1
@@ -4485,7 +5629,7 @@ exports[`Calendar when asked to render without outside dates renders without out
               role="presentation"
             >
               <button
-                className="rdp-button_reset rdp-button rdp-day my-today"
+                className="rdp-button_reset rdp-button rdp-day"
                 name="day"
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -4502,7 +5646,7 @@ exports[`Calendar when asked to render without outside dates renders without out
                 onTouchStart={[Function]}
                 role="gridcell"
                 style={{}}
-                tabIndex={0}
+                tabIndex={-1}
                 type="button"
               >
                 26

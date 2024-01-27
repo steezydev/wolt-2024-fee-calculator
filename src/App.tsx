@@ -72,18 +72,29 @@ const App = () => {
 
   return (
     <>
-      <header className='py-8 sm:py-12 flex flex-row items-start justify-between gap-5'>
-        <H1 className='text-black dark:text-white'>Delivery fee calculator</H1>
+      <header
+        aria-labelledby='header'
+        className='py-8 sm:py-12 flex flex-row items-start justify-between gap-5'
+      >
+        <H1 id='header' className='text-black dark:text-white'>
+          Delivery fee calculator
+        </H1>
         <ThemeSwitch />
       </header>
-      <main className='flex flex-col gap-6'>
+      <main aria-label='Main content' className='flex flex-col gap-6'>
         <div className='flex flex-row gap-3 items-center'>
           <BadgeInfoIcon className='text-primary-300' />
-          <B2 className='text-black dark:text-white'>
-            Fill the fields to calculate the delivery fee
+          <B2
+            id='orderFeeFormDescription'
+            className='text-black dark:text-white'
+          >
+            Order fee calculation form
           </B2>
         </div>
-        <form className='flex flex-col gap-4 sm:gap-6'>
+        <form
+          aria-labelledby='orderFeeFormDescription'
+          className='flex flex-col gap-4 sm:gap-6'
+        >
           <InputLabel
             label='Cart value, €'
             id='cartValueInput'
@@ -95,7 +106,7 @@ const App = () => {
               id='cartValue'
               name='cartValueInput'
               ariaLabel='Cart value in euros'
-              placeholder='20'
+              placeholder='Cart value in euros...'
               min={1}
               onBlur={cartValueInputData.handleTouch}
               isInvalid={!cartValueInputData.isValid}
@@ -114,7 +125,7 @@ const App = () => {
               id='deliveryDistance'
               name='deliveryDistanceInput'
               ariaLabel='Delivery distance in meters'
-              placeholder='900'
+              placeholder='Delivery distance in meters...'
               min={0}
               onBlur={deliveryDistanceInputData.handleTouch}
               isInvalid={!deliveryDistanceInputData.isValid}
@@ -133,7 +144,7 @@ const App = () => {
               id='numberOfItems'
               name='deliveryItemsAmountInput'
               ariaLabel='Amount of items in cart'
-              placeholder='1'
+              placeholder='Number of items...'
               min={1}
               onBlur={itemsAmountInputData.handleTouch}
               isInvalid={!itemsAmountInputData.isValid}
@@ -156,10 +167,10 @@ const App = () => {
                   id='orderTime'
                   name='deliveryOrderDateTimeInput'
                   ariaLabel='Order time'
-                  placeholder='hh.mm.yyyy HH:MM'
+                  placeholder='Date and time... (hh.mm.yyyy HH:MM)'
                 />
               )}
-              onDatetimeChange={orderTime.handleChangeDatetime}
+              onChange={orderTime.handleChange}
               onDateChange={orderTime.handleChangeDate}
               onTimeChange={orderTime.handleChangeTime}
             />

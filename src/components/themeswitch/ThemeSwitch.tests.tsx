@@ -11,7 +11,6 @@ export const themeSwitchRenderTests = (
   ThemeSwitch: React.FC<ThemeSwitchProps>
 ) => {
   describe(name, () => {
-    // === Snapshot tests ===
     describe('when asked to render', () => {
       it('renders', () => {
         const component = TestRenderer.create(
@@ -35,8 +34,14 @@ export const themeSwitchRenderTests = (
         expect(tree).toMatchSnapshot();
       });
     });
+  });
+};
 
-    // === Integration tests ===
+export const themeSwitchEventTests = (
+  name: string,
+  ThemeSwitch: React.FC<ThemeSwitchProps>
+) => {
+  describe(name, () => {
     describe('when clicked', () => {
       it('toggles theme and updates localStorage', () => {
         render(
@@ -57,20 +62,5 @@ export const themeSwitchRenderTests = (
         expect(localStorage.setItem).toHaveBeenCalledWith('theme', Theme.LIGHT);
       });
     });
-
-    // TODO: Fix this test or remove it completely
-    // it('respects system preference for dark mode', () => {
-    //   window.matchMedia = jest.fn().mockImplementation((query) => ({
-    //     matches: query === '(prefers-color-scheme: dark)',
-    //   }));
-    //   render(
-    //     <ThemeProvider>
-    //       <ThemeSwitch />
-    //     </ThemeProvider>
-    //   );
-    //   expect(screen.getByLabelText('Set dark theme')).toHaveClass(
-    //     'bg-primary-300'
-    //   );
-    // });
   });
 };

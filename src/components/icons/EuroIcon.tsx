@@ -11,6 +11,7 @@ const EuroIcon = ({ className }: IconProps) => {
       stroke='currentColor'
       strokeWidth='2'
       strokeLinecap='round'
+      aria-hidden='true'
       strokeLinejoin='round'
       className={className}
     >

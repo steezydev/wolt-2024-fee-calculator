@@ -25,7 +25,9 @@ const InputLabel = ({
       </label>
       <div className='hidden order-3 peer-data-[invalid=true]:flex gap-1.5 items-center'>
         <AlertOctagonIcon className='w-5 h-5 text-error' />
-        <B3 className='text-error'>{errorMessage}</B3>
+        <B3 id={id + 'ErrorMessage'} className='text-error'>
+          {errorMessage}
+        </B3>
       </div>
     </div>
   );

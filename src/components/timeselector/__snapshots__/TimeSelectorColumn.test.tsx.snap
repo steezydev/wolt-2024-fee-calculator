@@ -1,0 +1,965 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimeSelectorColumn when asked to render with hours renders with hours 1`] = `
+<div
+  className="flex flex-col items-center gap-1 w-full"
+>
+  <button
+    aria-label="Select previous hour"
+    className="w-full flex items-center justify-center"
+    data-test-id="selectPrevioushourButton"
+    id="selectPrevioushourButton"
+    onClick={[Function]}
+  >
+    <svg
+      className="text-black dark:text-white"
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m18 15-6-6-6 6"
+      />
+    </svg>
+  </button>
+  <div
+    className="flex flex-col overflow-auto scrollbar-hide gap-0.5 w-full max-h-56"
+  >
+    <button
+      aria-label="Select 0 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour0Button"
+      id="selectHour0Button"
+      onClick={[Function]}
+      type="button"
+    >
+      00
+    </button>
+    <button
+      aria-label="Select 1 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour1Button"
+      id="selectHour1Button"
+      onClick={[Function]}
+      type="button"
+    >
+      01
+    </button>
+    <button
+      aria-label="Select 2 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour2Button"
+      id="selectHour2Button"
+      onClick={[Function]}
+      type="button"
+    >
+      02
+    </button>
+    <button
+      aria-label="Select 3 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour3Button"
+      id="selectHour3Button"
+      onClick={[Function]}
+      type="button"
+    >
+      03
+    </button>
+    <button
+      aria-label="Select 4 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour4Button"
+      id="selectHour4Button"
+      onClick={[Function]}
+      type="button"
+    >
+      04
+    </button>
+    <button
+      aria-label="Select 5 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour5Button"
+      id="selectHour5Button"
+      onClick={[Function]}
+      type="button"
+    >
+      05
+    </button>
+    <button
+      aria-label="Select 6 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour6Button"
+      id="selectHour6Button"
+      onClick={[Function]}
+      type="button"
+    >
+      06
+    </button>
+    <button
+      aria-label="Select 7 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour7Button"
+      id="selectHour7Button"
+      onClick={[Function]}
+      type="button"
+    >
+      07
+    </button>
+    <button
+      aria-label="Select 8 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour8Button"
+      id="selectHour8Button"
+      onClick={[Function]}
+      type="button"
+    >
+      08
+    </button>
+    <button
+      aria-label="Select 9 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour9Button"
+      id="selectHour9Button"
+      onClick={[Function]}
+      type="button"
+    >
+      09
+    </button>
+    <button
+      aria-label="Select 10 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour10Button"
+      id="selectHour10Button"
+      onClick={[Function]}
+      type="button"
+    >
+      10
+    </button>
+    <button
+      aria-label="Select 11 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour11Button"
+      id="selectHour11Button"
+      onClick={[Function]}
+      type="button"
+    >
+      11
+    </button>
+    <button
+      aria-label="Select 12 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300 text-white hover:bg-primary-300"
+      data-test-id="selectHour12Button"
+      id="selectHour12Button"
+      onClick={[Function]}
+      type="button"
+    >
+      12
+    </button>
+    <button
+      aria-label="Select 13 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour13Button"
+      id="selectHour13Button"
+      onClick={[Function]}
+      type="button"
+    >
+      13
+    </button>
+    <button
+      aria-label="Select 14 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour14Button"
+      id="selectHour14Button"
+      onClick={[Function]}
+      type="button"
+    >
+      14
+    </button>
+    <button
+      aria-label="Select 15 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour15Button"
+      id="selectHour15Button"
+      onClick={[Function]}
+      type="button"
+    >
+      15
+    </button>
+    <button
+      aria-label="Select 16 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour16Button"
+      id="selectHour16Button"
+      onClick={[Function]}
+      type="button"
+    >
+      16
+    </button>
+    <button
+      aria-label="Select 17 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour17Button"
+      id="selectHour17Button"
+      onClick={[Function]}
+      type="button"
+    >
+      17
+    </button>
+    <button
+      aria-label="Select 18 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour18Button"
+      id="selectHour18Button"
+      onClick={[Function]}
+      type="button"
+    >
+      18
+    </button>
+    <button
+      aria-label="Select 19 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour19Button"
+      id="selectHour19Button"
+      onClick={[Function]}
+      type="button"
+    >
+      19
+    </button>
+    <button
+      aria-label="Select 20 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour20Button"
+      id="selectHour20Button"
+      onClick={[Function]}
+      type="button"
+    >
+      20
+    </button>
+    <button
+      aria-label="Select 21 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour21Button"
+      id="selectHour21Button"
+      onClick={[Function]}
+      type="button"
+    >
+      21
+    </button>
+    <button
+      aria-label="Select 22 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour22Button"
+      id="selectHour22Button"
+      onClick={[Function]}
+      type="button"
+    >
+      22
+    </button>
+    <button
+      aria-label="Select 23 hour"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectHour23Button"
+      id="selectHour23Button"
+      onClick={[Function]}
+      type="button"
+    >
+      23
+    </button>
+    <div
+      className="py-20"
+    />
+  </div>
+  <button
+    aria-label="Select next hour"
+    className="w-full flex items-center justify-center"
+    data-test-id="selectNexthourButton"
+    id="selectNexthourButton"
+    onClick={[Function]}
+  >
+    <svg
+      className="text-black dark:text-white"
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m6 9 6 6 6-6"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`TimeSelectorColumn when asked to render with minutes renders with minutes 1`] = `
+<div
+  className="flex flex-col items-center gap-1 w-full"
+>
+  <button
+    aria-label="Select previous minute"
+    className="w-full flex items-center justify-center"
+    data-test-id="selectPreviousminuteButton"
+    id="selectPreviousminuteButton"
+    onClick={[Function]}
+  >
+    <svg
+      className="text-black dark:text-white"
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m18 15-6-6-6 6"
+      />
+    </svg>
+  </button>
+  <div
+    className="flex flex-col overflow-auto scrollbar-hide gap-0.5 w-full max-h-56"
+  >
+    <button
+      aria-label="Select 0 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute0Button"
+      id="selectMinute0Button"
+      onClick={[Function]}
+      type="button"
+    >
+      00
+    </button>
+    <button
+      aria-label="Select 1 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute1Button"
+      id="selectMinute1Button"
+      onClick={[Function]}
+      type="button"
+    >
+      01
+    </button>
+    <button
+      aria-label="Select 2 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute2Button"
+      id="selectMinute2Button"
+      onClick={[Function]}
+      type="button"
+    >
+      02
+    </button>
+    <button
+      aria-label="Select 3 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute3Button"
+      id="selectMinute3Button"
+      onClick={[Function]}
+      type="button"
+    >
+      03
+    </button>
+    <button
+      aria-label="Select 4 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute4Button"
+      id="selectMinute4Button"
+      onClick={[Function]}
+      type="button"
+    >
+      04
+    </button>
+    <button
+      aria-label="Select 5 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute5Button"
+      id="selectMinute5Button"
+      onClick={[Function]}
+      type="button"
+    >
+      05
+    </button>
+    <button
+      aria-label="Select 6 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute6Button"
+      id="selectMinute6Button"
+      onClick={[Function]}
+      type="button"
+    >
+      06
+    </button>
+    <button
+      aria-label="Select 7 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute7Button"
+      id="selectMinute7Button"
+      onClick={[Function]}
+      type="button"
+    >
+      07
+    </button>
+    <button
+      aria-label="Select 8 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute8Button"
+      id="selectMinute8Button"
+      onClick={[Function]}
+      type="button"
+    >
+      08
+    </button>
+    <button
+      aria-label="Select 9 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute9Button"
+      id="selectMinute9Button"
+      onClick={[Function]}
+      type="button"
+    >
+      09
+    </button>
+    <button
+      aria-label="Select 10 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute10Button"
+      id="selectMinute10Button"
+      onClick={[Function]}
+      type="button"
+    >
+      10
+    </button>
+    <button
+      aria-label="Select 11 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute11Button"
+      id="selectMinute11Button"
+      onClick={[Function]}
+      type="button"
+    >
+      11
+    </button>
+    <button
+      aria-label="Select 12 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute12Button"
+      id="selectMinute12Button"
+      onClick={[Function]}
+      type="button"
+    >
+      12
+    </button>
+    <button
+      aria-label="Select 13 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute13Button"
+      id="selectMinute13Button"
+      onClick={[Function]}
+      type="button"
+    >
+      13
+    </button>
+    <button
+      aria-label="Select 14 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute14Button"
+      id="selectMinute14Button"
+      onClick={[Function]}
+      type="button"
+    >
+      14
+    </button>
+    <button
+      aria-label="Select 15 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute15Button"
+      id="selectMinute15Button"
+      onClick={[Function]}
+      type="button"
+    >
+      15
+    </button>
+    <button
+      aria-label="Select 16 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute16Button"
+      id="selectMinute16Button"
+      onClick={[Function]}
+      type="button"
+    >
+      16
+    </button>
+    <button
+      aria-label="Select 17 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute17Button"
+      id="selectMinute17Button"
+      onClick={[Function]}
+      type="button"
+    >
+      17
+    </button>
+    <button
+      aria-label="Select 18 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute18Button"
+      id="selectMinute18Button"
+      onClick={[Function]}
+      type="button"
+    >
+      18
+    </button>
+    <button
+      aria-label="Select 19 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute19Button"
+      id="selectMinute19Button"
+      onClick={[Function]}
+      type="button"
+    >
+      19
+    </button>
+    <button
+      aria-label="Select 20 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute20Button"
+      id="selectMinute20Button"
+      onClick={[Function]}
+      type="button"
+    >
+      20
+    </button>
+    <button
+      aria-label="Select 21 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute21Button"
+      id="selectMinute21Button"
+      onClick={[Function]}
+      type="button"
+    >
+      21
+    </button>
+    <button
+      aria-label="Select 22 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute22Button"
+      id="selectMinute22Button"
+      onClick={[Function]}
+      type="button"
+    >
+      22
+    </button>
+    <button
+      aria-label="Select 23 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute23Button"
+      id="selectMinute23Button"
+      onClick={[Function]}
+      type="button"
+    >
+      23
+    </button>
+    <button
+      aria-label="Select 24 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute24Button"
+      id="selectMinute24Button"
+      onClick={[Function]}
+      type="button"
+    >
+      24
+    </button>
+    <button
+      aria-label="Select 25 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute25Button"
+      id="selectMinute25Button"
+      onClick={[Function]}
+      type="button"
+    >
+      25
+    </button>
+    <button
+      aria-label="Select 26 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute26Button"
+      id="selectMinute26Button"
+      onClick={[Function]}
+      type="button"
+    >
+      26
+    </button>
+    <button
+      aria-label="Select 27 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute27Button"
+      id="selectMinute27Button"
+      onClick={[Function]}
+      type="button"
+    >
+      27
+    </button>
+    <button
+      aria-label="Select 28 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute28Button"
+      id="selectMinute28Button"
+      onClick={[Function]}
+      type="button"
+    >
+      28
+    </button>
+    <button
+      aria-label="Select 29 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute29Button"
+      id="selectMinute29Button"
+      onClick={[Function]}
+      type="button"
+    >
+      29
+    </button>
+    <button
+      aria-label="Select 30 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute30Button"
+      id="selectMinute30Button"
+      onClick={[Function]}
+      type="button"
+    >
+      30
+    </button>
+    <button
+      aria-label="Select 31 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute31Button"
+      id="selectMinute31Button"
+      onClick={[Function]}
+      type="button"
+    >
+      31
+    </button>
+    <button
+      aria-label="Select 32 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute32Button"
+      id="selectMinute32Button"
+      onClick={[Function]}
+      type="button"
+    >
+      32
+    </button>
+    <button
+      aria-label="Select 33 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute33Button"
+      id="selectMinute33Button"
+      onClick={[Function]}
+      type="button"
+    >
+      33
+    </button>
+    <button
+      aria-label="Select 34 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute34Button"
+      id="selectMinute34Button"
+      onClick={[Function]}
+      type="button"
+    >
+      34
+    </button>
+    <button
+      aria-label="Select 35 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300 text-white hover:bg-primary-300"
+      data-test-id="selectMinute35Button"
+      id="selectMinute35Button"
+      onClick={[Function]}
+      type="button"
+    >
+      35
+    </button>
+    <button
+      aria-label="Select 36 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute36Button"
+      id="selectMinute36Button"
+      onClick={[Function]}
+      type="button"
+    >
+      36
+    </button>
+    <button
+      aria-label="Select 37 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute37Button"
+      id="selectMinute37Button"
+      onClick={[Function]}
+      type="button"
+    >
+      37
+    </button>
+    <button
+      aria-label="Select 38 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute38Button"
+      id="selectMinute38Button"
+      onClick={[Function]}
+      type="button"
+    >
+      38
+    </button>
+    <button
+      aria-label="Select 39 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute39Button"
+      id="selectMinute39Button"
+      onClick={[Function]}
+      type="button"
+    >
+      39
+    </button>
+    <button
+      aria-label="Select 40 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute40Button"
+      id="selectMinute40Button"
+      onClick={[Function]}
+      type="button"
+    >
+      40
+    </button>
+    <button
+      aria-label="Select 41 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute41Button"
+      id="selectMinute41Button"
+      onClick={[Function]}
+      type="button"
+    >
+      41
+    </button>
+    <button
+      aria-label="Select 42 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute42Button"
+      id="selectMinute42Button"
+      onClick={[Function]}
+      type="button"
+    >
+      42
+    </button>
+    <button
+      aria-label="Select 43 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute43Button"
+      id="selectMinute43Button"
+      onClick={[Function]}
+      type="button"
+    >
+      43
+    </button>
+    <button
+      aria-label="Select 44 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute44Button"
+      id="selectMinute44Button"
+      onClick={[Function]}
+      type="button"
+    >
+      44
+    </button>
+    <button
+      aria-label="Select 45 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute45Button"
+      id="selectMinute45Button"
+      onClick={[Function]}
+      type="button"
+    >
+      45
+    </button>
+    <button
+      aria-label="Select 46 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute46Button"
+      id="selectMinute46Button"
+      onClick={[Function]}
+      type="button"
+    >
+      46
+    </button>
+    <button
+      aria-label="Select 47 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute47Button"
+      id="selectMinute47Button"
+      onClick={[Function]}
+      type="button"
+    >
+      47
+    </button>
+    <button
+      aria-label="Select 48 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute48Button"
+      id="selectMinute48Button"
+      onClick={[Function]}
+      type="button"
+    >
+      48
+    </button>
+    <button
+      aria-label="Select 49 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute49Button"
+      id="selectMinute49Button"
+      onClick={[Function]}
+      type="button"
+    >
+      49
+    </button>
+    <button
+      aria-label="Select 50 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute50Button"
+      id="selectMinute50Button"
+      onClick={[Function]}
+      type="button"
+    >
+      50
+    </button>
+    <button
+      aria-label="Select 51 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute51Button"
+      id="selectMinute51Button"
+      onClick={[Function]}
+      type="button"
+    >
+      51
+    </button>
+    <button
+      aria-label="Select 52 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute52Button"
+      id="selectMinute52Button"
+      onClick={[Function]}
+      type="button"
+    >
+      52
+    </button>
+    <button
+      aria-label="Select 53 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute53Button"
+      id="selectMinute53Button"
+      onClick={[Function]}
+      type="button"
+    >
+      53
+    </button>
+    <button
+      aria-label="Select 54 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute54Button"
+      id="selectMinute54Button"
+      onClick={[Function]}
+      type="button"
+    >
+      54
+    </button>
+    <button
+      aria-label="Select 55 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute55Button"
+      id="selectMinute55Button"
+      onClick={[Function]}
+      type="button"
+    >
+      55
+    </button>
+    <button
+      aria-label="Select 56 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute56Button"
+      id="selectMinute56Button"
+      onClick={[Function]}
+      type="button"
+    >
+      56
+    </button>
+    <button
+      aria-label="Select 57 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute57Button"
+      id="selectMinute57Button"
+      onClick={[Function]}
+      type="button"
+    >
+      57
+    </button>
+    <button
+      aria-label="Select 58 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute58Button"
+      id="selectMinute58Button"
+      onClick={[Function]}
+      type="button"
+    >
+      58
+    </button>
+    <button
+      aria-label="Select 59 minute"
+      className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
+      data-test-id="selectMinute59Button"
+      id="selectMinute59Button"
+      onClick={[Function]}
+      type="button"
+    >
+      59
+    </button>
+    <div
+      className="py-20"
+    />
+  </div>
+  <button
+    aria-label="Select next minute"
+    className="w-full flex items-center justify-center"
+    data-test-id="selectNextminuteButton"
+    id="selectNextminuteButton"
+    onClick={[Function]}
+  >
+    <svg
+      className="text-black dark:text-white"
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m6 9 6 6 6-6"
+      />
+    </svg>
+  </button>
+</div>
+`;

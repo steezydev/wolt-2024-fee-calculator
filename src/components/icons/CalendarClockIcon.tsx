@@ -12,6 +12,7 @@ const CalendarClockIcon = ({ className }: IconProps) => {
       strokeWidth='2'
       strokeLinecap='round'
       strokeLinejoin='round'
+      aria-hidden='true'
       className={className}
     >
       <path d='M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5' />

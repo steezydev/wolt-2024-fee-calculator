@@ -68,3 +68,26 @@ export const timeToDate = (hours: number, minutes: number): Date => {
 
     return newDate;
 };
+
+export const setDateHours = (date: Date, hours: number): Date => {
+    const newDate = new Date(date);
+    newDate.setHours(hours);
+
+    return newDate;
+};
+
+export const setDateMinutes = (date: Date, minutes: number): Date => {
+    const newDate = new Date(date);
+    newDate.setMinutes(minutes);
+
+    return newDate;
+};
+
+export const setDateDate = (date: Date, newDate: Date): Date => {
+    const newDateDate = new Date(date);
+    newDateDate.setFullYear(newDate.getFullYear());
+    newDateDate.setMonth(newDate.getMonth());
+    newDateDate.setDate(newDate.getDate());
+
+    return newDateDate;
+};
