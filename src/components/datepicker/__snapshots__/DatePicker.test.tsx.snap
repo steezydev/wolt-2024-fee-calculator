@@ -7,7 +7,7 @@ exports[`DatePicker when asked to render renders 1`] = `
   data-invalid={false}
 >
   <div
-    className="flex gap-2"
+    className="flex items-stretch gap-2"
   >
     <input
       onBlur={[Function]}
@@ -17,7 +17,7 @@ exports[`DatePicker when asked to render renders 1`] = `
     />
     <button
       aria-label="Open datepicker modal"
-      className="bg-primary-100 text-lg font-bold py-3 rounded-xl hover:bg-primary-300/20 active:bg-primary-300/50 disabled:bg-neutral-light-100 disabled:dark:bg-neutral-dark-100 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none aspect-square flex justify-center items-center px-3 h-full flex-shrink-0 flex-grow text-primary-300"
+      className="bg-primary-100 text-lg font-bold rounded-xl hover:bg-primary-300/20 active:bg-primary-300/50 disabled:bg-neutral-light-100 disabled:dark:bg-neutral-dark-100 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none aspect-square flex justify-center items-center text-primary-300 px-3.5"
       data-test-id="openDatePickerButton"
       disabled={false}
       id="openDatePickerButton"
@@ -72,7 +72,7 @@ exports[`DatePicker when asked to render with additional class name renders with
   data-invalid={false}
 >
   <div
-    className="flex gap-2"
+    className="flex items-stretch gap-2"
   >
     <input
       onBlur={[Function]}
@@ -82,7 +82,7 @@ exports[`DatePicker when asked to render with additional class name renders with
     />
     <button
       aria-label="Open datepicker modal"
-      className="bg-primary-100 text-lg font-bold py-3 rounded-xl hover:bg-primary-300/20 active:bg-primary-300/50 disabled:bg-neutral-light-100 disabled:dark:bg-neutral-dark-100 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none aspect-square flex justify-center items-center px-3 h-full flex-shrink-0 flex-grow text-primary-300"
+      className="bg-primary-100 text-lg font-bold rounded-xl hover:bg-primary-300/20 active:bg-primary-300/50 disabled:bg-neutral-light-100 disabled:dark:bg-neutral-dark-100 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none aspect-square flex justify-center items-center text-primary-300 px-3.5"
       data-test-id="openDatePickerButton"
       disabled={false}
       id="openDatePickerButton"

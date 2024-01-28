@@ -53,7 +53,7 @@ const DatePicker = ({
       data-focused={isFocused}
       className={classNames('w-full relative', className)}
     >
-      <div className='flex gap-2'>
+      <div className='flex items-stretch gap-2'>
         <DateField
           date={value}
           onDateChange={onChange}
@@ -62,7 +62,7 @@ const DatePicker = ({
         <ButtonSecondary
           onClick={() => setIsPickerOpen(true)}
           disabled={isPickerOpen}
-          className='aspect-square flex justify-center items-center px-3 h-full flex-shrink-0 flex-grow text-primary-300'
+          className='aspect-square flex justify-center items-center text-primary-300 px-3.5'
           id='openDatePickerButton'
           ariaLabel='Open datepicker modal'
         >
