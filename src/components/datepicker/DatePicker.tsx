@@ -77,7 +77,7 @@ const DatePicker = ({
           setIsPickerOpen(false);
           document.body.focus();
         }}
-        className='top-16 h-[395px] w-80 p-2'
+        className='top-16 h-[395px] w-full sm:w-80 p-2 '
       >
         <Tabs className='w-full'>
           <Tabs.Tab
@@ -87,7 +87,10 @@ const DatePicker = ({
           >
             <B3>Date</B3>
           </Tabs.Tab>
-          <Tabs.Panel value='datePickerTabButton'>
+          <Tabs.Panel
+            value='datePickerTabButton'
+            className='flex justify-center'
+          >
             <Calendar
               weekStartsOn={1}
               showOutsideDays
