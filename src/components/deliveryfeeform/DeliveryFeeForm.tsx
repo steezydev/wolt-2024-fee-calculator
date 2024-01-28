@@ -66,7 +66,7 @@ const DeliveryFeeForm = ({
     >
       <InputLabel
         label='Cart value, €'
-        id='cartValueInput'
+        id='cartValue'
         errorMessage={cartValueInputData.error}
         isInvalid={!cartValueInputData.isValid}
       >
@@ -86,7 +86,7 @@ const DeliveryFeeForm = ({
       </InputLabel>
       <InputLabel
         label='Delivery distance, m'
-        id='deliveryDistanceInput'
+        id='deliveryDistance'
         errorMessage={deliveryDistanceInputData.error}
         isInvalid={!deliveryDistanceInputData.isValid}
       >
@@ -106,7 +106,7 @@ const DeliveryFeeForm = ({
       </InputLabel>
       <InputLabel
         label='Amount of items'
-        id='deliveryItemsAmountInput'
+        id='numberOfItems'
         errorMessage={itemsAmountInputData.error}
         isInvalid={!itemsAmountInputData.isValid}
       >
@@ -126,7 +126,7 @@ const DeliveryFeeForm = ({
       </InputLabel>
       <InputLabel
         label='Order time'
-        id='deliveryOrderDateTimeInput'
+        id='orderTime'
         errorMessage='Please enter a valid date'
         isInvalid={false}
       >
