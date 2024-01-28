@@ -56,18 +56,21 @@ const Tabs = ({ children, className }: TabsProps) => {
         ))}
       </div>
       <div>
-        {tabsAndPanels.panels.map((panel, index) => (
-          <div
-            className={classNames(
-              'h-full',
-              activeTab === panel.props.value ? 'block' : 'hidden',
-              panel.props.className
-            )}
-            key={panel.props.value || index}
-          >
-            {panel.props.children}
-          </div>
-        ))}
+        {tabsAndPanels.panels.map(
+          (panel, index) =>
+            activeTab === panel.props.value && (
+              <div
+                className={classNames(
+                  'h-full',
+                  activeTab === panel.props.value ? 'block' : 'hidden',
+                  panel.props.className
+                )}
+                key={panel.props.value || index}
+              >
+                {panel.props.children}
+              </div>
+            )
+        )}
       </div>
     </div>
   );

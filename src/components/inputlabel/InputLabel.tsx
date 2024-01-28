@@ -9,6 +9,7 @@ const InputLabel = ({
   id,
   children,
   errorMessage,
+  isInvalid,
   className,
 }: InputLabelProps) => {
   return (
@@ -23,12 +24,14 @@ const InputLabel = ({
       >
         {label}
       </label>
-      <div className='hidden order-3 peer-data-[invalid=true]:flex gap-1.5 items-center'>
-        <AlertOctagonIcon className='w-5 h-5 text-error' />
-        <B3 id={id + 'ErrorMessage'} className='text-error'>
-          {errorMessage}
-        </B3>
-      </div>
+      {isInvalid && (
+        <div className='order-3 flex gap-1.5 items-center'>
+          <AlertOctagonIcon className='w-5 h-5 text-error' />
+          <B3 id={id + 'ErrorMessage'} className='text-error'>
+            {errorMessage}
+          </B3>
+        </div>
+      )}
     </div>
   );
 };

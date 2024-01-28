@@ -13,6 +13,7 @@ exports[`Tabs when asked to render with additional class renders with additional
       data-test-id="tab1Button"
       id="tab1Button"
       onClick={[Function]}
+      type="button"
     >
       Tab 1
     </button>
@@ -22,6 +23,7 @@ exports[`Tabs when asked to render with additional class renders with additional
       data-test-id="tab2Button"
       id="tab2Button"
       onClick={[Function]}
+      type="button"
     >
       Tab 2
     </button>
@@ -31,11 +33,6 @@ exports[`Tabs when asked to render with additional class renders with additional
       className="h-full block"
     >
       Panel 1 
-    </div>
-    <div
-      className="h-full hidden"
-    >
-      Panel 2
     </div>
   </div>
 </div>
@@ -54,6 +51,7 @@ exports[`Tabs when asked to render with children renders with children 1`] = `
       data-test-id="tab1Button"
       id="tab1Button"
       onClick={[Function]}
+      type="button"
     >
       Tab 1
     </button>
@@ -63,6 +61,7 @@ exports[`Tabs when asked to render with children renders with children 1`] = `
       data-test-id="tab2Button"
       id="tab2Button"
       onClick={[Function]}
+      type="button"
     >
       Tab 2
     </button>
@@ -72,11 +71,6 @@ exports[`Tabs when asked to render with children renders with children 1`] = `
       className="h-full block"
     >
       Panel 1 
-    </div>
-    <div
-      className="h-full hidden"
-    >
-      Panel 2
     </div>
   </div>
 </div>

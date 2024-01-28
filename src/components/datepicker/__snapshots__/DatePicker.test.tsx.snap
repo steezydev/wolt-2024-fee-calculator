@@ -22,6 +22,7 @@ exports[`DatePicker when asked to render renders 1`] = `
       disabled={false}
       id="openDatePickerButton"
       onClick={[Function]}
+      type="button"
     >
       <svg
         aria-hidden="true"
@@ -86,6 +87,7 @@ exports[`DatePicker when asked to render with additional class name renders with
       disabled={false}
       id="openDatePickerButton"
       onClick={[Function]}
+      type="button"
     >
       <svg
         aria-hidden="true"

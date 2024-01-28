@@ -7,7 +7,7 @@ exports[`ButtonRound when asked to render disabled renders disabled 1`] = `
   data-test-id="test-button"
   disabled={true}
   id="test-button"
-  onClick={[Function]}
+  type="button"
 >
   Test Button
 </button>
@@ -19,7 +19,7 @@ exports[`ButtonRound when asked to render with additional class renders with add
   className="rounded-full p-2 text-black dark:text-white hover:bg-primary-300/90 hover:text-white active:bg-primary-300/80 disabled:bg-primary-300/60 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none some-class"
   data-test-id="test-button"
   id="test-button"
-  onClick={[Function]}
+  type="button"
 >
   Test Button
 </button>
@@ -31,7 +31,7 @@ exports[`ButtonRound when asked to render with children renders with children 1`
   className="rounded-full p-2 text-black dark:text-white hover:bg-primary-300/90 hover:text-white active:bg-primary-300/80 disabled:bg-primary-300/60 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none"
   data-test-id="test-button"
   id="test-button"
-  onClick={[Function]}
+  type="button"
 >
   Test Button
 </button>

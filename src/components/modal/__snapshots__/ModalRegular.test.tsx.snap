@@ -21,7 +21,8 @@ exports[`ModalRegular when asked to render with children renders with children 1
       className="rounded-full p-2 text-black dark:text-white hover:bg-primary-300/90 hover:text-white active:bg-primary-300/80 disabled:bg-primary-300/60 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none"
       data-test-id="closeModalButtontestModal"
       id="closeModalButtontestModal"
-      onClick={[Function]}
+      onClick={[MockFunction]}
+      type="button"
     >
       <svg
         className="w-4 h-4"
@@ -73,7 +74,8 @@ exports[`ModalRegular when asked to render without children renders without chil
       className="rounded-full p-2 text-black dark:text-white hover:bg-primary-300/90 hover:text-white active:bg-primary-300/80 disabled:bg-primary-300/60 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none"
       data-test-id="closeModalButtontestModal"
       id="closeModalButtontestModal"
-      onClick={[Function]}
+      onClick={[MockFunction]}
+      type="button"
     >
       <svg
         className="w-4 h-4"

@@ -1,4 +1,3 @@
-import InputRegular from '@/components/input/InputRegular';
 import { InputLabelProps } from '@/types/props/InputLabelProps';
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
@@ -8,16 +7,28 @@ export const inputLabelRenderTests = (
   InputLabel: React.FC<InputLabelProps>
 ) => {
   describe(name, () => {
-    describe('when asked to render with label', () => {
-      it('renders with label', () => {
+    describe('when asked to render', () => {
+      it('renders', () => {
         const component = TestRenderer.create(
           <InputLabel label='Test label' id='testInput'>
-            <InputRegular
-              required
-              id='testInput'
-              name='testInput'
-              ariaLabel='Test label'
-            />
+            <input id='testInput' name='testInput' />
+          </InputLabel>
+        );
+        const tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+    });
+
+    describe('when asked to render with error', () => {
+      it('renders with error', () => {
+        const component = TestRenderer.create(
+          <InputLabel
+            label='Test label'
+            id='testInput'
+            errorMessage='Test error'
+            isInvalid={true}
+          >
+            <input aria-invalid={true} id='testInput' name='testInput' />
           </InputLabel>
         );
         const tree = component.toJSON();
@@ -29,16 +40,7 @@ export const inputLabelRenderTests = (
       it('renders with additional class', () => {
         const component = TestRenderer.create(
           <InputLabel label='Test label' id='test-input' className='some-class'>
-            <InputRegular
-              required
-              id='test-input'
-              name='test-input'
-              type='number'
-              ariaLabel='Test label'
-              placeholder='20'
-              onChange={() => {}}
-              value={'20'}
-            />
+            <input id='testInput' name='testInput' />
           </InputLabel>
         );
         const tree = component.toJSON();

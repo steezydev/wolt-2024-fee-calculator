@@ -23,7 +23,7 @@ const TimeSelector = ({
         const child = element.children[value];
 
         const scrollPosition =
-          (child as HTMLElement).offsetTop - element.clientHeight / 2;
+          (child as HTMLElement).offsetTop - element.clientHeight / 2 - 30;
 
         element.scrollTo({ top: scrollPosition, behavior: 'smooth' });
       }
@@ -31,7 +31,6 @@ const TimeSelector = ({
     []
   );
 
-  //TODO: Fix scrolling to the position of the selected item on mount (it only works on rerender now) offsetTop and clientHeight are 0 on mount
   // Scroll to the position of the selected item on mount
   useEffect(() => {
     if (time) {

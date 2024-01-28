@@ -189,6 +189,9 @@ export const dateFieldEventTests = (
         const openModalButton = screen.getByLabelText('Open datepicker modal');
         fireEvent.click(openModalButton);
 
+        const tab2Button = screen.getByLabelText('Open time picker tab');
+        fireEvent.click(tab2Button);
+
         const hourButton = screen.getByLabelText('Select 14 hour');
         expect(hourButton).toBeInTheDocument();
         fireEvent.click(hourButton);

@@ -77,8 +77,6 @@ export const tabsRenderTests = (name: string, Tabs: React.FC<TabsProps>) => {
         );
 
         expect(screen.getByText('Panel 1')).toHaveClass('block');
-
-        expect(screen.getByText('Panel 2')).toHaveClass('hidden');
       });
     });
   });
@@ -107,8 +105,6 @@ export const tabsEventTests = (name: string, Tabs: React.FC<TabsProps>) => {
         expect(screen.getByLabelText('Tab 2 label')).toHaveClass(
           'bg-primary-300'
         );
-
-        expect(screen.getByText('Panel 1')).toHaveClass('hidden');
 
         expect(screen.getByText('Panel 2')).toHaveClass('block');
       });

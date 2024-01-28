@@ -6,7 +6,6 @@ exports[`TimeSelectorItem when asked to render type hour active renders type hou
   className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300 text-white hover:bg-primary-300"
   data-test-id="selectHour15Button"
   id="selectHour15Button"
-  onClick={[Function]}
   type="button"
 >
   15
@@ -19,7 +18,6 @@ exports[`TimeSelectorItem when asked to render type hour renders type hour 1`] =
   className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
   data-test-id="selectHour15Button"
   id="selectHour15Button"
-  onClick={[Function]}
   type="button"
 >
   15
@@ -32,7 +30,6 @@ exports[`TimeSelectorItem when asked to render type minute active renders type m
   className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300 text-white hover:bg-primary-300"
   data-test-id="selectMinute35Button"
   id="selectMinute35Button"
-  onClick={[Function]}
   type="button"
 >
   35
@@ -45,7 +42,6 @@ exports[`TimeSelectorItem when asked to render type minute renders type minute 1
   className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
   data-test-id="selectMinute35Button"
   id="selectMinute35Button"
-  onClick={[Function]}
   type="button"
 >
   35

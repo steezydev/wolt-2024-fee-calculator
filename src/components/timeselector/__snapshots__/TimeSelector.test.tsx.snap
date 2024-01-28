@@ -13,6 +13,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       data-test-id="selectPrevioushourButton"
       id="selectPrevioushourButton"
       onClick={[Function]}
+      type="button"
     >
       <svg
         aria-hidden="true"
@@ -276,7 +277,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
         23
       </button>
       <div
-        className="py-20"
+        className="py-24"
       />
     </div>
     <button
@@ -285,6 +286,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       data-test-id="selectNexthourButton"
       id="selectNexthourButton"
       onClick={[Function]}
+      type="button"
     >
       <svg
         aria-hidden="true"
@@ -314,6 +316,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       data-test-id="selectPreviousminuteButton"
       id="selectPreviousminuteButton"
       onClick={[Function]}
+      type="button"
     >
       <svg
         aria-hidden="true"
@@ -937,7 +940,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
         59
       </button>
       <div
-        className="py-20"
+        className="py-24"
       />
     </div>
     <button
@@ -946,6 +949,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       data-test-id="selectNextminuteButton"
       id="selectNextminuteButton"
       onClick={[Function]}
+      type="button"
     >
       <svg
         aria-hidden="true"
@@ -982,6 +986,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       data-test-id="selectPrevioushourButton"
       id="selectPrevioushourButton"
       onClick={[Function]}
+      type="button"
     >
       <svg
         aria-hidden="true"
@@ -1245,7 +1250,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
         23
       </button>
       <div
-        className="py-20"
+        className="py-24"
       />
     </div>
     <button
@@ -1254,6 +1259,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       data-test-id="selectNexthourButton"
       id="selectNexthourButton"
       onClick={[Function]}
+      type="button"
     >
       <svg
         aria-hidden="true"
@@ -1283,6 +1289,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       data-test-id="selectPreviousminuteButton"
       id="selectPreviousminuteButton"
       onClick={[Function]}
+      type="button"
     >
       <svg
         aria-hidden="true"
@@ -1906,7 +1913,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
         59
       </button>
       <div
-        className="py-20"
+        className="py-24"
       />
     </div>
     <button
@@ -1915,6 +1922,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       data-test-id="selectNextminuteButton"
       id="selectNextminuteButton"
       onClick={[Function]}
+      type="button"
     >
       <svg
         aria-hidden="true"

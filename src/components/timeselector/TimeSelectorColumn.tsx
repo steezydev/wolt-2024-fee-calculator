@@ -32,7 +32,7 @@ const TimeSelectorColumn = React.forwardRef<
             onClick={() => onChange(item)}
           />
         ))}
-        <div className='py-20'></div>
+        <div className='py-24'></div>
       </div>
       <ButtonUnstyled
         id={`selectNext${type}Button`}
