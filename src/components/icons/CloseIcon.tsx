@@ -12,6 +12,7 @@ const CloseIcon = ({ className }: IconProps) => {
       strokeWidth='2'
       strokeLinecap='round'
       strokeLinejoin='round'
+      aria-hidden='true'
       className={className}
     >
       <path d='M18 6 6 18' />
