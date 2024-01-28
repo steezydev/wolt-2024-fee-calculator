@@ -51,7 +51,7 @@ export const autoCompleteDate = (dateStr: string): string => {
 
     if (minute && minute.length === 1) {
         minute += '0'; // Add trailing zero if only one digit is entered
-    } else if ((minute === undefined || minute.length === 0) && hour !== '00') {
+    } else if (minute === undefined || minute.length === 0) {
         minute = '00'; // Default to 00 if minute is empty but hour is not
     }
 
@@ -60,27 +60,6 @@ export const autoCompleteDate = (dateStr: string): string => {
 
 export const dateTimeStringToDate = (dateTimeString: string): Date => {
     return parse(dateTimeString, 'dd.MM.yyyy HH:mm', new Date());
-};
-
-export const timeToDate = (hours: number, minutes: number): Date => {
-    const newDate = new Date();
-    newDate.setHours(hours, minutes, 0, 0);
-
-    return newDate;
-};
-
-export const setDateHours = (date: Date, hours: number): Date => {
-    const newDate = new Date(date);
-    newDate.setHours(hours);
-
-    return newDate;
-};
-
-export const setDateMinutes = (date: Date, minutes: number): Date => {
-    const newDate = new Date(date);
-    newDate.setMinutes(minutes);
-
-    return newDate;
 };
 
 export const setDateDate = (date: Date, newDate: Date): Date => {
