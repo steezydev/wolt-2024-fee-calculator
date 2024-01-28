@@ -67,7 +67,7 @@ exports[`DeliveryFeeForm when asked to render renders correctly 1`] = `
     </div>
     <label
       className="text-neutral-light-300 dark:text-neutral-dark-300 text-sm font-semibold order-1 peer-focus:text-primary-300 peer-data-[invalid=true]:text-error peer-data-[focused=true]:peer-data-[invalid=false]:text-primary-300"
-      htmlFor="cartValueInput"
+      htmlFor="cartValue"
     >
       Cart value, €
     </label>
@@ -132,7 +132,7 @@ exports[`DeliveryFeeForm when asked to render renders correctly 1`] = `
     </div>
     <label
       className="text-neutral-light-300 dark:text-neutral-dark-300 text-sm font-semibold order-1 peer-focus:text-primary-300 peer-data-[invalid=true]:text-error peer-data-[focused=true]:peer-data-[invalid=false]:text-primary-300"
-      htmlFor="deliveryDistanceInput"
+      htmlFor="deliveryDistance"
     >
       Delivery distance, m
     </label>
@@ -164,7 +164,7 @@ exports[`DeliveryFeeForm when asked to render renders correctly 1`] = `
     />
     <label
       className="text-neutral-light-300 dark:text-neutral-dark-300 text-sm font-semibold order-1 peer-focus:text-primary-300 peer-data-[invalid=true]:text-error peer-data-[focused=true]:peer-data-[invalid=false]:text-primary-300"
-      htmlFor="deliveryItemsAmountInput"
+      htmlFor="numberOfItems"
     >
       Amount of items
     </label>
@@ -293,14 +293,14 @@ exports[`DeliveryFeeForm when asked to render renders correctly 1`] = `
     </div>
     <label
       className="text-neutral-light-300 dark:text-neutral-dark-300 text-sm font-semibold order-1 peer-focus:text-primary-300 peer-data-[invalid=true]:text-error peer-data-[focused=true]:peer-data-[invalid=false]:text-primary-300"
-      htmlFor="deliveryOrderDateTimeInput"
+      htmlFor="orderTime"
     >
       Order time
     </label>
   </div>
   <button
     aria-label="Calculate delivery price"
-    className="bg-primary-300 text-white text-lg font-bold py-3 rounded-xl hover:bg-primary-300/90 active:bg-primary-300/80 disabled:bg-primary-300/60 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none mt-4 w-full"
+    className="bg-primary-300 text-white text-lg font-bold py-3 rounded-xl hover:bg-primary-300/90 active:bg-primary-300/80 disabled:bg-neutral-700 disabled:text-white/60 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none mt-4 w-full"
     data-test-id="submitCalculateDeliveryPrice"
     disabled={true}
     id="submitCalculateDeliveryPrice"
@@ -378,7 +378,7 @@ exports[`DeliveryFeeForm when asked to render wtih additional class name renders
     </div>
     <label
       className="text-neutral-light-300 dark:text-neutral-dark-300 text-sm font-semibold order-1 peer-focus:text-primary-300 peer-data-[invalid=true]:text-error peer-data-[focused=true]:peer-data-[invalid=false]:text-primary-300"
-      htmlFor="cartValueInput"
+      htmlFor="cartValue"
     >
       Cart value, €
     </label>
@@ -443,7 +443,7 @@ exports[`DeliveryFeeForm when asked to render wtih additional class name renders
     </div>
     <label
       className="text-neutral-light-300 dark:text-neutral-dark-300 text-sm font-semibold order-1 peer-focus:text-primary-300 peer-data-[invalid=true]:text-error peer-data-[focused=true]:peer-data-[invalid=false]:text-primary-300"
-      htmlFor="deliveryDistanceInput"
+      htmlFor="deliveryDistance"
     >
       Delivery distance, m
     </label>
@@ -475,7 +475,7 @@ exports[`DeliveryFeeForm when asked to render wtih additional class name renders
     />
     <label
       className="text-neutral-light-300 dark:text-neutral-dark-300 text-sm font-semibold order-1 peer-focus:text-primary-300 peer-data-[invalid=true]:text-error peer-data-[focused=true]:peer-data-[invalid=false]:text-primary-300"
-      htmlFor="deliveryItemsAmountInput"
+      htmlFor="numberOfItems"
     >
       Amount of items
     </label>
@@ -604,14 +604,14 @@ exports[`DeliveryFeeForm when asked to render wtih additional class name renders
     </div>
     <label
       className="text-neutral-light-300 dark:text-neutral-dark-300 text-sm font-semibold order-1 peer-focus:text-primary-300 peer-data-[invalid=true]:text-error peer-data-[focused=true]:peer-data-[invalid=false]:text-primary-300"
-      htmlFor="deliveryOrderDateTimeInput"
+      htmlFor="orderTime"
     >
       Order time
     </label>
   </div>
   <button
     aria-label="Calculate delivery price"
-    className="bg-primary-300 text-white text-lg font-bold py-3 rounded-xl hover:bg-primary-300/90 active:bg-primary-300/80 disabled:bg-primary-300/60 disabled:text-white/40 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none mt-4 w-full"
+    className="bg-primary-300 text-white text-lg font-bold py-3 rounded-xl hover:bg-primary-300/90 active:bg-primary-300/80 disabled:bg-neutral-700 disabled:text-white/60 disabled:cursor-not-allowed focus-visible:ring-4 focus-visible:ring-focus focus:outline-none focus-visible:outline-none mt-4 w-full"
     data-test-id="submitCalculateDeliveryPrice"
     disabled={true}
     id="submitCalculateDeliveryPrice"

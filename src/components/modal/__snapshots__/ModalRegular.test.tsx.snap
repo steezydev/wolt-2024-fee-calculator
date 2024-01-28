@@ -25,6 +25,7 @@ exports[`ModalRegular when asked to render with children renders with children 1
       type="button"
     >
       <svg
+        aria-hidden="true"
         className="w-4 h-4"
         fill="none"
         height="24"
@@ -78,6 +79,7 @@ exports[`ModalRegular when asked to render without children renders without chil
       type="button"
     >
       <svg
+        aria-hidden="true"
         className="w-4 h-4"
         fill="none"
         height="24"
