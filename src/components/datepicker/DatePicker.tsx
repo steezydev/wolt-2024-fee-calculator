@@ -89,14 +89,9 @@ const DatePicker = ({
           </Tabs.Tab>
           <Tabs.Panel
             value='datePickerTabButton'
-            className='flex justify-center'
+            className='flex justify-center mt-3'
           >
-            <Calendar
-              weekStartsOn={1}
-              showOutsideDays
-              selectedDate={value}
-              onChange={onDateChange}
-            />
+            <Calendar selectedDate={value} onChange={onDateChange} />
           </Tabs.Panel>
           <Tabs.Tab
             id='timePickerTabButton'

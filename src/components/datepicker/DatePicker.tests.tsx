@@ -165,7 +165,7 @@ export const dateFieldEventTests = (
         const openModalButton = screen.getByLabelText('Open datepicker modal');
         fireEvent.click(openModalButton);
 
-        const day = screen.getByRole('gridcell', { name: '14' });
+        const day = screen.getByLabelText('Choose Sunday, 14 January 2024');
         expect(day).toBeInTheDocument();
 
         fireEvent.click(day);

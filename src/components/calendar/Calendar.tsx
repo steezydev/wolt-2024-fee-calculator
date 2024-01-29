@@ -1,32 +1,21 @@
-import { classNames } from '@/helpers/classNames';
 import { setDateDate } from '@/helpers/date';
 import { CalendarProps } from '@/types/props/CalendarProps';
-import { DayPicker } from 'react-day-picker';
-import 'react-day-picker/dist/style.css';
+import { enGB } from 'date-fns/locale';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
-const Calendar = ({
-  selectedDate,
-  onChange,
-  weekStartsOn = 1,
-  showOutsideDays = true,
-  className,
-}: CalendarProps) => {
-  const handleDayClick = (date: Date) => {
+const Calendar = ({ selectedDate, onChange }: CalendarProps) => {
+  const handleDateChange = (date: Date | null) => {
+    if (date == null) return;
     onChange?.(setDateDate(selectedDate ?? new Date(), date));
   };
 
   return (
-    <DayPicker
-      weekStartsOn={weekStartsOn}
-      showOutsideDays={showOutsideDays}
-      mode='single'
+    <DatePicker
       selected={selectedDate}
-      onDayClick={handleDayClick}
-      className={classNames('w-fit text-black dark:text-white', className)}
-      modifiersClassNames={{
-        selected: 'bg-primary-300 text-white',
-        today: 'my-today',
-      }}
+      onChange={handleDateChange}
+      locale={enGB}
+      inline
     />
   );
 };

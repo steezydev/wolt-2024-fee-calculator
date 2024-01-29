@@ -20,24 +20,6 @@ export const calendarRenderTests = (
       });
     });
 
-    describe('when asked to render with week starting on Tuesday', () => {
-      it('renders with week starting on Tuesday', () => {
-        const component = TestRenderer.create(<Calendar weekStartsOn={2} />);
-        const tree = component.toJSON();
-        expect(tree).toMatchSnapshot();
-      });
-    });
-
-    describe('when asked to render without outside dates', () => {
-      it('renders without outside dates', () => {
-        const component = TestRenderer.create(
-          <Calendar showOutsideDays={false} />
-        );
-        const tree = component.toJSON();
-        expect(tree).toMatchSnapshot();
-      });
-    });
-
     describe('when asked to render with selected date', () => {
       it('renders with selected date', () => {
         const component = TestRenderer.create(
@@ -48,23 +30,13 @@ export const calendarRenderTests = (
       });
     });
 
-    describe('when asked to render with additional class', () => {
-      it('renders with additional class', () => {
-        const component = TestRenderer.create(
-          <Calendar className='some-class' />
-        );
-        const tree = component.toJSON();
-        expect(tree).toMatchSnapshot();
-      });
-    });
-
     describe('when asked to render with selected date', () => {
-      it('selected date has active class', () => {
+      it('date is selected', () => {
         render(<Calendar selectedDate={testDate} />);
 
-        expect(screen.getByText('17', { selector: 'button' })).toHaveClass(
-          'bg-primary-300 text-white'
-        );
+        expect(
+          screen.getByLabelText('Choose Wednesday, 17 January 2024')
+        ).toHaveAttribute('aria-selected', 'true');
       });
     });
   });
@@ -81,7 +53,9 @@ export const calendarEventTests = (
           <Calendar onChange={mockOnDateChange} selectedDate={testDate} />
         );
 
-        const newDateButton = screen.getByText('20', { selector: 'button' });
+        const newDateButton = screen.getByLabelText(
+          'Choose Wednesday, 17 January 2024'
+        );
         fireEvent.click(newDateButton);
 
         expect(mockOnDateChange).toHaveBeenCalledTimes(1);
