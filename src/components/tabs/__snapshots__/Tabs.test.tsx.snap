@@ -9,7 +9,8 @@ exports[`Tabs when asked to render with additional class renders with additional
   >
     <button
       aria-label="Tab 1 label"
-      className="py-1 px-4 w-full rounded-l-xl bg-primary-300 text-white"
+      aria-selected={true}
+      className="py-1 px-4 w-full font-semibold text-black dark:text-white rounded-l-xl bg-primary-300/70"
       data-test-id="tab1Button"
       id="tab1Button"
       onClick={[Function]}
@@ -19,7 +20,8 @@ exports[`Tabs when asked to render with additional class renders with additional
     </button>
     <button
       aria-label="Tab 2 label"
-      className="py-1 px-4 w-full rounded-r-xl bg-primary-100 hover:bg-primary-300/80 hover:text-white text-black dark:text-white"
+      aria-selected={false}
+      className="py-1 px-4 w-full font-semibold text-black dark:text-white rounded-r-xl bg-primary-100 hover:bg-primary-300/70"
       data-test-id="tab2Button"
       id="tab2Button"
       onClick={[Function]}
@@ -47,7 +49,8 @@ exports[`Tabs when asked to render with children renders with children 1`] = `
   >
     <button
       aria-label="Tab 1 label"
-      className="py-1 px-4 w-full rounded-l-xl bg-primary-300 text-white"
+      aria-selected={true}
+      className="py-1 px-4 w-full font-semibold text-black dark:text-white rounded-l-xl bg-primary-300/70"
       data-test-id="tab1Button"
       id="tab1Button"
       onClick={[Function]}
@@ -57,7 +60,8 @@ exports[`Tabs when asked to render with children renders with children 1`] = `
     </button>
     <button
       aria-label="Tab 2 label"
-      className="py-1 px-4 w-full rounded-r-xl bg-primary-100 hover:bg-primary-300/80 hover:text-white text-black dark:text-white"
+      aria-selected={false}
+      className="py-1 px-4 w-full font-semibold text-black dark:text-white rounded-r-xl bg-primary-100 hover:bg-primary-300/70"
       data-test-id="tab2Button"
       id="tab2Button"
       onClick={[Function]}

@@ -3,7 +3,8 @@
 exports[`TimeSelectorItem when asked to render type hour active renders type hour active 1`] = `
 <button
   aria-label="Select 15 hour"
-  className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300 text-white hover:bg-primary-300"
+  aria-selected={true}
+  className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300/70  hover:bg-primary-300/70"
   data-test-id="selectHour15Button"
   id="selectHour15Button"
   type="button"
@@ -27,7 +28,8 @@ exports[`TimeSelectorItem when asked to render type hour renders type hour 1`] =
 exports[`TimeSelectorItem when asked to render type minute active renders type minute active 1`] = `
 <button
   aria-label="Select 35 minute"
-  className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300 text-white hover:bg-primary-300"
+  aria-selected={true}
+  className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300/70  hover:bg-primary-300/70"
   data-test-id="selectMinute35Button"
   id="selectMinute35Button"
   type="button"

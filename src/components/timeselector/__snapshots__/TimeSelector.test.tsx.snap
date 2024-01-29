@@ -38,6 +38,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
     >
       <button
         aria-label="Select 0 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour0Button"
         id="selectHour0Button"
@@ -48,6 +49,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 1 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour1Button"
         id="selectHour1Button"
@@ -58,6 +60,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 2 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour2Button"
         id="selectHour2Button"
@@ -68,6 +71,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 3 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour3Button"
         id="selectHour3Button"
@@ -78,6 +82,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 4 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour4Button"
         id="selectHour4Button"
@@ -88,6 +93,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 5 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour5Button"
         id="selectHour5Button"
@@ -98,6 +104,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 6 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour6Button"
         id="selectHour6Button"
@@ -108,6 +115,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 7 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour7Button"
         id="selectHour7Button"
@@ -118,6 +126,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 8 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour8Button"
         id="selectHour8Button"
@@ -128,6 +137,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 9 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour9Button"
         id="selectHour9Button"
@@ -138,6 +148,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 10 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour10Button"
         id="selectHour10Button"
@@ -148,6 +159,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 11 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour11Button"
         id="selectHour11Button"
@@ -158,7 +170,8 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 12 hour"
-        className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300 text-white hover:bg-primary-300"
+        aria-selected={true}
+        className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300/70  hover:bg-primary-300/70"
         data-test-id="selectHour12Button"
         id="selectHour12Button"
         onClick={[Function]}
@@ -168,6 +181,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 13 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour13Button"
         id="selectHour13Button"
@@ -178,6 +192,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 14 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour14Button"
         id="selectHour14Button"
@@ -188,6 +203,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 15 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour15Button"
         id="selectHour15Button"
@@ -198,6 +214,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 16 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour16Button"
         id="selectHour16Button"
@@ -208,6 +225,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 17 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour17Button"
         id="selectHour17Button"
@@ -218,6 +236,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 18 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour18Button"
         id="selectHour18Button"
@@ -228,6 +247,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 19 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour19Button"
         id="selectHour19Button"
@@ -238,6 +258,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 20 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour20Button"
         id="selectHour20Button"
@@ -248,6 +269,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 21 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour21Button"
         id="selectHour21Button"
@@ -258,6 +280,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 22 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour22Button"
         id="selectHour22Button"
@@ -268,6 +291,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 23 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour23Button"
         id="selectHour23Button"
@@ -341,6 +365,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
     >
       <button
         aria-label="Select 0 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute0Button"
         id="selectMinute0Button"
@@ -351,6 +376,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 1 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute1Button"
         id="selectMinute1Button"
@@ -361,6 +387,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 2 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute2Button"
         id="selectMinute2Button"
@@ -371,6 +398,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 3 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute3Button"
         id="selectMinute3Button"
@@ -381,6 +409,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 4 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute4Button"
         id="selectMinute4Button"
@@ -391,6 +420,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 5 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute5Button"
         id="selectMinute5Button"
@@ -401,6 +431,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 6 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute6Button"
         id="selectMinute6Button"
@@ -411,6 +442,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 7 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute7Button"
         id="selectMinute7Button"
@@ -421,6 +453,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 8 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute8Button"
         id="selectMinute8Button"
@@ -431,6 +464,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 9 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute9Button"
         id="selectMinute9Button"
@@ -441,6 +475,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 10 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute10Button"
         id="selectMinute10Button"
@@ -451,6 +486,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 11 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute11Button"
         id="selectMinute11Button"
@@ -461,6 +497,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 12 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute12Button"
         id="selectMinute12Button"
@@ -471,6 +508,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 13 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute13Button"
         id="selectMinute13Button"
@@ -481,6 +519,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 14 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute14Button"
         id="selectMinute14Button"
@@ -491,6 +530,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 15 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute15Button"
         id="selectMinute15Button"
@@ -501,6 +541,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 16 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute16Button"
         id="selectMinute16Button"
@@ -511,6 +552,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 17 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute17Button"
         id="selectMinute17Button"
@@ -521,6 +563,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 18 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute18Button"
         id="selectMinute18Button"
@@ -531,6 +574,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 19 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute19Button"
         id="selectMinute19Button"
@@ -541,6 +585,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 20 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute20Button"
         id="selectMinute20Button"
@@ -551,6 +596,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 21 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute21Button"
         id="selectMinute21Button"
@@ -561,6 +607,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 22 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute22Button"
         id="selectMinute22Button"
@@ -571,6 +618,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 23 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute23Button"
         id="selectMinute23Button"
@@ -581,6 +629,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 24 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute24Button"
         id="selectMinute24Button"
@@ -591,6 +640,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 25 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute25Button"
         id="selectMinute25Button"
@@ -601,6 +651,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 26 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute26Button"
         id="selectMinute26Button"
@@ -611,6 +662,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 27 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute27Button"
         id="selectMinute27Button"
@@ -621,6 +673,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 28 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute28Button"
         id="selectMinute28Button"
@@ -631,6 +684,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 29 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute29Button"
         id="selectMinute29Button"
@@ -641,6 +695,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 30 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute30Button"
         id="selectMinute30Button"
@@ -651,6 +706,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 31 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute31Button"
         id="selectMinute31Button"
@@ -661,6 +717,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 32 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute32Button"
         id="selectMinute32Button"
@@ -671,6 +728,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 33 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute33Button"
         id="selectMinute33Button"
@@ -681,6 +739,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 34 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute34Button"
         id="selectMinute34Button"
@@ -691,7 +750,8 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 35 minute"
-        className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300 text-white hover:bg-primary-300"
+        aria-selected={true}
+        className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300/70  hover:bg-primary-300/70"
         data-test-id="selectMinute35Button"
         id="selectMinute35Button"
         onClick={[Function]}
@@ -701,6 +761,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 36 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute36Button"
         id="selectMinute36Button"
@@ -711,6 +772,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 37 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute37Button"
         id="selectMinute37Button"
@@ -721,6 +783,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 38 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute38Button"
         id="selectMinute38Button"
@@ -731,6 +794,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 39 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute39Button"
         id="selectMinute39Button"
@@ -741,6 +805,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 40 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute40Button"
         id="selectMinute40Button"
@@ -751,6 +816,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 41 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute41Button"
         id="selectMinute41Button"
@@ -761,6 +827,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 42 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute42Button"
         id="selectMinute42Button"
@@ -771,6 +838,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 43 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute43Button"
         id="selectMinute43Button"
@@ -781,6 +849,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 44 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute44Button"
         id="selectMinute44Button"
@@ -791,6 +860,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 45 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute45Button"
         id="selectMinute45Button"
@@ -801,6 +871,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 46 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute46Button"
         id="selectMinute46Button"
@@ -811,6 +882,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 47 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute47Button"
         id="selectMinute47Button"
@@ -821,6 +893,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 48 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute48Button"
         id="selectMinute48Button"
@@ -831,6 +904,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 49 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute49Button"
         id="selectMinute49Button"
@@ -841,6 +915,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 50 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute50Button"
         id="selectMinute50Button"
@@ -851,6 +926,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 51 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute51Button"
         id="selectMinute51Button"
@@ -861,6 +937,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 52 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute52Button"
         id="selectMinute52Button"
@@ -871,6 +948,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 53 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute53Button"
         id="selectMinute53Button"
@@ -881,6 +959,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 54 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute54Button"
         id="selectMinute54Button"
@@ -891,6 +970,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 55 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute55Button"
         id="selectMinute55Button"
@@ -901,6 +981,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 56 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute56Button"
         id="selectMinute56Button"
@@ -911,6 +992,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 57 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute57Button"
         id="selectMinute57Button"
@@ -921,6 +1003,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 58 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute58Button"
         id="selectMinute58Button"
@@ -931,6 +1014,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
       </button>
       <button
         aria-label="Select 59 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute59Button"
         id="selectMinute59Button"
@@ -1011,6 +1095,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
     >
       <button
         aria-label="Select 0 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour0Button"
         id="selectHour0Button"
@@ -1021,6 +1106,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 1 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour1Button"
         id="selectHour1Button"
@@ -1031,6 +1117,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 2 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour2Button"
         id="selectHour2Button"
@@ -1041,6 +1128,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 3 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour3Button"
         id="selectHour3Button"
@@ -1051,6 +1139,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 4 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour4Button"
         id="selectHour4Button"
@@ -1061,6 +1150,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 5 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour5Button"
         id="selectHour5Button"
@@ -1071,6 +1161,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 6 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour6Button"
         id="selectHour6Button"
@@ -1081,6 +1172,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 7 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour7Button"
         id="selectHour7Button"
@@ -1091,6 +1183,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 8 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour8Button"
         id="selectHour8Button"
@@ -1101,6 +1194,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 9 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour9Button"
         id="selectHour9Button"
@@ -1111,6 +1205,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 10 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour10Button"
         id="selectHour10Button"
@@ -1121,6 +1216,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 11 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour11Button"
         id="selectHour11Button"
@@ -1131,7 +1227,8 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 12 hour"
-        className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300 text-white hover:bg-primary-300"
+        aria-selected={true}
+        className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300/70  hover:bg-primary-300/70"
         data-test-id="selectHour12Button"
         id="selectHour12Button"
         onClick={[Function]}
@@ -1141,6 +1238,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 13 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour13Button"
         id="selectHour13Button"
@@ -1151,6 +1249,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 14 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour14Button"
         id="selectHour14Button"
@@ -1161,6 +1260,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 15 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour15Button"
         id="selectHour15Button"
@@ -1171,6 +1271,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 16 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour16Button"
         id="selectHour16Button"
@@ -1181,6 +1282,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 17 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour17Button"
         id="selectHour17Button"
@@ -1191,6 +1293,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 18 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour18Button"
         id="selectHour18Button"
@@ -1201,6 +1304,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 19 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour19Button"
         id="selectHour19Button"
@@ -1211,6 +1315,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 20 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour20Button"
         id="selectHour20Button"
@@ -1221,6 +1326,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 21 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour21Button"
         id="selectHour21Button"
@@ -1231,6 +1337,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 22 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour22Button"
         id="selectHour22Button"
@@ -1241,6 +1348,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 23 hour"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectHour23Button"
         id="selectHour23Button"
@@ -1314,6 +1422,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
     >
       <button
         aria-label="Select 0 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute0Button"
         id="selectMinute0Button"
@@ -1324,6 +1433,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 1 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute1Button"
         id="selectMinute1Button"
@@ -1334,6 +1444,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 2 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute2Button"
         id="selectMinute2Button"
@@ -1344,6 +1455,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 3 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute3Button"
         id="selectMinute3Button"
@@ -1354,6 +1466,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 4 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute4Button"
         id="selectMinute4Button"
@@ -1364,6 +1477,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 5 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute5Button"
         id="selectMinute5Button"
@@ -1374,6 +1488,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 6 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute6Button"
         id="selectMinute6Button"
@@ -1384,6 +1499,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 7 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute7Button"
         id="selectMinute7Button"
@@ -1394,6 +1510,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 8 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute8Button"
         id="selectMinute8Button"
@@ -1404,6 +1521,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 9 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute9Button"
         id="selectMinute9Button"
@@ -1414,6 +1532,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 10 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute10Button"
         id="selectMinute10Button"
@@ -1424,6 +1543,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 11 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute11Button"
         id="selectMinute11Button"
@@ -1434,6 +1554,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 12 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute12Button"
         id="selectMinute12Button"
@@ -1444,6 +1565,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 13 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute13Button"
         id="selectMinute13Button"
@@ -1454,6 +1576,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 14 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute14Button"
         id="selectMinute14Button"
@@ -1464,6 +1587,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 15 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute15Button"
         id="selectMinute15Button"
@@ -1474,6 +1598,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 16 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute16Button"
         id="selectMinute16Button"
@@ -1484,6 +1609,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 17 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute17Button"
         id="selectMinute17Button"
@@ -1494,6 +1620,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 18 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute18Button"
         id="selectMinute18Button"
@@ -1504,6 +1631,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 19 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute19Button"
         id="selectMinute19Button"
@@ -1514,6 +1642,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 20 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute20Button"
         id="selectMinute20Button"
@@ -1524,6 +1653,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 21 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute21Button"
         id="selectMinute21Button"
@@ -1534,6 +1664,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 22 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute22Button"
         id="selectMinute22Button"
@@ -1544,6 +1675,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 23 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute23Button"
         id="selectMinute23Button"
@@ -1554,6 +1686,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 24 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute24Button"
         id="selectMinute24Button"
@@ -1564,6 +1697,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 25 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute25Button"
         id="selectMinute25Button"
@@ -1574,6 +1708,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 26 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute26Button"
         id="selectMinute26Button"
@@ -1584,6 +1719,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 27 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute27Button"
         id="selectMinute27Button"
@@ -1594,6 +1730,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 28 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute28Button"
         id="selectMinute28Button"
@@ -1604,6 +1741,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 29 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute29Button"
         id="selectMinute29Button"
@@ -1614,6 +1752,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 30 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute30Button"
         id="selectMinute30Button"
@@ -1624,6 +1763,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 31 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute31Button"
         id="selectMinute31Button"
@@ -1634,6 +1774,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 32 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute32Button"
         id="selectMinute32Button"
@@ -1644,6 +1785,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 33 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute33Button"
         id="selectMinute33Button"
@@ -1654,6 +1796,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 34 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute34Button"
         id="selectMinute34Button"
@@ -1664,7 +1807,8 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 35 minute"
-        className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300 text-white hover:bg-primary-300"
+        aria-selected={true}
+        className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base bg-primary-300/70  hover:bg-primary-300/70"
         data-test-id="selectMinute35Button"
         id="selectMinute35Button"
         onClick={[Function]}
@@ -1674,6 +1818,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 36 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute36Button"
         id="selectMinute36Button"
@@ -1684,6 +1829,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 37 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute37Button"
         id="selectMinute37Button"
@@ -1694,6 +1840,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 38 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute38Button"
         id="selectMinute38Button"
@@ -1704,6 +1851,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 39 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute39Button"
         id="selectMinute39Button"
@@ -1714,6 +1862,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 40 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute40Button"
         id="selectMinute40Button"
@@ -1724,6 +1873,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 41 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute41Button"
         id="selectMinute41Button"
@@ -1734,6 +1884,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 42 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute42Button"
         id="selectMinute42Button"
@@ -1744,6 +1895,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 43 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute43Button"
         id="selectMinute43Button"
@@ -1754,6 +1906,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 44 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute44Button"
         id="selectMinute44Button"
@@ -1764,6 +1917,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 45 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute45Button"
         id="selectMinute45Button"
@@ -1774,6 +1928,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 46 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute46Button"
         id="selectMinute46Button"
@@ -1784,6 +1939,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 47 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute47Button"
         id="selectMinute47Button"
@@ -1794,6 +1950,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 48 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute48Button"
         id="selectMinute48Button"
@@ -1804,6 +1961,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 49 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute49Button"
         id="selectMinute49Button"
@@ -1814,6 +1972,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 50 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute50Button"
         id="selectMinute50Button"
@@ -1824,6 +1983,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 51 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute51Button"
         id="selectMinute51Button"
@@ -1834,6 +1994,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 52 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute52Button"
         id="selectMinute52Button"
@@ -1844,6 +2005,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 53 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute53Button"
         id="selectMinute53Button"
@@ -1854,6 +2016,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 54 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute54Button"
         id="selectMinute54Button"
@@ -1864,6 +2027,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 55 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute55Button"
         id="selectMinute55Button"
@@ -1874,6 +2038,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 56 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute56Button"
         id="selectMinute56Button"
@@ -1884,6 +2049,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 57 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute57Button"
         id="selectMinute57Button"
@@ -1894,6 +2060,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 58 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute58Button"
         id="selectMinute58Button"
@@ -1904,6 +2071,7 @@ exports[`TimeSelector when asked to render with additional class renders with ad
       </button>
       <button
         aria-label="Select 59 minute"
+        aria-selected={false}
         className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
         data-test-id="selectMinute59Button"
         id="selectMinute59Button"

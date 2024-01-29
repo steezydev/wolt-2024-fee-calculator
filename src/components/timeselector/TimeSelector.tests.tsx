@@ -46,11 +46,13 @@ export const timeSelectorRenderTests = (
       it('renders with selected time 12:00', () => {
         render(<TimeSelector time={testDate} onChange={mockOnTimeChange} />);
 
-        expect(screen.getByLabelText('Select 12 hour')).toHaveClass(
-          'bg-primary-300'
+        expect(screen.getByLabelText('Select 12 hour')).toHaveAttribute(
+          'aria-selected',
+          'true'
         );
-        expect(screen.getByLabelText('Select 35 minute')).toHaveClass(
-          'bg-primary-300'
+        expect(screen.getByLabelText('Select 35 minute')).toHaveAttribute(
+          'aria-selected',
+          'true'
         );
       });
     });
@@ -132,8 +134,9 @@ export const timeSelectorColumnRenderTests = (
           />
         );
 
-        expect(screen.getByLabelText('Select 12 hour')).toHaveClass(
-          'bg-primary-300'
+        expect(screen.getByLabelText('Select 12 hour')).toHaveAttribute(
+          'aria-selected',
+          'true'
         );
       });
     });
@@ -149,8 +152,9 @@ export const timeSelectorColumnRenderTests = (
           />
         );
 
-        expect(screen.getByLabelText('Select 35 minute')).toHaveClass(
-          'bg-primary-300'
+        expect(screen.getByLabelText('Select 35 minute')).toHaveAttribute(
+          'aria-selected',
+          'true'
         );
       });
     });
@@ -235,8 +239,9 @@ export const timeSelectorItemRenderTests = (
 
         render(cp);
 
-        expect(screen.getByLabelText('Select 15 hour')).toHaveClass(
-          'bg-primary-300'
+        expect(screen.getByLabelText('Select 15 hour')).toHaveAttribute(
+          'aria-selected',
+          'true'
         );
       });
     });
@@ -253,8 +258,9 @@ export const timeSelectorItemRenderTests = (
 
         render(cp);
 
-        expect(screen.getByLabelText('Select 35 minute')).toHaveClass(
-          'bg-primary-300'
+        expect(screen.getByLabelText('Select 35 minute')).toHaveAttribute(
+          'aria-selected',
+          'true'
         );
       });
     });

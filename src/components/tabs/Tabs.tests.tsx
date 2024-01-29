@@ -72,11 +72,12 @@ export const tabsRenderTests = (name: string, Tabs: React.FC<TabsProps>) => {
           </Tabs>
         );
 
-        expect(screen.getByLabelText('Tab 1 label')).toHaveClass(
-          'bg-primary-300'
+        expect(screen.getByLabelText('Tab 1 label')).toHaveAttribute(
+          'aria-selected',
+          'true'
         );
 
-        expect(screen.getByText('Panel 1')).toHaveClass('block');
+        expect(screen.getByText('Panel 1')).toBeInTheDocument();
       });
     });
   });
@@ -102,11 +103,12 @@ export const tabsEventTests = (name: string, Tabs: React.FC<TabsProps>) => {
         const tab2Button = screen.getByLabelText('Tab 2 label');
         fireEvent.click(tab2Button);
 
-        expect(screen.getByLabelText('Tab 2 label')).toHaveClass(
-          'bg-primary-300'
+        expect(screen.getByLabelText('Tab 2 label')).toHaveAttribute(
+          'aria-selected',
+          'true'
         );
 
-        expect(screen.getByText('Panel 2')).toHaveClass('block');
+        expect(screen.getByText('Panel 2')).toBeInTheDocument();
       });
     });
   });

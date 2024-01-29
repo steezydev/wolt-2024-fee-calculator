@@ -40,13 +40,14 @@ const Tabs = ({ children, className }: TabsProps) => {
             id={tab.props.id}
             ariaLabel={tab.props.ariaLabel}
             key={tab.props.id || index}
+            ariaSelected={activeTab === tab.props.value}
             className={classNames(
-              'py-1 px-4 w-full',
+              'py-1 px-4 w-full font-semibold text-black dark:text-white',
               index === 0 ? 'rounded-l-xl' : '',
               index === tabsAndPanels.tabs.length - 1 ? 'rounded-r-xl' : '',
               activeTab === tab.props.value
-                ? 'bg-primary-300 text-white'
-                : 'bg-primary-100 hover:bg-primary-300/80 hover:text-white text-black dark:text-white',
+                ? 'bg-primary-300/70'
+                : 'bg-primary-100 hover:bg-primary-300/70',
               tab.props.className
             )}
             onClick={() => handleTabClick(tab.props.value)}

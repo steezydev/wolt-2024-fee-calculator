@@ -11,10 +11,11 @@ const TimeSelectorItem = ({
   <ButtonUnstyled
     id={`select${type.charAt(0).toUpperCase() + type.slice(1)}${value}Button`}
     ariaLabel={`Select ${value} ${type}`}
+    ariaSelected={isActive}
     type='button'
     className={classNames(
       'px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base',
-      isActive && 'bg-primary-300 text-white hover:bg-primary-300'
+      isActive && 'bg-primary-300/70  hover:bg-primary-300/70'
     )}
     onClick={onClick}
   >

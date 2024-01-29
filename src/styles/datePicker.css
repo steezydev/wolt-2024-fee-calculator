@@ -33,7 +33,7 @@
 }
 
 .react-datepicker__day--selected {
-    @apply bg-primary-300 text-white hover:bg-primary-300;
+    @apply bg-primary-300/70  hover:bg-primary-300/70;
 }
 
 .react-datepicker__day--keyboard-selected {

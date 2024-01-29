@@ -8,6 +8,7 @@ const ButtonUnstyled = ({
   className,
   disabled,
   onClick,
+  ariaSelected,
   type = 'button',
   buttonRef,
 }: ButtonProps) => {
@@ -18,6 +19,7 @@ const ButtonUnstyled = ({
       type={type}
       onClick={onClick}
       aria-label={ariaLabel}
+      aria-selected={ariaSelected}
       className={classNames('', className)}
       disabled={disabled}
       data-test-id={id}
