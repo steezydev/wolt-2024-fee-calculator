@@ -1,5 +1,5 @@
-import { DeliveryFeeFormData } from '../data/DeliveryFeeFormData';
-import { ClassNameProps } from './ClassNameProps';
+import { DeliveryFeeFormData } from '@/types/data/DeliveryFeeFormData';
+import { ClassNameProps } from '@/types/props/ClassNameProps';
 
 export declare interface DeliveryFeeFormProps extends ClassNameProps {
     onSubmit: (data: DeliveryFeeFormData) => void;

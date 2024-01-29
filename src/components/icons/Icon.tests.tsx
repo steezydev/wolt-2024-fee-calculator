@@ -1,4 +1,5 @@
 import { IconProps } from '@/types/props/IconProps';
+import '@testing-library/jest-dom';
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 

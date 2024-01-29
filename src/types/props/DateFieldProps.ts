@@ -1,5 +1,5 @@
-import { ClassNameProps } from './ClassNameProps';
-import { RenderInputProps } from './RenderInputProps';
+import { ClassNameProps } from '@/types/props/ClassNameProps';
+import { RenderInputProps } from '@/types/props/RenderInputProps';
 
 export declare interface DateFieldProps extends ClassNameProps {
     date: Date;

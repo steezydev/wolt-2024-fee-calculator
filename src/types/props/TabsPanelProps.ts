@@ -1,4 +1,4 @@
-import { ClassNameProps } from './ClassNameProps';
+import { ClassNameProps } from '@/types/props/ClassNameProps';
 
 export declare interface TabsPanelProps extends ClassNameProps {
     value: string;

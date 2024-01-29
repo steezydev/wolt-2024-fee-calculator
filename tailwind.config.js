@@ -42,24 +42,24 @@ export default {
         },
     },
     plugins: [
-        // plugin(function ({ addComponents, theme }) {
-        //     const names = ['typography'];
-        //     names.map((name) => {
-        //         if (name == '' || name == undefined) return;
-        //         const styles = theme(name);
-        //         const components = Object.entries(styles).map(
-        //             ([key, value]) => {
-        //                 const className = '.' + name + '-' + key;
-        //                 const applyClasses = '@apply ' + value;
-        //                 return {
-        //                     [className]: {
-        //                         [applyClasses]: {},
-        //                     },
-        //                 };
-        //             }
-        //         );
-        //         addComponents(components);
-        //     });
-        // }),
+        plugin(function ({ addComponents, theme }) {
+            const names = ['typography'];
+            names.map((name) => {
+                if (name == '' || name == undefined) return;
+                const styles = theme(name);
+                const components = Object.entries(styles).map(
+                    ([key, value]) => {
+                        const className = '.' + name + '-' + key;
+                        const applyClasses = '@apply ' + value;
+                        return {
+                            [className]: {
+                                [applyClasses]: {},
+                            },
+                        };
+                    }
+                );
+                addComponents(components);
+            });
+        }),
     ],
 };

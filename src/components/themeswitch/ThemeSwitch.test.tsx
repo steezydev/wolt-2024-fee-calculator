@@ -23,8 +23,8 @@ const matchMediaMock = jest.fn().mockImplementation((query) => ({
   matches: query === '(prefers-color-scheme: dark)',
   media: query,
   onchange: null,
-  addListener: jest.fn(), // Deprecated but included for completeness
-  removeListener: jest.fn(), // Deprecated but included for completeness
+  addListener: jest.fn(),
+  removeListener: jest.fn(),
   addEventListener: jest.fn(),
   removeEventListener: jest.fn(),
   dispatchEvent: jest.fn(),

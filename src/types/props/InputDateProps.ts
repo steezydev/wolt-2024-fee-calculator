@@ -1,5 +1,5 @@
-import { ClassNameProps } from './ClassNameProps';
-import { InputProps } from './InputProps';
+import { ClassNameProps } from '@/types/props/ClassNameProps';
+import { InputProps } from '@/types/props/InputProps';
 
 export declare interface InputDateProps extends ClassNameProps {
     Item: React.FC<InputProps>;

@@ -4,6 +4,7 @@ export const isValidDate = (dateStr: string): boolean => {
     const regex = /^(\d{2})\.(\d{2})\.(\d{4}) (\d{2}):(\d{2})$/;
     if (!regex.test(dateStr)) return false;
 
+    // Get date components from string
     const [_, day, month, year, hour, minute] = regex
         .exec(dateStr)!
         .map(Number);
@@ -24,6 +25,7 @@ export const autoCompleteDate = (dateStr: string): string => {
     const matches = dateStr.match(regex);
     if (!matches) return dateStr;
 
+    // Get date components from string
     let [_, day, month, year, hour, minute] = matches;
 
     // Current date as fallback
@@ -52,7 +54,7 @@ export const autoCompleteDate = (dateStr: string): string => {
     if (minute && minute.length === 1) {
         minute += '0'; // Add trailing zero if only one digit is entered
     } else if (minute === undefined || minute.length === 0) {
-        minute = '00'; // Default to 00 if minute is empty but hour is not
+        minute = '00'; // Default to 00 if minute is empt
     }
 
     return `${day}.${month}.${year} ${hour}:${minute}`;
