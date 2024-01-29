@@ -1,5 +1,5 @@
 .react-datepicker {
-    @apply h-full border-none bg-transparent;
+    @apply h-full border-none bg-transparent font-sans;
 }
 
 .react-datepicker__header {

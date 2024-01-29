@@ -1,6 +1,5 @@
+import useDatetimeSelector from '@/hooks/useDatetimeSelector';
 import { act, renderHook } from '@testing-library/react-hooks';
-
-import useDatetimeSelector from '../useDatetimeSelector';
 
 describe('useDatetimeSelector', () => {
   it('sets initial date correctly', () => {

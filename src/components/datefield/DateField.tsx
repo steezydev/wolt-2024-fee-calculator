@@ -8,6 +8,7 @@ import { format } from 'date-fns';
 import { useEffect, useState } from 'react';
 
 const DateField = ({ date, onDateChange, renderInput }: DateFieldProps) => {
+  // Handling input string value localy
   const [inputValue, setInputValue] = useState(
     format(date, 'dd.MM.yyyy HH:mm')
   );
@@ -18,6 +19,7 @@ const DateField = ({ date, onDateChange, renderInput }: DateFieldProps) => {
 
   // Set or revert date value on blur
   const handleBlur = () => {
+    // Auto completes date and validates it
     const autoCompletedValue = autoCompleteDate(inputValue);
 
     if (isValidDate(autoCompletedValue)) {

@@ -1,6 +1,5 @@
+import useInput from '@/hooks/useInput';
 import { act, renderHook } from '@testing-library/react-hooks';
-
-import useInput from '../useInput';
 
 describe('useInput', () => {
   it('initializes with the given value', () => {

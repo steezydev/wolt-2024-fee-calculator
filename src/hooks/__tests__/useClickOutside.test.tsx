@@ -1,7 +1,6 @@
+import useClickOutside from '@/hooks/useClickOutside';
 import { fireEvent, render } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
-
-import useClickOutside from '../useClickOutside';
 
 describe('useClickOutside', () => {
   it('calls callback on outside click', () => {
