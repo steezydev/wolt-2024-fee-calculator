@@ -15,7 +15,7 @@ export const dateFieldRenderTests = (
 ) => {
   describe(name, () => {
     describe('when asked to render', () => {
-      it('renders', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <DatePicker
             value={testDate}
@@ -28,10 +28,29 @@ export const dateFieldRenderTests = (
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders correctly', () => {
+        render(
+          <DatePicker
+            value={testDate}
+            onDateChange={mockOnDateChange}
+            onTimeChange={mockOnTimeChange}
+            onChange={mockOnChange}
+            renderInput={(inputProps) => <input {...inputProps} />}
+          />
+        );
+
+        const input = screen.getByRole('textbox');
+        expect(screen.getByRole('textbox')).toBeInTheDocument();
+        expect(input).toHaveValue('17.01.2024 12:00');
+
+        const openModalButton = screen.getByLabelText('Open datepicker modal');
+        expect(openModalButton).toBeInTheDocument();
+      });
     });
 
     describe('when asked to render with additional class name', () => {
-      it('renders with additional class name', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <DatePicker
             value={testDate}
@@ -45,23 +64,20 @@ export const dateFieldRenderTests = (
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
-    });
 
-    describe('when asked to render with initial value', () => {
-      it('renders with intial value in the input', () => {
-        render(
+      it('renders with additional class name', () => {
+        const { container } = render(
           <DatePicker
             value={testDate}
             onDateChange={mockOnDateChange}
             onTimeChange={mockOnTimeChange}
             onChange={mockOnChange}
             renderInput={(inputProps) => <input {...inputProps} />}
+            className='some-class'
           />
         );
 
-        expect(
-          screen.getByDisplayValue('17.01.2024 12:00')
-        ).toBeInTheDocument();
+        expect(container.firstChild).toHaveClass('some-class');
       });
     });
   });

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DatePicker when asked to render renders 1`] = `
+exports[`DatePicker when asked to render matches snapshot 1`] = `
 <div
   className="w-full relative"
   data-focused={false}
@@ -65,7 +65,7 @@ exports[`DatePicker when asked to render renders 1`] = `
 </div>
 `;
 
-exports[`DatePicker when asked to render with additional class name renders with additional class name 1`] = `
+exports[`DatePicker when asked to render with additional class name matches snapshot 1`] = `
 <div
   className="w-full relative some-class"
   data-focused={false}

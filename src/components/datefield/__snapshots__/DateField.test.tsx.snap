@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DateField when asked to render renders 1`] = `
+exports[`DateField when asked to render matches snpashot 1`] = `
 <input
   onBlur={[Function]}
   onChange={[Function]}
@@ -8,8 +8,11 @@ exports[`DateField when asked to render renders 1`] = `
 />
 `;
 
-exports[`DateField when asked to render with additional class renders with additional class 1`] = `
+exports[`DateField when asked to render with additional input props matches snapshot 1`] = `
 <input
+  className="some-class"
+  id="testId"
+  name="testName"
   onBlur={[Function]}
   onChange={[Function]}
   value="17.01.2024 12:00"

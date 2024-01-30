@@ -12,7 +12,7 @@ mockContext();
 setupFakeDate();
 
 describe('App', () => {
-  it('renders', () => {
+  it('matches snapshot', () => {
     const component = TestRenderer.create(
       <ThemeProvider>
         <App />

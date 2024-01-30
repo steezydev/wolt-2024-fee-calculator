@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TimeSelector when asked to render renders 1`] = `
+exports[`TimeSelector when asked to render matches snapshot 1`] = `
 <div
   className="flex gap-1 undefined"
 >
@@ -1057,7 +1057,7 @@ exports[`TimeSelector when asked to render renders 1`] = `
 </div>
 `;
 
-exports[`TimeSelector when asked to render with additional class renders with additional class 1`] = `
+exports[`TimeSelector when asked to render with additional class matches snapshot 1`] = `
 <div
   className="flex gap-1 some-class"
 >

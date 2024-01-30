@@ -19,31 +19,15 @@ export const timeSelectorRenderTests = (
 ) => {
   describe(name, () => {
     describe('when asked to render', () => {
-      it('renders', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <TimeSelector time={testDate} onChange={mockOnTimeChange} />
         );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
-    });
 
-    describe('when asked to render with additional class', () => {
-      it('renders with additional class', () => {
-        const component = TestRenderer.create(
-          <TimeSelector
-            time={testDate}
-            onChange={mockOnTimeChange}
-            className='some-class'
-          />
-        );
-        const tree = component.toJSON();
-        expect(tree).toMatchSnapshot();
-      });
-    });
-
-    describe('when asked to render with test date 17.01.2024 12:00', () => {
-      it('renders with selected time 12:00', () => {
+      it('renders correctly', () => {
         render(<TimeSelector time={testDate} onChange={mockOnTimeChange} />);
 
         expect(screen.getByLabelText('Select 12 hour')).toHaveAttribute(
@@ -54,6 +38,32 @@ export const timeSelectorRenderTests = (
           'aria-selected',
           'true'
         );
+      });
+    });
+
+    describe('when asked to render with additional class', () => {
+      it('matches snapshot', () => {
+        const component = TestRenderer.create(
+          <TimeSelector
+            time={testDate}
+            onChange={mockOnTimeChange}
+            className='some-class'
+          />
+        );
+        const tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('renders with additional class', () => {
+        const { container } = render(
+          <TimeSelector
+            time={testDate}
+            onChange={mockOnTimeChange}
+            className='some-class'
+          />
+        );
+
+        expect(container.firstChild).toHaveClass('some-class');
       });
     });
   });
@@ -94,7 +104,7 @@ export const timeSelectorColumnRenderTests = (
 ) => {
   describe(name, () => {
     describe('when asked to render with hours', () => {
-      it('renders with hours', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <TimeSelectorColumn
             type='hour'
@@ -106,25 +116,8 @@ export const timeSelectorColumnRenderTests = (
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
-    });
 
-    describe('when asked to render with minutes', () => {
-      it('renders with minutes', () => {
-        const component = TestRenderer.create(
-          <TimeSelectorColumn
-            type='minute'
-            items={minutes}
-            currentItem={testDate.getMinutes()}
-            onChange={mockOnTimeChange}
-          />
-        );
-        const tree = component.toJSON();
-        expect(tree).toMatchSnapshot();
-      });
-    });
-
-    describe('when asked to render hours with test date 17.01.2024 12:00', () => {
-      it('renders with selected time hours 12', () => {
+      it('renders with hours correctly', () => {
         render(
           <TimeSelectorColumn
             type='hour'
@@ -141,8 +134,21 @@ export const timeSelectorColumnRenderTests = (
       });
     });
 
-    describe('when asked to render minutes with test date 17.01.2024 12:00', () => {
-      it('renders with selected time minutes 12', () => {
+    describe('when asked to render with minutes', () => {
+      it('matches snapshot', () => {
+        const component = TestRenderer.create(
+          <TimeSelectorColumn
+            type='minute'
+            items={minutes}
+            currentItem={testDate.getMinutes()}
+            onChange={mockOnTimeChange}
+          />
+        );
+        const tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+
+      it('renders with minutes correctly', () => {
         render(
           <TimeSelectorColumn
             type='minute'
@@ -210,34 +216,48 @@ export const timeSelectorItemRenderTests = (
 ) => {
   describe(name, () => {
     describe('when asked to render type hour', () => {
-      it('renders type hour', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <TimeSelectorItem value={15} type='hour' />
         );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders type hour', () => {
+        render(<TimeSelectorItem value={15} type='hour' />);
+
+        expect(screen.getByLabelText('Select 15 hour')).toBeInTheDocument();
+      });
     });
 
     describe('when asked to render type minute', () => {
-      it('renders type minute', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <TimeSelectorItem value={35} type='minute' />
         );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders type minute', () => {
+        render(<TimeSelectorItem value={35} type='minute' />);
+
+        expect(screen.getByLabelText('Select 35 minute')).toBeInTheDocument();
+      });
     });
 
     describe('when asked to render type hour active', () => {
-      it('renders type hour active', () => {
-        const cp = <TimeSelectorItem value={15} type='hour' isActive={true} />;
-
-        const component = TestRenderer.create(cp);
+      it('matches snapshot', () => {
+        const component = TestRenderer.create(
+          <TimeSelectorItem value={15} type='hour' isActive={true} />
+        );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
+      });
 
-        render(cp);
+      it('renders type hour active', () => {
+        render(<TimeSelectorItem value={15} type='hour' isActive={true} />);
 
         expect(screen.getByLabelText('Select 15 hour')).toHaveAttribute(
           'aria-selected',
@@ -247,16 +267,16 @@ export const timeSelectorItemRenderTests = (
     });
 
     describe('when asked to render type minute active', () => {
-      it('renders type minute active', () => {
-        const cp = (
+      it('matches snapshot', () => {
+        const component = TestRenderer.create(
           <TimeSelectorItem value={35} type='minute' isActive={true} />
         );
-
-        const component = TestRenderer.create(cp);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
+      });
 
-        render(cp);
+      it('renders type minute active', () => {
+        render(<TimeSelectorItem value={35} type='minute' isActive={true} />);
 
         expect(screen.getByLabelText('Select 35 minute')).toHaveAttribute(
           'aria-selected',

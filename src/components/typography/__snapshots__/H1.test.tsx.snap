@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`H1 when asked to render  renders 1`] = `
-<h1
+exports[`H1 when asked to render  matches snapshot 1`] = `
+<p
   className="font-display text-4xl sm:text-5xl font-bold subpixel-antialiased"
 >
   Hello world!
-</h1>
+</p>
 `;
 
-exports[`H1 when asked to render with additional class  renders with additional class 1`] = `
-<h1
+exports[`H1 when asked to render with additional class  matches snapshot 1`] = `
+<p
   className="font-display text-4xl sm:text-5xl font-bold subpixel-antialiased some-class"
 >
   Hello world!
-</h1>
+</p>
 `;

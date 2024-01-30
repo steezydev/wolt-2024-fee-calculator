@@ -11,8 +11,16 @@ export const calculationResultRenderTests = (
   CalculationResult: React.FC<CalculationResultProps>
 ) => {
   describe(name, () => {
-    describe('when asked to render', () => {
-      it('renders', () => {
+    describe('when asked to render without children', () => {
+      it('macthes snapshot', () => {
+        const component = TestRenderer.create(<CalculationResult result={7} />);
+        const tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+    });
+
+    describe('when asked to render with children', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <CalculationResult result={7}>
             <CalculationResultItem label='Cart value' value='20 €' />
@@ -27,10 +35,38 @@ export const calculationResultRenderTests = (
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders correctly', () => {
+        render(
+          <CalculationResult result={7}>
+            <CalculationResultItem label='Cart value' value='20 €' />
+            <CalculationResultItem label='Delivery distance' value='900 m' />
+            <CalculationResultItem label='Amount of items' value='1' />
+            <CalculationResultItem
+              label='Order time'
+              value='17.01.2024 14:38'
+            />
+          </CalculationResult>
+        );
+
+        expect(screen.getByText('Cart value')).toBeInTheDocument();
+        expect(screen.getByText('20 €')).toBeInTheDocument();
+
+        expect(screen.getByText('Delivery distance')).toBeInTheDocument();
+        expect(screen.getByText('900 m')).toBeInTheDocument();
+
+        expect(screen.getByText('Amount of items')).toBeInTheDocument();
+        expect(screen.getByText('1')).toBeInTheDocument();
+
+        expect(screen.getByText('Order time')).toBeInTheDocument();
+        expect(screen.getByText('17.01.2024 14:38')).toBeInTheDocument();
+
+        expect(screen.getByText('€7.00')).toBeInTheDocument();
+      });
     });
 
     describe('when asked to render with additional class', () => {
-      it('renders with additional class', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <CalculationResult className='some-class' result={7}>
             <CalculationResultItem label='Cart value' value='20 €' />
@@ -45,6 +81,22 @@ export const calculationResultRenderTests = (
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders with additional class', () => {
+        const { container } = render(
+          <CalculationResult className='some-class' result={7}>
+            <CalculationResultItem label='Cart value' value='20 €' />
+            <CalculationResultItem label='Delivery distance' value='900 m' />
+            <CalculationResultItem label='Amount of items' value='1' />
+            <CalculationResultItem
+              label='Order time'
+              value='17.01.2024 14:38'
+            />
+          </CalculationResult>
+        );
+
+        expect(container.firstChild).toHaveClass('some-class');
+      });
     });
 
     describe('when asked to render with formatted result', () => {
@@ -54,15 +106,8 @@ export const calculationResultRenderTests = (
             <div>Test Content</div>
           </CalculationResult>
         );
-        expect(screen.getByText('€123.45')).toBeInTheDocument();
-      });
-    });
 
-    describe('when asked to render without children', () => {
-      it('renders without children', () => {
-        const component = TestRenderer.create(<CalculationResult result={7} />);
-        const tree = component.toJSON();
-        expect(tree).toMatchSnapshot();
+        expect(screen.getByText('€123.45')).toBeInTheDocument();
       });
     });
   });
@@ -74,17 +119,24 @@ export const calculationResultItemRenderTests = (
 ) => {
   describe(name, () => {
     describe('when asked to render', () => {
-      it('renders', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <CalculationResultItem label='Cart value' value='20 €' />
         );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders correctly', () => {
+        render(<CalculationResultItem label='Cart value' value='20 €' />);
+
+        expect(screen.getByText('Cart value')).toBeInTheDocument();
+        expect(screen.getByText('20 €')).toBeInTheDocument();
+      });
     });
 
     describe('when asked to render with additional class', () => {
-      it('renders with additional class', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <CalculationResultItem
             className='some-class'
@@ -95,13 +147,17 @@ export const calculationResultItemRenderTests = (
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
-    });
 
-    describe('when asked to render with different label and value', () => {
-      it('renders with given label and value', () => {
-        render(<CalculationResultItem label='Total Cost' value='€50' />);
-        expect(screen.getByText('Total Cost')).toBeInTheDocument();
-        expect(screen.getByText('€50')).toBeInTheDocument();
+      it('renders with additional class', () => {
+        const { container } = render(
+          <CalculationResultItem
+            className='some-class'
+            label='Cart value'
+            value='20 €'
+          />
+        );
+
+        expect(container.firstChild).toHaveClass('some-class');
       });
     });
   });

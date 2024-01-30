@@ -150,7 +150,7 @@ describe('Delivery fee calculation', () => {
                     3,
                     new Date('2024-01-05T16:00:00')
                 )
-            ).toBeCloseTo(4.8); // (2€ base + 2€ distance) * 1.2
+            ).toBe(4.8); // (2€ base + 2€ distance) * 1.2
         });
 
         test('edge case for distance surcharge at 1500m', () => {
@@ -197,7 +197,7 @@ describe('Delivery fee calculation', () => {
             ).toBe(7); // 2€ base + 1€ small order + 3€ distance + 1€ items
         });
 
-        test('minimum fee for slight distance over 1km', () => {
+        test('minimum fee for distance slightly over 1km', () => {
             expect(
                 calculateDeliveryFee(
                     20,

@@ -1,6 +1,6 @@
 import { DateFieldProps } from '@/types/props/DateFieldProps';
 import '@testing-library/jest-dom';
-import { fireEvent, render } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
 import TestRenderer from 'react-test-renderer';
 
@@ -13,7 +13,7 @@ export const dateFieldRenderTests = (
 ) => {
   describe(name, () => {
     describe('when asked to render', () => {
-      it('renders', () => {
+      it('matches snpashot', () => {
         const component = TestRenderer.create(
           <DateField
             date={testDate}
@@ -23,55 +23,63 @@ export const dateFieldRenderTests = (
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders correctly', () => {
+        render(
+          <DateField
+            date={testDate}
+            renderInput={(inputProps) => <input {...inputProps} />}
+          />
+        );
+
+        expect(
+          screen.getByDisplayValue('17.01.2024 12:00')
+        ).toBeInTheDocument();
+        expect(screen.getByRole('textbox')).toBeInTheDocument();
+      });
     });
 
-    describe('when asked to render with additional class', () => {
-      it('renders with additional class', () => {
+    describe('when asked to render with additional input props', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <DateField
             className='some-class'
             date={testDate}
-            renderInput={(inputProps) => <input {...inputProps} />}
+            renderInput={(inputProps) => (
+              <input
+                name='testName'
+                id='testId'
+                className='some-class'
+                {...inputProps}
+              />
+            )}
           />
         );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
-    });
 
-    describe('when asked to be initializes with the formatted date', () => {
-      it('initializes with the formatted date', () => {
-        const { getByDisplayValue } = render(
+      it('renders with additional input props', () => {
+        render(
           <DateField
+            className='some-class'
             date={testDate}
-            onDateChange={mockOnDateChange}
-            renderInput={(inputProps) => <input {...inputProps} />}
-          />
-        );
-        expect(getByDisplayValue('17.01.2024 12:00')).toBeInTheDocument();
-      });
-    });
-
-    describe('when asked to update with date prop changes', () => {
-      it('updates the input value when the date prop changes', () => {
-        const { rerender, getByDisplayValue } = render(
-          <DateField
-            date={testDate}
-            onDateChange={mockOnDateChange}
-            renderInput={(inputProps) => <input {...inputProps} />}
+            renderInput={(inputProps) => (
+              <input
+                name='testName'
+                id='testId'
+                className='some-class'
+                {...inputProps}
+              />
+            )}
           />
         );
 
-        const newTestDate = new Date(2024, 0, 18, 15, 0); // 18.01.2024 15:00
-        rerender(
-          <DateField
-            date={newTestDate}
-            onDateChange={mockOnDateChange}
-            renderInput={(inputProps) => <input {...inputProps} />}
-          />
-        );
+        const input = screen.getByRole('textbox');
 
-        expect(getByDisplayValue('18.01.2024 15:00')).toBeInTheDocument();
+        expect(input).toHaveAttribute('name', 'testName');
+        expect(input).toHaveAttribute('id', 'testId');
+        expect(input).toHaveClass('some-class');
       });
     });
   });

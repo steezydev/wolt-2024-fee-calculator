@@ -20,7 +20,7 @@ export const tabsRenderTests = (name: string, Tabs: React.FC<TabsProps>) => {
     });
 
     describe('when asked to render with children', () => {
-      it('renders with children', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <Tabs>
             <TabsTab id='tab1Button' ariaLabel='Tab 1 label' value='tab1'>
@@ -36,10 +36,34 @@ export const tabsRenderTests = (name: string, Tabs: React.FC<TabsProps>) => {
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders with children', () => {
+        render(
+          <Tabs>
+            <TabsTab id='tab1Button' ariaLabel='Tab 1 label' value='tab1'>
+              Tab 1
+            </TabsTab>
+            <TabsPanel value='tab1'>Panel 1 </TabsPanel>
+            <TabsTab id='tab2Button' ariaLabel='Tab 2 label' value='tab2'>
+              Tab 2
+            </TabsTab>
+            <TabsPanel value='tab2'>Panel 2</TabsPanel>
+          </Tabs>
+        );
+
+        expect(screen.getByLabelText('Tab 1 label')).toBeInTheDocument();
+        expect(screen.getByLabelText('Tab 2 label')).toBeInTheDocument();
+        expect(screen.getByText('Panel 1')).toBeInTheDocument();
+
+        expect(screen.getByLabelText('Tab 1 label')).toHaveAttribute(
+          'aria-selected',
+          'true'
+        );
+      });
     });
 
     describe('when asked to render with additional class', () => {
-      it('renders with additional class', () => {
+      it('matches the snapshot', () => {
         const component = TestRenderer.create(
           <Tabs className='some-class'>
             <TabsTab id='tab1Button' ariaLabel='Tab 1 label' value='tab1'>
@@ -55,16 +79,14 @@ export const tabsRenderTests = (name: string, Tabs: React.FC<TabsProps>) => {
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
-    });
 
-    describe('when asked to render', () => {
-      it('first tab is active and first panel is visible', () => {
-        render(
+      it('renders with additional class', () => {
+        const { container } = render(
           <Tabs className='some-class'>
             <TabsTab id='tab1Button' ariaLabel='Tab 1 label' value='tab1'>
               Tab 1
             </TabsTab>
-            <TabsPanel value='tab1'>Panel 1</TabsPanel>
+            <TabsPanel value='tab1'>Panel 1 </TabsPanel>
             <TabsTab id='tab2Button' ariaLabel='Tab 2 label' value='tab2'>
               Tab 2
             </TabsTab>
@@ -72,12 +94,7 @@ export const tabsRenderTests = (name: string, Tabs: React.FC<TabsProps>) => {
           </Tabs>
         );
 
-        expect(screen.getByLabelText('Tab 1 label')).toHaveAttribute(
-          'aria-selected',
-          'true'
-        );
-
-        expect(screen.getByText('Panel 1')).toBeInTheDocument();
+        expect(container.firstChild).toHaveClass('some-class');
       });
     });
   });

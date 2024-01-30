@@ -1,12 +1,12 @@
 import { formatCurrency } from '../currency';
 
 describe('formatCurrency', () => {
-    test('formats USD correctly', () => {
-        expect(formatCurrency(1234.56, 'USD')).toBe('$1,234.56');
-    });
-
     test('formats EUR correctly', () => {
         expect(formatCurrency(1234.56, 'EUR')).toBe('€1,234.56');
+    });
+
+    test('formats USD correctly', () => {
+        expect(formatCurrency(1234.56, 'USD')).toBe('$1,234.56');
     });
 
     test('formats large numbers correctly', () => {

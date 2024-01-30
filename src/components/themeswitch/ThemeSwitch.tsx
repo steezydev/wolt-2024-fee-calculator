@@ -15,6 +15,7 @@ const ThemeSwitch = ({ className }: ThemeSwitchProps) => {
         onClick={() => toggleTheme(Theme.LIGHT)}
         id='light-theme-button'
         ariaLabel='Set light theme'
+        ariaSelected={theme === Theme.LIGHT}
         className={classNames(
           theme === Theme.LIGHT ? 'bg-primary-300 text-white' : ''
         )}
@@ -25,6 +26,7 @@ const ThemeSwitch = ({ className }: ThemeSwitchProps) => {
         onClick={() => toggleTheme(Theme.DARK)}
         id='dark-theme-button'
         ariaLabel='Set dark theme'
+        ariaSelected={theme === Theme.DARK}
         className={classNames(
           theme === Theme.DARK ? 'bg-primary-300 text-white' : ''
         )}

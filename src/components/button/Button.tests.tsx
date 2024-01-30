@@ -10,30 +10,54 @@ export const buttonRenderTests = (
 ) => {
   describe(name, () => {
     describe('when asked to render with children', () => {
-      it('renders with children', () => {
-        const cp = (
+      it('matches snapshot', () => {
+        const component = TestRenderer.create(
           <Button id='test-button' ariaLabel='Test button label'>
             Test Button
           </Button>
         );
-
-        const component = TestRenderer.create(cp);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
+      });
 
-        render(cp);
+      it('renders correctly', () => {
+        render(
+          <Button id='test-button' ariaLabel='Test button label'>
+            Test Button
+          </Button>
+        );
         expect(screen.getByRole('button')).toHaveTextContent('Test Button');
       });
     });
 
     describe('when asked to render disabled', () => {
+      it('matches snapshot', () => {
+        const component = TestRenderer.create(
+          <Button id='test-button' ariaLabel='Test button label' disabled>
+            Test Button
+          </Button>
+        );
+        const tree = component.toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+
       it('renders disabled', () => {
+        render(
+          <Button id='test-button' ariaLabel='Test button label' disabled>
+            Test Button
+          </Button>
+        );
+        expect(screen.getByRole('button')).toBeDisabled();
+      });
+    });
+
+    describe('when asked to render with additional class', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <Button
             className='some-class'
             id='test-button'
             ariaLabel='Test button label'
-            disabled
           >
             Test Button
           </Button>
@@ -41,11 +65,9 @@ export const buttonRenderTests = (
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
-    });
 
-    describe('when asked to render with additional class', () => {
       it('renders with additional class', () => {
-        const component = TestRenderer.create(
+        render(
           <Button
             className='some-class'
             id='test-button'
@@ -54,8 +76,8 @@ export const buttonRenderTests = (
             Test Button
           </Button>
         );
-        const tree = component.toJSON();
-        expect(tree).toMatchSnapshot();
+
+        expect(screen.getByRole('button')).toHaveClass('some-class');
       });
     });
   });
@@ -84,7 +106,7 @@ export const buttonEventTests = (
       });
     });
 
-    describe('when disabled', () => {
+    describe('when disabled clicked', () => {
       it('does not trigger onClick event', () => {
         const handleClick = jest.fn();
         const { getByRole } = render(

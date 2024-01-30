@@ -4,6 +4,7 @@ import { act, renderHook } from '@testing-library/react-hooks';
 describe('useInput', () => {
   it('initializes with the given value', () => {
     const initialValue = 'test';
+
     const { result } = renderHook(() => useInput(initialValue));
 
     expect(result.current.value).toBe(initialValue);

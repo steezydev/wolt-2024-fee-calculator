@@ -9,7 +9,7 @@ const mockOnClose = jest.fn();
 export const modalRenderTests = (name: string, Modal: React.FC<ModalProps>) => {
   describe(name, () => {
     describe('when asked to render without children', () => {
-      it('renders without children', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <Modal
             id='testModal'
@@ -21,11 +21,33 @@ export const modalRenderTests = (name: string, Modal: React.FC<ModalProps>) => {
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders correctly', () => {
+        render(
+          <Modal
+            id='testModal'
+            isOpen={true}
+            title='Test modal'
+            onClose={mockOnClose}
+          />
+        );
+
+        const modal = screen.getByRole('dialog');
+        expect(modal).toBeInTheDocument();
+        expect(modal).toHaveAttribute('aria-modal', 'true');
+        expect(modal).toHaveAttribute(
+          'aria-labelledby',
+          'dialogTitletestModal'
+        );
+
+        const title = screen.getByText('Test modal');
+        expect(title).toBeInTheDocument();
+      });
     });
 
     describe('when asked to render with children', () => {
-      it('renders with children', () => {
-        const cp = (
+      it('matches snapshot', () => {
+        const component = TestRenderer.create(
           <Modal
             id='testModal'
             isOpen={true}
@@ -35,12 +57,21 @@ export const modalRenderTests = (name: string, Modal: React.FC<ModalProps>) => {
             <div>Test modal content</div>
           </Modal>
         );
-
-        const component = TestRenderer.create(cp);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
+      });
 
-        render(cp);
+      it('renders with children', () => {
+        render(
+          <Modal
+            id='testModal'
+            isOpen={true}
+            title='Test modal'
+            onClose={mockOnClose}
+          >
+            <div>Test modal content</div>
+          </Modal>
+        );
         expect(screen.getByText('Test modal content')).toBeInTheDocument();
       });
     });

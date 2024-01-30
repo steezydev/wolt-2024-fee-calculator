@@ -12,6 +12,7 @@ describe('withInputIcon HOC', () => {
     render(
       <WithIconInput id='testId' ariaLabel='Test label' name='testName' />
     );
+
     expect(screen.getByText('Icon')).toBeInTheDocument();
     expect(screen.getByRole('textbox')).toBeInTheDocument();
   });
@@ -25,12 +26,14 @@ describe('withInputIcon HOC', () => {
         placeholder='Test'
       />
     );
+
     expect(screen.getByPlaceholderText('Test')).toBeInTheDocument();
   });
 
   it('handles focus and blur events', () => {
     const onFocus = jest.fn();
     const onBlur = jest.fn();
+
     render(
       <WithIconInput
         id='testId'
@@ -40,6 +43,7 @@ describe('withInputIcon HOC', () => {
         onBlur={onBlur}
       />
     );
+
     const input = screen.getByRole('textbox');
 
     fireEvent.focus(input);

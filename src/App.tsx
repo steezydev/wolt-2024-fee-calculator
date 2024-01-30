@@ -38,7 +38,7 @@ const App = () => {
         </H1>
         <ThemeSwitch />
       </header>
-      <main aria-label='Main content' className='flex flex-col gap-6'>
+      <main aria-label='Main content' className='flex flex-col gap-6 mb-10'>
         <div className='flex flex-row gap-3 items-center'>
           <BadgeInfoIcon className='text-primary-300' />
           <B2

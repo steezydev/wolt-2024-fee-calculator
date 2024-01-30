@@ -9,6 +9,7 @@ import Panel from './TabsPanel';
 import Tab from './TabsTab';
 
 const Tabs = ({ children, className }: TabsProps) => {
+  // Separate tabs and panels from children
   const tabsAndPanels = useMemo(() => {
     const tabs: ReactElement<TabsTabProps>[] = [];
     const panels: ReactElement<TabsPanelProps>[] = [];

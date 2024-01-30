@@ -12,7 +12,7 @@ export const themeSwitchRenderTests = (
 ) => {
   describe(name, () => {
     describe('when asked to render', () => {
-      it('renders', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <ThemeProvider>
             <ThemeSwitch />
@@ -21,10 +21,21 @@ export const themeSwitchRenderTests = (
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders correctly', () => {
+        render(
+          <ThemeProvider>
+            <ThemeSwitch />
+          </ThemeProvider>
+        );
+
+        expect(screen.getByLabelText('Set light theme')).toBeInTheDocument();
+        expect(screen.getByLabelText('Set dark theme')).toBeInTheDocument();
+      });
     });
 
     describe('when asked to render with additional class', () => {
-      it('renders wtih additional class', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <ThemeProvider>
             <ThemeSwitch className='some-class' />
@@ -32,6 +43,16 @@ export const themeSwitchRenderTests = (
         );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
+      });
+
+      it('renders wtih additional class', () => {
+        const { container } = render(
+          <ThemeProvider>
+            <ThemeSwitch className='some-class' />
+          </ThemeProvider>
+        );
+
+        expect(container.firstChild).toHaveClass('some-class');
       });
     });
   });

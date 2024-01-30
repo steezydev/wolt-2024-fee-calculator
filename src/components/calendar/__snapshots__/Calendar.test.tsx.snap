@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Calendar when asked to render renders 1`] = `
+exports[`Calendar when asked to render matches snapshot 1`] = `
 <div
   style={
     {
@@ -620,7 +620,7 @@ exports[`Calendar when asked to render renders 1`] = `
 </div>
 `;
 
-exports[`Calendar when asked to render with selected date renders with selected date 1`] = `
+exports[`Calendar when asked to render with selected date matches snapshot 1`] = `
 <div
   style={
     {

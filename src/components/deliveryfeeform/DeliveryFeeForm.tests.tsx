@@ -12,16 +12,18 @@ export const deliveryFeeFormRenderTests = (
 ) => {
   describe(name, () => {
     describe('when asked to render', () => {
-      it('renders correctly', () => {
-        const cp = (
+      it('matches snapshot', () => {
+        const component = TestRenderer.create(
           <DeliveryFeeForm onSubmit={mockOnSubmit} ariaLabeledBy='some-id' />
         );
-
-        const component = TestRenderer.create(cp);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
+      });
 
-        render(cp);
+      it('renders correctly', () => {
+        render(
+          <DeliveryFeeForm onSubmit={mockOnSubmit} ariaLabeledBy='some-id' />
+        );
 
         expect(screen.getByRole('form')).toBeInTheDocument();
         expect(
@@ -41,7 +43,7 @@ export const deliveryFeeFormRenderTests = (
     });
 
     describe('when asked to render wtih additional class name', () => {
-      it('renders wtih additional class name', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <DeliveryFeeForm
             className='some-class'
@@ -51,6 +53,18 @@ export const deliveryFeeFormRenderTests = (
         );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
+      });
+
+      it('renders wtih additional class name', () => {
+        const { container } = render(
+          <DeliveryFeeForm
+            className='some-class'
+            ariaLabeledBy='some-id'
+            onSubmit={mockOnSubmit}
+          />
+        );
+
+        expect(container.firstChild).toHaveClass('some-class');
       });
     });
   });

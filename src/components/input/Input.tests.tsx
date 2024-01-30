@@ -8,17 +8,31 @@ import TestRenderer from 'react-test-renderer';
 export const inputRenderTests = (name: string, Input: React.FC<InputProps>) => {
   describe(name, () => {
     describe('when asked to render', () => {
-      it('renders', () => {
+      it('matches the snapshot', () => {
         const component = TestRenderer.create(
           <Input id='test-input' name='test-input' ariaLabel='Test label' />
         );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders correctly', () => {
+        render(
+          <Input id='test-input' name='test-input' ariaLabel='Test label' />
+        );
+
+        const input = screen.getByRole('textbox');
+
+        expect(input).toBeInTheDocument();
+
+        expect(input).toHaveAttribute('id', 'test-input');
+        expect(input).toHaveAttribute('name', 'test-input');
+        expect(input).toHaveAttribute('aria-label', 'Test label');
+      });
     });
 
     describe('when asked to render disabled', () => {
-      it('renders disabled', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <Input
             id='test-input'
@@ -30,10 +44,24 @@ export const inputRenderTests = (name: string, Input: React.FC<InputProps>) => {
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders disabled', () => {
+        render(
+          <Input
+            id='test-input'
+            name='test-input'
+            ariaLabel='Test label'
+            disabled
+          />
+        );
+
+        const input = screen.getByRole('textbox');
+        expect(input).toBeDisabled();
+      });
     });
 
     describe('when asked to render with placeholder', () => {
-      it('renders with placeholder', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <Input
             id='test-input'
@@ -45,25 +73,55 @@ export const inputRenderTests = (name: string, Input: React.FC<InputProps>) => {
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders with placeholder', () => {
+        render(
+          <Input
+            id='test-input'
+            name='test-input'
+            ariaLabel='Test label'
+            placeholder='Test placeholder'
+          />
+        );
+
+        const input = screen.getByRole('textbox');
+        expect(input).toHaveAttribute('placeholder', 'Test placeholder');
+      });
     });
 
     describe('when asked to render with value', () => {
-      it('renders with placeholder', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <Input
             id='test-input'
             name='test-input'
             ariaLabel='Test label'
             value='Test value'
+            onChange={() => {}}
           />
         );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders with value', () => {
+        render(
+          <Input
+            id='test-input'
+            name='test-input'
+            ariaLabel='Test label'
+            value='Test value'
+            onChange={() => {}}
+          />
+        );
+
+        const input = screen.getByRole('textbox');
+        expect(input).toHaveValue('Test value');
+      });
     });
 
     describe('when asked to render required', () => {
-      it('renders required', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <Input
             id='test-input'
@@ -75,10 +133,24 @@ export const inputRenderTests = (name: string, Input: React.FC<InputProps>) => {
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders required', () => {
+        render(
+          <Input
+            id='test-input'
+            name='test-input'
+            ariaLabel='Test label'
+            required
+          />
+        );
+
+        const input = screen.getByRole('textbox');
+        expect(input).toBeRequired();
+      });
     });
 
     describe('when asked to render autofocused', () => {
-      it('renders autofocused', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <Input
             id='test-input'
@@ -89,6 +161,20 @@ export const inputRenderTests = (name: string, Input: React.FC<InputProps>) => {
         );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
+      });
+
+      it('renders autofocused', () => {
+        render(
+          <Input
+            id='test-input'
+            name='test-input'
+            ariaLabel='Test label'
+            autoFocus
+          />
+        );
+
+        const input = screen.getByRole('textbox');
+        expect(input).toHaveFocus();
       });
     });
   });

@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ButtonUnstyled when asked to render disabled renders disabled 1`] = `
+exports[`ButtonUnstyled when asked to render disabled matches snapshot 1`] = `
 <button
   aria-label="Test button label"
-  className="some-class"
+  className=""
   data-test-id="test-button"
   disabled={true}
   id="test-button"
@@ -13,7 +13,7 @@ exports[`ButtonUnstyled when asked to render disabled renders disabled 1`] = `
 </button>
 `;
 
-exports[`ButtonUnstyled when asked to render with additional class renders with additional class 1`] = `
+exports[`ButtonUnstyled when asked to render with additional class matches snapshot 1`] = `
 <button
   aria-label="Test button label"
   className="some-class"
@@ -25,7 +25,7 @@ exports[`ButtonUnstyled when asked to render with additional class renders with 
 </button>
 `;
 
-exports[`ButtonUnstyled when asked to render with children renders with children 1`] = `
+exports[`ButtonUnstyled when asked to render with children matches snapshot 1`] = `
 <button
   aria-label="Test button label"
   className=""

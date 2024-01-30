@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TimeSelectorItem when asked to render type hour active renders type hour active 1`] = `
+exports[`TimeSelectorItem when asked to render type hour active matches snapshot 1`] = `
 <button
   aria-label="Select 15 hour"
   aria-selected={true}
@@ -13,7 +13,7 @@ exports[`TimeSelectorItem when asked to render type hour active renders type hou
 </button>
 `;
 
-exports[`TimeSelectorItem when asked to render type hour renders type hour 1`] = `
+exports[`TimeSelectorItem when asked to render type hour matches snapshot 1`] = `
 <button
   aria-label="Select 15 hour"
   className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"
@@ -25,7 +25,7 @@ exports[`TimeSelectorItem when asked to render type hour renders type hour 1`] =
 </button>
 `;
 
-exports[`TimeSelectorItem when asked to render type minute active renders type minute active 1`] = `
+exports[`TimeSelectorItem when asked to render type minute active matches snapshot 1`] = `
 <button
   aria-label="Select 35 minute"
   aria-selected={true}
@@ -38,7 +38,7 @@ exports[`TimeSelectorItem when asked to render type minute active renders type m
 </button>
 `;
 
-exports[`TimeSelectorItem when asked to render type minute renders type minute 1`] = `
+exports[`TimeSelectorItem when asked to render type minute matches snapshot 1`] = `
 <button
   aria-label="Select 35 minute"
   className="px-3 py-1 rounded-lg hover:bg-primary-100 w-full text-black dark:text-white text-base"

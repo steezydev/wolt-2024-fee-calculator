@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InputRegular when asked to render autofocused renders autofocused 1`] = `
+exports[`InputRegular when asked to render autofocused matches snapshot 1`] = `
 <input
   aria-disabled={false}
   aria-errormessage="test-inputErrorMessage"
@@ -20,7 +20,7 @@ exports[`InputRegular when asked to render autofocused renders autofocused 1`] =
 />
 `;
 
-exports[`InputRegular when asked to render disabled renders disabled 1`] = `
+exports[`InputRegular when asked to render disabled matches snapshot 1`] = `
 <input
   aria-disabled={true}
   aria-errormessage="test-inputErrorMessage"
@@ -40,7 +40,7 @@ exports[`InputRegular when asked to render disabled renders disabled 1`] = `
 />
 `;
 
-exports[`InputRegular when asked to render renders 1`] = `
+exports[`InputRegular when asked to render matches the snapshot 1`] = `
 <input
   aria-disabled={false}
   aria-errormessage="test-inputErrorMessage"
@@ -60,7 +60,7 @@ exports[`InputRegular when asked to render renders 1`] = `
 />
 `;
 
-exports[`InputRegular when asked to render required renders required 1`] = `
+exports[`InputRegular when asked to render required matches snapshot 1`] = `
 <input
   aria-disabled={false}
   aria-errormessage="test-inputErrorMessage"
@@ -80,7 +80,7 @@ exports[`InputRegular when asked to render required renders required 1`] = `
 />
 `;
 
-exports[`InputRegular when asked to render with placeholder renders with placeholder 1`] = `
+exports[`InputRegular when asked to render with placeholder matches snapshot 1`] = `
 <input
   aria-disabled={false}
   aria-errormessage="test-inputErrorMessage"
@@ -101,7 +101,7 @@ exports[`InputRegular when asked to render with placeholder renders with placeho
 />
 `;
 
-exports[`InputRegular when asked to render with value renders with placeholder 1`] = `
+exports[`InputRegular when asked to render with value matches snapshot 1`] = `
 <input
   aria-disabled={false}
   aria-errormessage="test-inputErrorMessage"
@@ -115,6 +115,7 @@ exports[`InputRegular when asked to render with value renders with placeholder 1
   disabled={false}
   id="test-input"
   name="test-input"
+  onChange={[Function]}
   readOnly={false}
   required={false}
   type="text"

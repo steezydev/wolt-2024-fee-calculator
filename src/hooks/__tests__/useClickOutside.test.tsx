@@ -5,6 +5,7 @@ import { act } from 'react-dom/test-utils';
 describe('useClickOutside', () => {
   it('calls callback on outside click', () => {
     const callback = jest.fn();
+
     function TestComponent() {
       const ref = useClickOutside<HTMLDivElement>(callback);
       return <div ref={ref} data-testid='inside'></div>;
@@ -21,6 +22,7 @@ describe('useClickOutside', () => {
 
   it('does not call callback on inside click', () => {
     const callback = jest.fn();
+
     function TestComponent() {
       const ref = useClickOutside<HTMLDivElement>(callback);
       return <div ref={ref} data-testid='inside'></div>;
@@ -37,6 +39,7 @@ describe('useClickOutside', () => {
 
   it('cleans up event listeners on unmount', () => {
     const callback = jest.fn();
+
     function TestComponent() {
       const ref = useClickOutside<HTMLDivElement>(callback);
       return <div ref={ref}></div>;

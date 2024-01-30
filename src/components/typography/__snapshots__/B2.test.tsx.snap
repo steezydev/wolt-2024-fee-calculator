@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`B2 when asked to render  renders 1`] = `
+exports[`B2 when asked to render  matches snapshot 1`] = `
 <p
-  className="text-lg"
+  className="text-lg "
 >
   Hello world!
 </p>
 `;
 
-exports[`B2 when asked to render with additional class  renders with additional class 1`] = `
+exports[`B2 when asked to render with additional class  matches snapshot 1`] = `
 <p
-  className="text-lg some-class"
+  className="text-lg  some-class"
 >
   Hello world!
 </p>

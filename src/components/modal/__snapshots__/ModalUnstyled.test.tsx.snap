@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ModalUnstyled when asked to render with children renders with children 1`] = `
+exports[`ModalUnstyled when asked to render with children matches snapshot 1`] = `
 <div
   aria-labelledby="dialogTitletestModal"
   aria-modal="true"
@@ -11,7 +11,7 @@ exports[`ModalUnstyled when asked to render with children renders with children 
     className="border-b border-b-neutral-light-100 dark:border-b-neutral-dark-100 pb-1 flex justify-between"
   >
     <p
-      className="text-lg text-dark dark:text-white font-bold"
+      className="text-lg  text-dark dark:text-white font-bold"
       id="dialogTitletestModal"
     >
       Test modal
@@ -54,7 +54,7 @@ exports[`ModalUnstyled when asked to render with children renders with children 
 </div>
 `;
 
-exports[`ModalUnstyled when asked to render without children renders without children 1`] = `
+exports[`ModalUnstyled when asked to render without children matches snapshot 1`] = `
 <div
   aria-labelledby="dialogTitletestModal"
   aria-modal="true"
@@ -65,7 +65,7 @@ exports[`ModalUnstyled when asked to render without children renders without chi
     className="border-b border-b-neutral-light-100 dark:border-b-neutral-dark-100 pb-1 flex justify-between"
   >
     <p
-      className="text-lg text-dark dark:text-white font-bold"
+      className="text-lg  text-dark dark:text-white font-bold"
       id="dialogTitletestModal"
     >
       Test modal

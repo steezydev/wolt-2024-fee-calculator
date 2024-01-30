@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TimeSelectorColumn when asked to render with hours renders with hours 1`] = `
+exports[`TimeSelectorColumn when asked to render with hours matches snapshot 1`] = `
 <div
   className="flex flex-col items-center gap-1 w-full"
 >
@@ -330,7 +330,7 @@ exports[`TimeSelectorColumn when asked to render with hours renders with hours 1
 </div>
 `;
 
-exports[`TimeSelectorColumn when asked to render with minutes renders with minutes 1`] = `
+exports[`TimeSelectorColumn when asked to render with minutes matches snapshot 1`] = `
 <div
   className="flex flex-col items-center gap-1 w-full"
 >

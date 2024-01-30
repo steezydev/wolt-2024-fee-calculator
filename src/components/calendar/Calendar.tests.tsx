@@ -13,25 +13,39 @@ export const calendarRenderTests = (
 ) => {
   describe(name, () => {
     describe('when asked to render', () => {
-      it('renders', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(<Calendar />);
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
+
+      it('renders correctly', () => {
+        render(<Calendar />);
+
+        expect(screen.getByText('January 2024')).toBeInTheDocument();
+
+        expect(
+          screen.getByLabelText('Choose Monday, 1 January 2024')
+        ).toBeInTheDocument();
+        expect(
+          screen.getByLabelText('Choose Wednesday, 17 January 2024')
+        ).toBeInTheDocument();
+        expect(
+          screen.getByLabelText('Choose Wednesday, 31 January 2024')
+        ).toBeInTheDocument();
+      });
     });
 
     describe('when asked to render with selected date', () => {
-      it('renders with selected date', () => {
+      it('matches snapshot', () => {
         const component = TestRenderer.create(
           <Calendar selectedDate={testDate} />
         );
         const tree = component.toJSON();
         expect(tree).toMatchSnapshot();
       });
-    });
 
-    describe('when asked to render with selected date', () => {
-      it('date is selected', () => {
+      it('renders with date selected', () => {
         render(<Calendar selectedDate={testDate} />);
 
         expect(
@@ -56,6 +70,7 @@ export const calendarEventTests = (
         const newDateButton = screen.getByLabelText(
           'Choose Wednesday, 17 January 2024'
         );
+
         fireEvent.click(newDateButton);
 
         expect(mockOnDateChange).toHaveBeenCalledTimes(1);

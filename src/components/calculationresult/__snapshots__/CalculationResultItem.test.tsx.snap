@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CalculationResultItem when asked to render renders 1`] = `
+exports[`CalculationResultItem when asked to render matches snapshot 1`] = `
 <div
   className="flex flex-row justify-between"
 >
@@ -17,7 +17,7 @@ exports[`CalculationResultItem when asked to render renders 1`] = `
 </div>
 `;
 
-exports[`CalculationResultItem when asked to render with additional class renders with additional class 1`] = `
+exports[`CalculationResultItem when asked to render with additional class matches snapshot 1`] = `
 <div
   className="flex flex-row justify-between some-class"
 >

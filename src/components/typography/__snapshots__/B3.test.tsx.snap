@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`B3 when asked to render  renders 1`] = `
+exports[`B3 when asked to render  matches snapshot 1`] = `
 <p
   className="text-base"
 >
@@ -8,7 +8,7 @@ exports[`B3 when asked to render  renders 1`] = `
 </p>
 `;
 
-exports[`B3 when asked to render with additional class  renders with additional class 1`] = `
+exports[`B3 when asked to render with additional class  matches snapshot 1`] = `
 <p
   className="text-base some-class"
 >

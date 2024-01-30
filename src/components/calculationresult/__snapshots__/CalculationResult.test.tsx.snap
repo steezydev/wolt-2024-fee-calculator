@@ -1,87 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CalculationResult when asked to render renders 1`] = `
-<div
-  className="flex flex-col gap-6 bg-primary-100 py-6 px-5 rounded-xl text-black dark:text-white"
->
-  <div
-    className="flex flex-col gap-1"
-  >
-    <div
-      className="flex flex-row justify-between"
-    >
-      <p
-        className="text-base"
-      >
-        Cart value
-      </p>
-      <p
-        className="text-base"
-      >
-        20 €
-      </p>
-    </div>
-    <div
-      className="flex flex-row justify-between"
-    >
-      <p
-        className="text-base"
-      >
-        Delivery distance
-      </p>
-      <p
-        className="text-base"
-      >
-        900 m
-      </p>
-    </div>
-    <div
-      className="flex flex-row justify-between"
-    >
-      <p
-        className="text-base"
-      >
-        Amount of items
-      </p>
-      <p
-        className="text-base"
-      >
-        1
-      </p>
-    </div>
-    <div
-      className="flex flex-row justify-between"
-    >
-      <p
-        className="text-base"
-      >
-        Order time
-      </p>
-      <p
-        className="text-base"
-      >
-        17.01.2024 14:38
-      </p>
-    </div>
-  </div>
-  <div
-    className="flex flex-row justify-between"
-  >
-    <p
-      className="text-xl  text-2xl font-semibold"
-    >
-      Delivery fee
-    </p>
-    <p
-      className="text-xl  text-2xl  font-semibold"
-    >
-      €7.00
-    </p>
-  </div>
-</div>
-`;
-
-exports[`CalculationResult when asked to render with additional class renders with additional class 1`] = `
+exports[`CalculationResult when asked to render with additional class matches snapshot 1`] = `
 <div
   className="flex flex-col gap-6 bg-primary-100 py-6 px-5 rounded-xl text-black dark:text-white some-class"
 >
@@ -154,7 +73,8 @@ exports[`CalculationResult when asked to render with additional class renders wi
       Delivery fee
     </p>
     <p
-      className="text-xl  text-2xl  font-semibold"
+      className="text-xl  text-2xl font-semibold"
+      data-test-id="fee"
     >
       €7.00
     </p>
@@ -162,7 +82,89 @@ exports[`CalculationResult when asked to render with additional class renders wi
 </div>
 `;
 
-exports[`CalculationResult when asked to render without children renders without children 1`] = `
+exports[`CalculationResult when asked to render with children matches snapshot 1`] = `
+<div
+  className="flex flex-col gap-6 bg-primary-100 py-6 px-5 rounded-xl text-black dark:text-white"
+>
+  <div
+    className="flex flex-col gap-1"
+  >
+    <div
+      className="flex flex-row justify-between"
+    >
+      <p
+        className="text-base"
+      >
+        Cart value
+      </p>
+      <p
+        className="text-base"
+      >
+        20 €
+      </p>
+    </div>
+    <div
+      className="flex flex-row justify-between"
+    >
+      <p
+        className="text-base"
+      >
+        Delivery distance
+      </p>
+      <p
+        className="text-base"
+      >
+        900 m
+      </p>
+    </div>
+    <div
+      className="flex flex-row justify-between"
+    >
+      <p
+        className="text-base"
+      >
+        Amount of items
+      </p>
+      <p
+        className="text-base"
+      >
+        1
+      </p>
+    </div>
+    <div
+      className="flex flex-row justify-between"
+    >
+      <p
+        className="text-base"
+      >
+        Order time
+      </p>
+      <p
+        className="text-base"
+      >
+        17.01.2024 14:38
+      </p>
+    </div>
+  </div>
+  <div
+    className="flex flex-row justify-between"
+  >
+    <p
+      className="text-xl  text-2xl font-semibold"
+    >
+      Delivery fee
+    </p>
+    <p
+      className="text-xl  text-2xl font-semibold"
+      data-test-id="fee"
+    >
+      €7.00
+    </p>
+  </div>
+</div>
+`;
+
+exports[`CalculationResult when asked to render without children macthes snapshot 1`] = `
 <div
   className="flex flex-col gap-6 bg-primary-100 py-6 px-5 rounded-xl text-black dark:text-white"
 >
@@ -178,7 +180,8 @@ exports[`CalculationResult when asked to render without children renders without
       Delivery fee
     </p>
     <p
-      className="text-xl  text-2xl  font-semibold"
+      className="text-xl  text-2xl font-semibold"
+      data-test-id="fee"
     >
       €7.00
     </p>

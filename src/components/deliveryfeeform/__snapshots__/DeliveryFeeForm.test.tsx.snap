@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DeliveryFeeForm when asked to render renders correctly 1`] = `
+exports[`DeliveryFeeForm when asked to render matches snapshot 1`] = `
 <form
   aria-labelledby="some-id"
   className="flex flex-col gap-4 sm:gap-6"
@@ -311,7 +311,7 @@ exports[`DeliveryFeeForm when asked to render renders correctly 1`] = `
 </form>
 `;
 
-exports[`DeliveryFeeForm when asked to render wtih additional class name renders wtih additional class name 1`] = `
+exports[`DeliveryFeeForm when asked to render wtih additional class name matches snapshot 1`] = `
 <form
   aria-labelledby="some-id"
   className="flex flex-col gap-4 sm:gap-6 some-class"
