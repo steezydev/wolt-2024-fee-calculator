@@ -1,5 +1,12 @@
 # Wolt Summer 2024 Engineering Internships Project
 
+## Setup
+
+1. Install dependencies by running `yarn install` or `npm install`
+2. Run project by `yarn dev` or `npm run dev`
+3. Run test by `yarn test` or `npm run test`
+4. Build application by `yarn build` or `npm run build`
+
 ## Overview
 
 The project is implemented with React, Typescript, styled with TailwindCSS and uses `date-fns` as an industry standard for date manipulations and `react-datepicker` due to complexity of the calendar component.
